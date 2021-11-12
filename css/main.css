@@ -49,6 +49,10 @@ body {
 a {
     text-decoration: underline;
     color: var(--color-black);
+    text-underline-offset: 1rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    display: block;
 }
 
 strong {
@@ -70,6 +74,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    padding: 1rem 0;
     margin: 0;
     line-height: 1.3;
 }
