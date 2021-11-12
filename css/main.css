@@ -7,15 +7,26 @@ html {
   }
 
 :root {
+    /* Colors */
     --color-red: #fc493c;
     --color-cream: #fff7ee;
     --color-black: #000;
+    
+    /*Typeface*/
     --font: termina, sans-serif;
+    
+    /*Type Weights*/
     --font-weight-headline: 900;
     --font-weight-subhead: 500;
     --font-weight-body-head: 600;
     --font-weight-body: 400;
     --font-weight-body-strong: 700;
+
+    /*Type Sizes*/
+    --font-size-headline: 14px;
+    --font-size-subhead: 14px;
+    --font-size-body-head: 14px;
+    --font-size-body: 14px;
 }
 
 body {
