@@ -30,7 +30,7 @@ html {
     */
     --font-size-h1: 13.288rem;
     --font-size-h2: 4.209rem;
-    --font-size-h3: 2.369rem;   
+    --font-size-h3: 4rem;   
     --font-size-h4: 1.333rem;
     --font-size-p: 1rem;
 }
@@ -95,6 +95,18 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+.h-three {
+    color: var(--color-black);
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-h3);
+    text-transform: uppercase;
+}
+
+.h-three--red {
+    color: var(--color-red);
+    font-weight: 400;
+    text-transform: none;
+}
 
 .organism {
     background-color: var(--color-cream);
