@@ -1,11 +1,39 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 :root {
     --color-red: #fc493c;
     --color-cream: #fff7ee;
     --color-black: #000;
+    --font: termina, sans-serif;
+    --font-weight-headline: 900;
+    --font-weight-subhead: 500;
+    --font-weight-body-head: 600;
+    --font-weight-body: 400;
+    --font-weight-body-strong: 700;
 }
 
 body {
     margin: 0;
+    font-family: var(--font);
+    font-weight: var(--font-weight-body);
+    color: var(--color-black);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--color-black);
+}
+
+strong {
+    font-weight: var(--font-weight-body-strong);
 }
 
 img {
