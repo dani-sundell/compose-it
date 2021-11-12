@@ -30,9 +30,10 @@ html {
     */
     --font-size-h1: 13.288rem;
     --font-size-h2: 4.209rem;
-    --font-size-h3: 4rem;   
+    --font-size-h3: 4rem;
     --font-size-h4: 1.333rem;
     --font-size-p: 1rem;
+     /*Ultimately, I think it's bad design to have h2 and h3 so close in size, but the site uses two different sizes for these items consistenly, so I followed that lead to be faithful to their design*/
 }
 
 body {
@@ -106,6 +107,17 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-red);
     font-weight: 400;
     text-transform: none;
+}
+
+.h-four {
+    color: var(--color-black);
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-h4);
+    text-transform: uppercase;
+}
+
+.h-four--red {
+    color: var(--color-red);
 }
 
 .organism {
