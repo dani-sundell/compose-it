@@ -1,7 +1,9 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
+    font-size: 81.3%; /*13px*/
   }
+
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -16,25 +18,29 @@ html {
     --font: termina, sans-serif;
     
     /*Type Weights*/
-    --font-weight-headline: 900;
-    --font-weight-subhead: 500;
-    --font-weight-body-head: 600;
-    --font-weight-body: 400;
-    --font-weight-body-strong: 700;
+    --font-weight-h1: 900;
+    --font-weight-h2: 500;
+    --font-weight-h3: 500;
+    --font-weight-h4: 600;
+    --font-weight-p: 400;
+    --font-weight-p-strng: 700;
 
-    /*Type Sizes*/
-    --font-size-headline: 14px;
-    --font-size-subhead: 14px;
-    --font-size-body-head: 14px;
-    --font-size-body: 14px;
+    /*Type Sizes
+    ref: https://type-scale.com/?size=13&scale=1.333&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false
+    */
+    --font-size-h1: 13.288rem;
+    --font-size-h2: 4.209rem;
+    --font-size-h3: 2.369rem;   
+    --font-size-h4: 1.333rem;
+    --font-size-p: 1rem;
 }
 
 body {
     margin: 0;
     font-family: var(--font);
-    font-weight: var(--font-weight-body);
+    font-weight: var(--font-weight-p);
     color: var(--color-black);
-    font-size: 14px;
+    font-size: var(--font-size-p);
     line-height: 1.5;
     padding: 2rem;
 }
@@ -45,7 +51,7 @@ a {
 }
 
 strong {
-    font-weight: var(--font-weight-body-strong);
+    font-weight: var(--font-weight-p-strng);
 }
 
 img {
@@ -70,8 +76,8 @@ h1, h2, h3, h4, h5, h6 {
 .h-one {
     color: var(--color-cream);
     background-color: var(--color-red);
-    font-weight: var(--font-weight-headline);
-    font-size: 180px;
+    font-weight: var(--font-weight-h1);
+    font-size: var(--font-size-h1);
     text-transform: uppercase;
     margin: 0 auto;
     text-align: left;
@@ -81,6 +87,14 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-red);
     background-color:transparent;
 }
+
+.h-two {
+    color: var(--color-black);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    text-transform: uppercase;
+}
+
 
 .organism {
     background-color: var(--color-cream);
