@@ -64,6 +64,11 @@ img {
     display: block;
 }
 
+.component {
+    max-width: initial;
+    padding: 2rem 0;
+}
+
 .component img {
     max-width: initial;
 }
@@ -71,6 +76,11 @@ img {
 .component__img {
     border: solid 1px #ccc;
     overflow-x: auto;
+}
+
+.component__code {
+    max-width: initial;
+    padding: 2rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -124,6 +134,19 @@ h1, h2, h3, h4, h5, h6 {
 .h-four--red {
     color: var(--color-red);
 }
+
+.logo {
+    fill: var(--color-black);
+    width: 10rem;
+    display: block;
+    padding: 1rem;
+}
+
+.logo--cream {
+    fill: var(--color-cream);
+    background-color: var(--color-black);
+}
+
 
 .organism {
     background-color: var(--color-cream);
