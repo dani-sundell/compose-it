@@ -87,11 +87,19 @@ aside a {
     margin-bottom: 1rem;
 }
 
+a.logo  {
+    text-decoration: none;
+    text-underline-offset: 0;
+    margin: 0;
+    text-transform: none;
+    margin-bottom: 0rem;
+}
+
 aside a:hover {
     color: var(--color-black);
 }
 
-aside h1, aside h2, aside h3, aside a, aside .logo {
+aside h1, aside h2, aside h3, aside a, aside.logo {
     padding: .75rem 0rem .75rem 2rem;
 }
 
