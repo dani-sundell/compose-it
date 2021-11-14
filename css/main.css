@@ -59,9 +59,59 @@ strong {
     font-weight: var(--font-weight-p-strng);
 }
 
+/* Images */
+
 img {
     max-width: 100%;
     display: block;
+}
+
+figure {
+    margin: 0;
+}
+
+figure.compimg img{
+    width: 100%;
+    padding-bottom: .5rem;
+    margin: auto;
+}
+
+.compimg--insta {
+    width: 268px;
+    height: 268px;
+}
+
+figure.compimg--insta img {
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+}
+
+.compimg--awards, .compimg--trust img {
+    padding: 1rem;
+}
+
+.compimg--awards, .compimg--trust {
+    width: 150px;
+    height: 150px;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+}
+
+.compimg--awards {
+    background-color: var(--color-red);
+    border-color: var(--color-cream);
+}
+
+.compimg--trust {
+    background-color: var(--color-cream);
+    border-color: var(--color-black);
+}
+
+figcaption {
+    text-transform: uppercase;
 }
 
 /* Components Library */
