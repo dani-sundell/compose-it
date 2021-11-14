@@ -203,6 +203,31 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-red);
 }
 
+/* Lists */
+
+ul {
+    padding: 0;
+    margin: 1rem 0;
+    list-style: none;
+}
+
+.list--nonum, .list--numbered {
+    border-bottom: solid 1px var(--color-black);
+}
+
+.list-item {
+    margin: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-top: solid 1px var(--color-black);
+}
+
+.list-item--numbered {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Site Logos */
 
 .logo {
@@ -366,30 +391,6 @@ a.project--link:hover > .project-category--normal {
     float: right;
 }
 
-/* Lists */
-
-ul {
-    padding: 0;
-    margin: 1rem 0;
-    list-style: none;
-}
-
-.list--nonum, .list--numbered {
-    border-bottom: solid 1px var(--color-black);
-}
-
-.list-item {
-    margin: 0;
-    width: 100%;
-    padding: 1rem 0;
-    border-top: solid 1px var(--color-black);
-}
-
-.list-item--numbered {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 /*unsorted*/
 
