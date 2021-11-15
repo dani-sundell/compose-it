@@ -123,7 +123,7 @@ aside {
     position: fixed;
     padding-top: 2rem;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 aside a {
