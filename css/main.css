@@ -440,6 +440,7 @@ ul {
 
 .table__content figure {
     position: absolute;
+    left: 75%;
     opacity: 0;
     width: 200px;
     height: 200px;
