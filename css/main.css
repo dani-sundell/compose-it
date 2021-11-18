@@ -23,6 +23,8 @@ html {
     --font-weight-h2: 500;
     --font-weight-h3: 500;
     --font-weight-h4: 600;
+    --font-weight-table: 400;
+    --font-weight-table-h: 700;
     --font-weight-p: 400;
     --font-weight-p-strng: 700;
 
@@ -33,6 +35,7 @@ html {
     --font-size-h2: 4.209rem;
     --font-size-h3: 4rem;
     --font-size-h4: 1.333rem;
+    --font-size-table: 1.777rem;
     --font-size-p: 1rem;
      /*Ultimately, I think it's bad design to have h2 and h3 so close in size, but the site uses two different sizes for these items consistenly, so I followed that lead to be faithful to their design*/
 }
@@ -388,6 +391,67 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
+
+/* Table */
+
+.table__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: solid 1px var(--color-black);
+    padding: 1rem 0;
+}
+
+.table__row:last-child {
+    border-bottom: solid 1px var(--color-black);
+}
+
+.table__header {
+    font-size: var(--font-size-table);
+    font-weight: var(--font-weight-table-h);
+}
+
+.table__item {
+    font-size: var(--font-size-table);
+    font-weight: var(--font-weight-table);
+}
+
+.table__content figure {
+    position: absolute;
+    opacity: 0;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.table__hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+.table__hover:hover {
+    opacity: 0.5;
+}
+
+.table__img img{
+    z-index: 10;
+    margin: auto;
+    width: 100%;
+}
+
+.table__hover:hover + .compimg {
+    opacity: 1;
+}
+
 
 /* Site Logos */
 
