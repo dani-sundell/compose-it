@@ -57,6 +57,12 @@ a {
     padding-top: 1rem;
     text-transform: uppercase;
     display: block;
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    text-underline-offset: 0rem;
+    text-decoration: none;
 }
 
 strong {
@@ -617,9 +623,9 @@ a.project--link:hover > .project-category--normal {
 }
 
 
-/* Agency */
+/* Agency & Awards */
 
-.agency {
+.agency, .awards {
     background-color: var(--color-red);
     padding: 4rem;
     margin: 0 auto;
@@ -632,7 +638,7 @@ a.project--link:hover > .project-category--normal {
     align-items: flex-start;
 }
 
-.content--agency {
+.content--agency, .content--awards {
     color: var(--color-black);
 }
 
@@ -652,4 +658,9 @@ a.project--link:hover > .project-category--normal {
     font-style: normal;
     line-height: 1.5;
     padding: 1rem 0;
+}
+
+.awards a {
+    padding-top: 3rem;
+    text-align: center;
 }
