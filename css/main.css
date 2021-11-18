@@ -35,7 +35,7 @@ html {
     --font-size-h2: 4.209rem;
     --font-size-h3: 4rem;
     --font-size-h4: 1.333rem;
-    --font-size-table: 1.777rem;
+    --font-size-table: 1.6rem;
     --font-size-p: 1rem;
      /*Ultimately, I think it's bad design to have h2 and h3 so close in size, but the site uses two different sizes for these items consistenly, so I followed that lead to be faithful to their design*/
 }
