@@ -411,6 +411,11 @@ ul {
     align-items: flex-start;
     border-top: solid 1px var(--color-black);
     padding: 1rem 0;
+    flex-basis: 30%;
+}
+
+.table__content {
+    flex-basis: 70%;
 }
 
 .table__row:last-child {
@@ -423,8 +428,14 @@ ul {
 }
 
 .table__item {
+    text-align: right;
     font-size: var(--font-size-table);
     font-weight: var(--font-weight-table);
+    flex-basis: 70%;
+}
+
+.table__item:last-child {
+    flex-basis: 30%;
 }
 
 .table__content figure {
