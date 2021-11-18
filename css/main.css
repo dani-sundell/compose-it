@@ -1,4 +1,5 @@
 /* Global */
+
 html {
     box-sizing: border-box;
     font-size: 81.3%; /*13px*/
@@ -112,6 +113,116 @@ figure.compimg--insta img {
 
 figcaption {
     text-transform: uppercase;
+}
+
+/* Buttons */
+
+.button-container {
+    position: absolute;
+}
+
+.button-container--inline-lg {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+}
+
+.button-container--inline-md {
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: relative;    
+}
+
+.button-container--inline-sm {
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: relative;    
+}
+
+.buttons--s {
+    width: 100px;
+    height: 100px;
+}
+
+.buttons--m {
+    width: 120px;
+    height: 120px;
+}
+
+.buttons--l {
+    width: 200px;
+    height: 200px;
+}
+
+.button-text {
+    position: absolute;
+    left: 0%;
+    z-index: 2;
+    transition: all 1s ease-in-out;
+    animation: rotation 10s infinite linear;
+}
+
+.button-text--lg {
+    width: 200px;
+    height: 200px;
+    top: 6%;
+}
+
+.button-text--md {
+    width: 120px;
+    height: 120px;
+    top: 11%;
+}
+
+.button-text--sm {
+    width: 100px;
+    height: 100px;
+    top: 13%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+} /*ref: https://flaviocopes.com/rotate-image/*/
+
+.button-shapes {
+    z-index: 1;
+}
+
+.button-container--inline-lg:hover, .button-container--inline-md:hover, .button-container--inline-sm:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button--arrow-rotate:hover {
+    transform: rotate(-180deg);
+}
+
+.button-cream {
+    fill: var(--color-cream);
+    stroke: var(--color-red);
+    stroke-width: 2px;
+}
+
+.button-cream--blk {
+    fill: var(--color-cream);
+    stroke: var(--color-black);
+    stroke-width: 2px;
+}
+
+.button-blk {
+    fill: var(--color-black);
+}
+
+.button-red {
+    fill: var(--color-red);
 }
 
 /* Components Library */
