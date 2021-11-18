@@ -48,6 +48,7 @@ body {
     font-size: var(--font-size-p);
     line-height: 1.5;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a {
