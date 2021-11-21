@@ -1,16 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <title>Compose It | Web components</title>
-    <link href="../css/normalize.css" rel="stylesheet" />
-    <link href="../css/main.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.typekit.net/axs1svs.css">
-    </head>
-    <body>
-        <aside class="components__sidebar">
-            <a href="index.html" class="logo">
-                <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo logo--component">
+<head>
+<meta charset="UTF-8">
+<title>Compose It | Web components</title>
+<link href="../css/normalize.css" rel="stylesheet" />
+<link href="../css/main.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.typekit.net/axs1svs.css">
+</head>
+<body>
+    <aside class="components__sidebar">
+        <a href="index.html" class="logo">
+            <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo logo--component">
+            <g>
+            <path d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
+                    c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"/>
+            <path d="M12.8,17.8c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C15.9,15.4,14.8,17.8,12.8,17.8z"/>
+            </g>
+            <path d="M48.4,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8v-6c0-2.1-0.7-3.5-2.4-3.5C39,6.5,38.1,8,38.1,10c0,0.1,0,6,0,6
+                c0,1.1,0.3,1.7,1.3,1.8v0.9h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.8v-6c0-2.1-0.6-3.5-2.4-3.5c-1.6,0-2.5,1.5-2.5,3.4v6
+                c0,1.1,0.3,1.7,1.4,1.8v0.9h-6.7v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.4-1h0.7V7c1-1.3,2.3-1.9,4-1.9
+                c2.3,0,3.8,1,4.6,2.5c1-1.7,2.5-2.5,4.4-2.5c3.6,0,5.1,2.3,5.1,5.4V16C47,17.1,47.3,17.7,48.4,17.8z"/>
+            <path d="M64.7,12c0,4.3-2.3,6.9-6,6.9c-1.8,0-3.1-0.7-4.1-1.7v5.2c0,1.1,0.3,1.7,1.3,1.7V25h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.7V8.8
+                c0-1.1-0.3-1.7-1.3-1.7V6.1l4.6-1h0.7v1.7c0.9-1,2.3-1.7,4.1-1.7C62.3,5.1,64.7,7.7,64.7,12z M60.7,12c0-3.3-0.9-5.8-3-5.8
+                c-2.1,0-3.2,2.3-3.2,5.8c0,3.5,1.1,5.8,3.2,5.8C59.9,17.8,60.7,15.3,60.7,12z"/>
+            <path d="M73.2,5.1C69.3,5.1,66,7.5,66,12c0,4.5,3.4,6.9,7.3,6.9c3.9,0,7.3-2.4,7.3-6.9C80.5,7.5,77.1,5.1,73.2,5.1z M73.2,17.8
+                c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C76.4,15.4,75.2,17.8,73.2,17.8z"/>
+            <path d="M88.7,10.4c2.1,1,4.7,2.1,3.8,5.2c-0.6,2.1-2.7,3.3-5.5,3.3c-1.7,0-3.9-0.5-5.2-1.5v-3.4h0.7c0.6,2.6,2.7,3.9,4.6,3.9
+                c1.1,0,2.1-0.5,2.3-1.4c0.3-1.5-1.1-2-3-2.8c-2.7-1.2-4.9-2.6-4.1-5.9c0.6-2.2,3-2.8,5-2.8c1.4,0,3,0.5,4.2,1.4v3h-0.6
+                C90.1,7,89.1,6,87.2,6c-0.7,0-1.8,0.2-2,1.4C85.2,9,86.8,9.6,88.7,10.4z"/>
+            <path d="M106.9,11.8c-9,0-9,0-9,0c0.4,5.5,6.1,5.9,8.4,3.3l0.5,0.4c-1,1.9-3,3.4-5.7,3.4c-3.8,0-7.2-2.4-7.2-7.1
+                c0-4.2,2.9-6.7,7-6.7c4,0,6.2,2.8,6.1,6.3V11.8z M97.8,10.4h5.5c0-2-0.4-4.4-2.5-4.4C99.1,6.1,98,7.7,97.8,10.4z"/>
+            <path d="M109.4,16.6c0-1.5,1.1-2.4,2.5-2.4c1.4,0,2.5,0.9,2.5,2.4c0,1.5-1.1,2.4-2.5,2.4C110.5,18.9,109.4,18.1,109.4,16.6z"/>
+            <path d="M123.6,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.6-1h0.7V16
+                C122.2,17.1,122.4,17.7,123.6,17.8z"/>
+            <path d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h2.6v1.4
+                h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"/>
+            </svg>
+        </a>
+        <div class="divider"></div>
+        <h3>Atoms</h3>
+            <a href="#body">Body</a>
+            <a href="#links">Links</a>
+            <a href="#lists">Lists</a>
+            <a href="#imgs">Images</a>
+            <a href="#buttons">Buttons</a>
+            <a href="#table">Table</a>
+        <h3>Headers</h3>
+            <a href="#h-one">h1</a>
+            <a href="#h-two">h2</a>
+            <a href="#h-three">h3</a>
+            <a href="#h-four">h4</a>
+        <h3>Logos</h3>
+            <a href="#logo-link">Logo</a>
+            <a href="#logomark">Logomark</a>
+        <h3>Molecules</h3>
+            <a href="#menu">Menu</a>
+            <a href="#header-bar">Header bar</a>
+            <a href="#work-project">Project Link</a>
+        <h3>Organisms</h3>
+            <a href="#work-section">Work Section</a>  
+            <a href="#prod-section">Production Section</a> 
+            <a href="#agency-section">Agency Section</a>
+            <a href="#trust-section">Insta Section</a> 
+            <a href="#trust-section">Trust Section</a> 
+            <a href="#awards-section">Awards Section</a>
+            <a href="#contact-section">Contact Section</a>    
+        <div class="divider"></div>
+    </aside>
+    <section class="components_section">
+        <h1 class="comopnent__headline">Compose It Web Components</h1>
+        
+        <h2 class="comopnent__subhead">Typography defaults</h2>
+        
+        <!-- Body -->
+        
+        <article class="component">
+        <h3 class="component__name" id="body">Body</h3>
+        <div class="component__img">
+            <img
+                srcset="img-ref/homepage-production-desc.png 2x"
+                src="img-ref/homepage-production-desc.png"
+                alt="body copy">
+        </div>
+        <div class="component__code">
+            <p>Nous sommes <strong>Compose it, </strong>une agence de Production et R&eacute;alisation Audiovisuelle.</p>
+            <p>Nous sommes une &eacute;quipe de sept permanents et disposons de toutes les comp&eacute;tences de la production de films en interne. Nous sommes agiles et mettons en oeuvre les id&eacute;es de nos clients.</p>
+            <p>Nos deux r&eacute;alisateurs inhouse sont garants de la vision artistique de chaque production. Nous sommes cr&eacute;atifs et accompagnons nos clients dans l&#8217;&eacute;criture et la conception des projets.</p>
+            <p>Nos monteurs assurent la post-production des films au sein de nos bureaux. Nous sommes agiles afin de garantir le suivi de chaque projet dans le respect des d&eacute;lais.</p>
+            <p>Nous &eacute;voluons dans diff&eacute;rents univers, et vivons des aventures avec nos clients, car nous sommes curieux, ouverts et passionn&eacute;s : nous irons, ensemble, l&agrave; ou vous nous emmenerez.</p>
+            <p><strong>Let&#8217;s Talk about your project, we will Compose it for you !</strong></p>
+        </div>
+        </article>
+
+        <!-- Links -->
+        
+        <article class="component">
+            <h3 class="component__name" id="links">Links</h3>
+            <div class="component__img">
+                <img
+                srcset="img-ref/homepage-link.png 2x"
+                src="img-ref/homepage-link.png"
+                alt="link normal">
+            </div>
+            <div class="component__code">
+                <a href="#!">Voir Plus</a>
+            </div>
+        </article>
+
+        <!-- List -->
+
+        <article class="component">
+            <h3 class="component__name" id="lists">Lists</h3>
+            <div class="component__img">
+                <img
+                srcset="img-ref/homepage-agency-ul.png 2x"
+                src="img-ref/homepage-agency-ul.png"
+                alt="List">
+                <img
+                srcset="img-ref/homepage-trust-ul.png 2x"
+                src="img-ref/homepage-trust-ul.png"
+                alt="List">
+            </div>
+            <div class="component__code">
+                <ul class="list--numbered">
+                    <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">01</h4></li>
+                    <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">02</h4></li>
+                    <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">03</h4></li>
+                    <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">04</h4></li>
+                    <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">05</h4></li>
+                </ul>
+                <ul class="list--nonum">
+                    <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
+                    <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
+                    <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
+                    <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
+                    <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Imgs -->
+
+        <article class="component">
+            <h3 class="component__name" id="imgs">Imgs</h3>
+            <div class="component__img">
+                <img
+                srcset="img-ref/homepage-references-item.png 2x"
+                src="img-ref/homepage-references-item.png"
+                alt="Mr Store Image">
+                <img
+                srcset="img-ref/homepage-insta-img.png 2x"
+                src="img-ref/homepage-insta-img.png"
+                alt="Instagram Image">
+                <img
+                srcset="img-ref/homepage-awards-img.png 2x"
+                src="img-ref/homepage-awards-img.png"
+                alt="Award Image">
+                <img
+                srcset="img-ref/homepage-trust-img.png 2x"
+                src="img-ref/homepage-trust-img.png"
+                alt="Trust Image">
+            </div>
+            <div class="component__code" style="width: 30%;">
+                <figure class="compimg compimg--project">
+                    <img class="img" src="../img/project-img-mr-store.png">
+                </figure>
+                <figcaption class="img-caption--project">Digital</figcaption>
+
+                <figure class="compimg compimg--insta">
+                    <img class="img" src="../img/insta-img-cameras.jpeg">
+                </figure>
+
+                <figure class="compimg compimg--awards">
+                    <img class="img" src="../img/awards-nikon-film-fest.png">
+                </figure>
+
+                <figure class="compimg compimg--trust">
+                    <img class="img" src="../img/trust-img-service-plan.png">
+                </figure>
+
+            </div>
+        </article>
+
+        <!-- Buttons -->
+
+        <article class="component">
+            <h3 class="component__name" id="buttons">Buttons</h3>
+
+            <div class="component__img">
+                    <img
+                    srcset="img-ref/homepage-agency-button.png 2x"
+                    src="img-ref/homepage-agency-button.png"
+                    alt="Button">
+                    <img
+                    srcset="img-ref/homepage-contact-button.png 2x"
+                    src="img-ref/homepage-contact-button.png"
+                    alt="Button">
+                    <img
+                    srcset="img-ref/homepage-projects-button.png 2x"
+                    src="img-ref/homepage-projects-button.png"
+                    alt="Button">
+                    <img
+                    srcset="img-ref/homepage-production-button.png 2x"
+                    src="img-ref/homepage-production-button.png"
+                    alt="Button">
+                    <img
+                    srcset="img-ref/homepage-work-button.png 2x"
+                    src="img-ref/homepage-work-button.png"
+                    alt="Button">
+                    <img
+                    srcset="img-ref/homepage-content-button.png 2x"
+                    src="img-ref/homepage-content-button.png"
+                    alt="Button">
+            </div>
+            <div class="component__code">
+                <a class="button-container--inline-lg">
+                    <div class="button-shapes">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                            <circle class="button-cream--blk" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"/></svg>
+                    </div>
+                    <div class="button-text button-text--lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200"><g id="buttons-blk--savior-text">
+                        <path d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z"/><path d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z"/><path d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z"/><path d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z"/><path d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z"/><path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z"/><path d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z"/><path d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z"/><path d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z"/><path d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z"/><path d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z"/><path d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z"/><path d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z"/><path d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z"/><path d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z"/><path d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z"/><path d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z"/><path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z"/><path d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z"/><path d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z"/><path d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z"/><path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z"/><path d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z"/><path d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z"/></g></svg>
+                    </div>
+                </a>
+                
+                <a class="button-container--inline-lg">
+                    <div class="button-shapes button--arrow-rotate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                            <circle class="button-cream--blk" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"/></svg>
+                    </div>
+                </a>
+
+                <a class="button-container--inline-sm">
+                    <div class="button-shapes">
+                        <svg id="buttons-red--up" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+                            <circle class="button-cream" cx="50" cy="50" r="49"/><polygon class="button-red" points="43.69 43.75 43.69 45.42 53.39 45.42 43.16 55.66 44.34 56.84 54.58 46.61 54.58 56.31 56.25 56.31 56.25 43.75 56.25 43.75 56.25 43.75 43.69 43.75"/></svg>
+                    </div>
+                </a>
+
+                <a class="button-container--inline-md">
+                    <div class="button-shapes">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                            <circle class="button-cream" cx="100" cy="100" r="99"/><path d="M100,2A98,98,0,1,1,2,100,98.11,98.11,0,0,1,100,2m0-2A100,100,0,1,0,200,100,100,100,0,0,0,100,0Z" class="button-red"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5" class="button-red"/></svg>
+                    </div>
+                    <div class="button-text button-text--md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                        <path d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z" class="button-red"/><path d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z" class="button-red"/><path d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z" class="button-red"/><path d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z" class="button-red"/><path d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z" class="button-red"/><path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z" class="button-red"/><path d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z" class="button-red"/><path d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z" class="button-red"/><path d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z" class="button-red"/><path d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z" class="button-red"/><path d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z" class="button-red"/><path d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z" class="button-red"/><path d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z" class="button-red"/><path d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z" class="button-red"/><path d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z" class="button-red"/><path d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z" class="button-red"/><path d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z" class="button-red"/><path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z" class="button-red"/><path d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z" class="button-red"/><path d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z" class="button-red"/><path d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z" class="button-red"/><path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z" class="button-red"/><path d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z" class="button-red"/><path d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z" class="button-red"/></svg>
+                    </div>
+                </a>
+
+
+                <a class="button-container--inline-sm">
+                    <div class="button-shapes">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+                            <circle class="button-cream" cx="50" cy="50" r="49"/>
+                            <polygon class="button-red" points="58.88 49.95 57.7 48.77 50.84 55.63 50.84 41.16 49.16 41.16 49.16 55.63 42.3 48.77 41.12 49.95 50 58.84 50 58.84 50 58.84 58.88 49.95"/></svg>
+                    </div>
+                    <div class="button-text button-text--sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+                        <path class="button-red" d="M58.39,13.29c-.16,1.37-1.57,2.17-4,1.88a6.37,6.37,0,0,1-4.08-1.89l1-1a4.76,4.76,0,0,0,3.24,1.55c1.41.16,2.16,0,2.22-.6s-.63-.82-2.21-1.14c-2-.4-3.76-1.06-3.59-2.55s1.81-2.06,4-1.81a6.12,6.12,0,0,1,3.59,1.5l-1,1a4.59,4.59,0,0,0-2.75-1.17c-.94-.12-2.11-.08-2.19.55s.92.77,2.29,1C57.06,11.11,58.57,11.76,58.39,13.29Z"/><path class="button-red" d="M65.75,15.73l1.11,1.2a4.52,4.52,0,0,1-4.23.32c-2.46-.92-3.57-2.82-2.76-5s2.91-2.89,5.44-1.94a4.46,4.46,0,0,1,2.89,3l-1.63.17a2.53,2.53,0,0,0-1.76-1.87c-1.56-.58-2.87-.21-3.41,1.23s.21,2.58,1.77,3.16A2.55,2.55,0,0,0,65.75,15.73Z"/><path class="button-red" d="M72.08,22.33l-.3-3.1L69.7,17.79l-1.36,2L67,18.84l4-5.76,4,2.75c1.41,1,2,2.36,1.15,3.61a2.21,2.21,0,0,1-2.85.7l.36,3.28Zm1-3.83c.69.47,1.31.66,1.76,0s0-1.16-.65-1.64l-2.59-1.79L70.44,16.7Z"/><path class="button-red" d="M76.58,21.38c1.78-1.53,4-1.11,5.72,1s1.84,4.28.07,5.8-4,1.11-5.72-1S74.8,22.9,76.58,21.38Zm4.73,5.52c1.14-1,1.07-2.35-.06-3.66s-2.47-1.6-3.61-.63-1.08,2.35.06,3.67S80.17,27.88,81.31,26.9Z"/><path class="button-red" d="M84.37,36.63l-1.23.62-3-5.83,6.24-3.17.72,1.42-5,2.55Z"/><path class="button-red" d="M86.39,44l-1.33.36L83.36,38l6.76-1.82.41,1.55-5.42,1.45Z"/><path class="button-red" d="M86.64,58.65c-1.37-.17-2.16-1.59-1.85-4a6.4,6.4,0,0,1,1.93-4.07l1,1a4.73,4.73,0,0,0-1.57,3.22c-.18,1.41,0,2.16.57,2.23s.83-.62,1.16-2.2c.42-2,1.09-3.75,2.57-3.57s2,1.83,1.79,4a6.11,6.11,0,0,1-1.53,3.58l-1-1a4.61,4.61,0,0,0,1.19-2.73c.12-1,.1-2.12-.54-2.2s-.77.91-1,2.28C88.83,57.34,88.17,58.84,86.64,58.65Z"/><path class="button-red" d="M84.16,66,83,67.08a4.51,4.51,0,0,1-.3-4.22c.94-2.46,2.85-3.56,5-2.73s2.87,2.93,1.9,5.45a4.47,4.47,0,0,1-3,2.87l-.16-1.64a2.5,2.5,0,0,0,1.88-1.74c.59-1.55.24-2.87-1.2-3.42s-2.58.2-3.17,1.75A2.54,2.54,0,0,0,84.16,66Z"/><path class="button-red" d="M77.53,72.23l3.1-.27,1.46-2.07-2-1.37.91-1.3,5.73,4L84,75.2c-1,1.4-2.37,2-3.61,1.12a2.21,2.21,0,0,1-.68-2.86l-3.28.34Zm3.82,1c-.48.68-.67,1.31,0,1.75s1.15.06,1.64-.63l1.81-2.58-1.6-1.13Z"/><path class="button-red" d="M78.45,76.77c1.51,1.78,1.09,4-1,5.71s-4.28,1.82-5.79,0-1.09-3.94,1-5.71S76.94,75,78.45,76.77ZM72.9,81.46c1,1.15,2.34,1.08,3.66,0s1.61-2.47.64-3.61-2.33-1.09-3.66,0S71.93,80.32,72.9,81.46Z"/><path class="button-red" d="M63.14,84.46l-.62-1.24,5.86-2.93,3.13,6.26-1.43.72-2.52-5Z"/><path class="button-red" d="M55.74,86.42l-.34-1.33,6.33-1.65,1.76,6.77-1.54.4-1.42-5.43Z"/><path class="button-red" d="M41.12,86.59c.18-1.37,1.6-2.15,4.06-1.83a6.37,6.37,0,0,1,4.06,2l-1.05,1A4.75,4.75,0,0,0,45,86.09c-1.41-.19-2.16,0-2.24.56s.62.83,2.2,1.18c2,.42,3.75,1.1,3.55,2.59s-1.84,2-4,1.76a6.12,6.12,0,0,1-3.57-1.55l1-1a4.65,4.65,0,0,0,2.73,1.2c.94.13,2.11.11,2.19-.52s-.9-.78-2.27-1.07C42.41,88.79,40.92,88.12,41.12,86.59Z"/><path class="button-red" d="M33.81,84.06l-1.1-1.21a4.51,4.51,0,0,1,4.23-.27c2.45,1,3.54,2.87,2.7,5s-3,2.85-5.47,1.87a4.47,4.47,0,0,1-2.85-3L33,86.32a2.5,2.5,0,0,0,1.73,1.89c1.55.6,2.87.26,3.43-1.18s-.18-2.58-1.73-3.18A2.54,2.54,0,0,0,33.81,84.06Z"/><path class="button-red" d="M27.57,77.38l.26,3.11L29.89,82,31.27,80l1.3.92-4.06,5.7-3.94-2.8c-1.39-1-2-2.38-1.1-3.62a2.21,2.21,0,0,1,2.86-.66L26,76.28Zm-1,3.82c-.68-.48-1.31-.68-1.76,0s-.06,1.15.62,1.64L28,84.63,29.14,83Z"/><path class="button-red" d="M23,78.27c-1.8,1.5-4,1.06-5.71-1s-1.79-4.3,0-5.8,3.95-1.07,5.7,1S24.83,76.77,23,78.27Zm-4.66-5.58c-1.15,1-1.1,2.33,0,3.66S20.84,78,22,77s1.11-2.33,0-3.67S19.53,71.73,18.38,72.69Z"/><path class="button-red" d="M15.46,62.93l1.23-.61,2.9,5.87-6.28,3.1-.71-1.44,5-2.48Z"/><path class="button-red" d="M13.54,55.52l1.34-.34,1.61,6.34L9.71,63.24l-.4-1.55,5.45-1.38Z"/><path class="button-red" d="M13.46,40.89c1.37.19,2.14,1.62,1.81,4.07a6.41,6.41,0,0,1-2,4l-1-1.06A4.79,4.79,0,0,0,14,44.74c.19-1.41,0-2.16-.56-2.23s-.83.61-1.18,2.18c-.44,2-1.13,3.74-2.62,3.54s-2-1.85-1.73-4a6.1,6.1,0,0,1,1.57-3.56l1,1a4.58,4.58,0,0,0-1.22,2.72c-.14.94-.13,2.11.5,2.2s.79-.9,1.09-2.26C11.26,42.17,11.94,40.68,13.46,40.89Z"/><path class="button-red" d="M16.05,33.58l1.22-1.09a4.52,4.52,0,0,1,.24,4.23c-1,2.45-2.89,3.52-5.06,2.66s-2.82-3-1.83-5.47a4.44,4.44,0,0,1,3-2.83l.14,1.64a2.48,2.48,0,0,0-1.9,1.72c-.62,1.54-.28,2.86,1.15,3.43s2.58-.16,3.2-1.7A2.56,2.56,0,0,0,16.05,33.58Z"/><path class="button-red" d="M22.77,27.39l-3.1.24-1.48,2.05,1.92,1.39-.93,1.29-5.67-4.1,2.83-3.92c1-1.38,2.4-2,3.63-1.07a2.23,2.23,0,0,1,.64,2.87l3.28-.29Zm-3.81-1c.49-.68.69-1.3.06-1.76s-1.15-.07-1.65.61l-1.85,2.56,1.59,1.15Z"/><path class="button-red" d="M21.9,22.87c-1.49-1.81-1-4,1.06-5.71s4.32-1.76,5.81.05,1,4-1.07,5.7S23.38,24.67,21.9,22.87Zm5.61-4.63c-1-1.16-2.33-1.11-3.67,0s-1.64,2.44-.69,3.6,2.33,1.12,3.67,0S28.46,19.4,27.51,18.24Z"/><path class="button-red" d="M37.31,15.37l.6,1.24L32,19.47,29,13.17l1.44-.7,2.45,5.06Z"/><path class="button-red" d="M44.71,13.51,45,14.85l-6.36,1.57L37,9.62l1.55-.38L39.9,14.7Z"/></svg>
+                    </div>
+                </a>
+
+                <a class="button-container--inline-md">
+                    <div class="button-shapes">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                            <circle class="button-cream" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5" class="button-red"/></svg>
+                    </div>
+                    <div class="button-text button-text--md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 120 120">
+                            <path class="button-red" d="M67.58,15.76l1.45.93a4.75,4.75,0,0,1-4.21,1.44c-2.74-.29-4.38-1.92-4.12-4.36s2.2-3.69,5-3.39a4.64,4.64,0,0,1,3.72,2.27l-1.61.6a2.65,2.65,0,0,0-2.28-1.44c-1.73-.18-3,.54-3.14,2.14s.89,2.57,2.63,2.75A2.67,2.67,0,0,0,67.58,15.76Z"/><path class="button-red" d="M70.41,14.89c.79-2.32,3-3.11,5.68-2.18s4,2.87,3.16,5.2-3,3.11-5.68,2.19S69.62,17.22,70.41,14.89Zm7.22,2.47c.51-1.49-.29-2.7-2-3.28S72.54,14,72,15.45s.28,2.69,2,3.28S77.12,18.85,77.63,17.36Z"/><path class="button-red" d="M90.06,20.16l-3.92,6.22-1.25-.79-1.62-7.3-2.84,4.49-1.37-.86L83,15.7l1.51.95L86,23.56l2.69-4.27Z"/><path class="button-red" d="M96.67,28.33l-2.3-2.24-4.13,4.22L89,29.13l4.13-4.22-2.28-2.23,1-1,5.78,5.65Z"/><path class="button-red" d="M97.11,36.38l-2.58-3.62L92.81,33l-1-1.47L100,30.47l1.06,1.5L97.35,39.4l-1-1.48Zm.7-1.37,1.56-3-3.32.49Z"/><path class="button-red" d="M102.21,44.7l-.09,1.71a4.74,4.74,0,0,1-3.34-2.94c-1.11-2.52-.49-4.75,1.75-5.73s4.3.07,5.43,2.67a4.67,4.67,0,0,1-.13,4.35l-1.32-1.1a2.63,2.63,0,0,0,.12-2.69c-.7-1.6-1.93-2.32-3.41-1.67s-1.79,2.05-1.09,3.64A2.67,2.67,0,0,0,102.21,44.7Z"/><path class="button-red" d="M108.06,53.9l-.66-3.14L101.63,52l-.35-1.65,5.77-1.22L106.38,46l1.42-.3,1.68,7.91Z"/><path class="button-red" d="M103.84,63.48l-1.41,0-.12-7.57,7.35-.12.12,7.47-1.41,0-.09-5.8-1.51,0,.07,4.84-1.4,0-.08-4.84-1.62,0Z"/><path class="button-red" d="M107,73.05l-3.68-6.28-1.07,5.54-1.38-.26,1.54-8,1.12.22,3.68,6.28,1-5.19,1.38.27-1.47,7.64Z"/><path class="button-red" d="M103,73.19l1.29.47-1.66,4.53-1.28-.47Z"/><path class="button-red" d="M100.48,89.19l-6.3-3.79.75-1.26,7.28-1.78-4.56-2.74.84-1.4,6.3,3.79-.92,1.53L97,85.19l4.32,2.6Z"/><path class="button-red" d="M96.17,88.87c1.76,1.72,1.53,4-.47,6.07s-4.3,2.33-6.06.61-1.53-4,.47-6.07S94.42,87.15,96.17,88.87Zm-5.33,5.46c1.12,1.1,2.56.9,3.82-.4S96.1,91.2,95,90.1s-2.55-.91-3.83.4S89.71,93.23,90.84,94.33Z"/><path class="button-red" d="M83.15,104.2l-2.08-3.28c-1.18-1.86-.75-3.9,1.5-5.33s4.29-1,5.47.91l2.08,3.28-1.42.9-2-3.18a2.45,2.45,0,0,0-4.13,2.63l2,3.17Z"/><path class="button-red" d="M71.28,103.36c-.49-1.36.46-2.78,2.91-3.67a6.74,6.74,0,0,1,4.73-.14L78.4,101a5,5,0,0,0-3.77.07c-1.41.51-2,1-1.81,1.61s1,.47,2.61,0c2-.55,4-.78,4.57.7s-.73,2.79-2.86,3.56a6.46,6.46,0,0,1-4.08.29l.47-1.41a4.88,4.88,0,0,0,3.13-.2c.94-.33,2-.91,1.79-1.55s-1.22-.29-2.63.1C73.55,104.78,71.83,104.88,71.28,103.36Z"/><path class="button-red" d="M51.47,104.07l-1.42-.95a4.75,4.75,0,0,1,4.23-1.36c2.75.34,4.35,2,4,4.45s-2.27,3.65-5.08,3.29a4.67,4.67,0,0,1-3.68-2.34l1.63-.57a2.63,2.63,0,0,0,2.25,1.48c1.73.22,3-.47,3.18-2.08s-.84-2.58-2.57-2.8A2.68,2.68,0,0,0,51.47,104.07Z"/><path class="button-red" d="M48.66,104.89c-.84,2.31-3,3-5.72,2.07s-3.9-3-3.06-5.27,3-3,5.72-2.07S49.5,102.58,48.66,104.89Zm-7.17-2.61c-.54,1.48.23,2.7,1.94,3.32s3.09.18,3.63-1.3-.23-2.7-2-3.32S42,100.8,41.49,102.28Z"/><path class="button-red" d="M29.15,99.21l4-6.13,1.23.81,1.47,7.33,2.93-4.43,1.35.9-4,6.13-1.49-1L33.28,95.9l-2.78,4.21Z"/><path class="button-red" d="M22.68,90.87l2.25,2.3L29.15,89l1.17,1.21L26.1,94.37l2.23,2.28-1,1-5.65-5.78Z"/><path class="button-red" d="M22.41,82.84l2.49,3.67,1.73-.22,1,1.48-8.27.92-1-1.52,3.89-7.36,1,1.5Zm-.74,1.35-1.62,2.94,3.34-.42Z"/><path class="button-red" d="M17.48,74.39l.13-1.71a4.76,4.76,0,0,1,3.27,3c1.05,2.55.39,4.76-1.88,5.69s-4.29-.17-5.37-2.79a4.66,4.66,0,0,1,.23-4.35l1.3,1.14A2.61,2.61,0,0,0,15,78.07c.66,1.61,1.88,2.36,3.37,1.74s1.83-2,1.17-3.61A2.68,2.68,0,0,0,17.48,74.39Z"/><path class="button-red" d="M11.83,65.12l.6,3.15,5.79-1.1.32,1.65-5.8,1.1.6,3.14-1.42.27L10.4,65.39Z"/><path class="button-red" d="M16.29,55.59l1.4,0-.12,7.57-7.35-.12.12-7.46,1.41,0-.09,5.8,1.51,0,.08-4.84,1.4,0-.07,4.84,1.61,0Z"/><path class="button-red" d="M13.32,46l3.54,6.36L18,46.8l1.38.3-1.7,8-1.12-.24-3.55-6.36-1.11,5.17-1.37-.3,1.63-7.61Z"/><path class="button-red" d="M17.33,45.92l-1.28-.49,1.76-4.49,1.27.5Z"/><path class="button-red" d="M20.13,30l6.22,3.92-.78,1.25-7.31,1.62,4.5,2.83L21.89,41l-6.22-3.92,1-1.51,6.91-1.5-4.26-2.69Z"/><path class="button-red" d="M24.44,30.37c-1.71-1.75-1.43-4.05.62-6.06s4.35-2.23,6.07-.47,1.44,4.06-.61,6.06S26.16,32.13,24.44,30.37ZM29.9,25c-1.1-1.13-2.53-1-3.83.31s-1.5,2.7-.4,3.83,2.53,1,3.83-.32S31,26.16,29.9,25Z"/><path class="button-red" d="M37.75,15.34l2,3.32c1.15,1.88.67,3.92-1.61,5.3s-4.3.87-5.44-1l-2-3.32,1.43-.87L34.08,22a2.17,2.17,0,0,0,3.31.74,2.18,2.18,0,0,0,.87-3.28l-1.95-3.21Z"/><path class="button-red" d="M49.58,16.42c.46,1.37-.51,2.77-3,3.61a6.73,6.73,0,0,1-4.72,0l.54-1.39a5,5,0,0,0,3.77,0c1.41-.48,2-1,1.84-1.57s-1-.49-2.61-.09c-2.05.51-4,.71-4.55-.78s.78-2.78,2.93-3.51a6.35,6.35,0,0,1,4.07-.2l-.49,1.4a4.78,4.78,0,0,0-3.13.13c-1,.31-2,.87-1.82,1.51s1.21.32,2.63,0C47.34,15,49.06,14.89,49.58,16.42Z"/></svg>
+                    </div>
+                </a>
+
+            </div>
+        </article>
+
+        <!-- Table -->
+
+        <article class="component">
+            <h3 class="component__name" id="table">Table</h3>
+            <div class="component__img">
+                <img
+                srcset="img-ref/homepage-awards-table.png 2x"
+                src="img-ref/homepage-awards-table.png"
+                alt="Table">
+            </div>
+            <div class="component__code">
+                <div class="table">
+                    <div class="table__row">
+                        <div class="table__header">Baisser les Potards</div>
+                        <div class="table__content">
+                            <div class="table__hover">
+                                <div class="table__item">Nikon Film Festival 2020</div>
+                                <div class="table__item">Sélection Finaliste Top 50</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/BALAIS-TOP50-480x223.png">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__header">Passage</div>
+                        <div class="table__content">
+                            <div class="table__hover">
+                                <div class="table__item">Experimental, Dance & Music Film Festival 2019</div>
+                                <div class="table__item">Best Film</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/BEST-FILM-Experimental-Dance-Music-Film-Festival-2019-1-480x318.png">
+                            </figure>
+                            <div class="table__hover">
+                                <div class="table__item">Video Mapping Festival 2019</div>
+                                <div class="table__item">Award Winner</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/AWARD-WINNER-Videomapping-Festival-2019-1-480x318.png">
+                            </figure>
+                            <div class="table__hover">
+                                <div class="table__item">Sarajevo Fashion Film Festival 2018</div>
+                                <div class="table__item">Award Winner</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/AWARD-WINNER-Sarajevo-Fashion-Film-Festival-2018-480x318.png">
+                            </figure>
+                            <div class="table__hover">
+                                <div class="table__item">Roots of Europe International Film Festival 2018</div>
+                                <div class="table__item">Award Winner</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/AWARD-WINNER-Roots-of-Europe-International-Film-Festival-2018-1-480x318.png">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__header">Eolien et Territoire</div>
+                        <div class="table__content">
+                            <div class="table__hover">
+                                <div class="table__item">Deauville Green Awards 2019</div>
+                                <div class="table__item">Trophée Argent dans la catégorie Transition Energétique</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/BORALEX-480x252.png">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__header">Renaître ici</div>
+                        <div class="table__content">
+                            <div class="table__hover">
+                                <div class="table__item">Trophées de la vidéo Touristique 2019</div>
+                                <div class="table__item">Nomination Meilleure vidéo de Destination Touristique</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/AURA-PRIX-TOURISTIQUE-480x259.png">
+                            </figure>
+                            <div class="table__hover">
+                                <div class="table__item">Master of Art Film Festival 2019</div>
+                                <div class="table__item">Nomination Video Art & Art Advertising</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/AURA-PRIX-MASTER-OF-ART.png">
+                            </figure>
+                            <div class="table__hover">
+                                <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
+                                <div class="table__item">Nomination Dance Short Film Los Angeles</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/AURA-PRIX-EXPER-LA.png">
+                            </figure>
+                            <div class="table__hover">
+                                <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
+                                <div class="table__item">Nomination Dance Short Film Toronto</div>
+                            </div>
+                            <figure class="compimg compimg--awards table__img">
+                                <img class="img" src="../img/AURA-PRIX-EXPER-TORONTO.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- h1 -->
+        
+        <article class="component">
+            <h3 class="component__name" id="h-one">H1</h3>
+            <div class="component__img">
+                <img
+                    srcset="img-ref/homepage-agency-h1.png 2x"
+                    src="img-ref/homepage-agency-h1.png"
+                    alt="h1 normal">
+                    <img
+                    srcset="img-ref/project-content-h1.png 2x"
+                    src="img-ref/project-content-h1.png"
+                    alt="h1 red">
+            </div>
+            <div class="component__code">
+                <h1 class="h-one">Compose it</h1>
+                <h1 class="h-one h-one--red">Mr Store</h1>
+            </div>
+        </article>
+
+        <!-- h2 -->
+        
+        <article class="component">
+            <h3 class="component__name" id="h-two">H2</h3>
+            <div class="component__img">
+                    <img
+                    srcset="img-ref/homepage-work-item-h2.png 2x"
+                    src="img-ref/homepage-work-item-h2.png"
+                    alt="h2 normal">
+            </div>
+            <div class="component__code">
+                <h2 class="h-two">Fall Guys</h2>
+            </div>
+        </article>
+
+        <!-- h3 -->
+        
+        <article class="component">
+            <h3 class="component__name" id="h-three">H3</h3>
+            <div class="component__img">
+                <img
+                srcset="img-ref/project-content-h3.png 2x"
+                src="img-ref/project-content-h3.png"
+                alt="h3 normal">
+                <img
+                    srcset="img-ref/homepage-production-link-h3.png 2x"
+                    src="img-ref/homepage-production-link-h3.png"
+                    alt="h3 red">
+            </div>
+            <div class="component__code">
+                <h3 class="h-three">Campagne TV</h3>
+                <h3 class="h-three h-three--red">Découvrir tous les projets</h3>
+            </div>
+        </article>
+
+        <!-- h4 -->
+        
+        <article class="component">
+            <h3 class="component__name" id="h-four">H4</h3>
+            <div class="component__img">
+                <img
+                srcset="img-ref/project-content-h4.png 2x"
+                src="img-ref/project-content-h4.png"
+                alt="h4 normal">
+                <img
+                    srcset="img-ref/homepage-trust-h4.png 2x"
+                    src="img-ref/homepage-trust-h4.png"
+                    alt="h4 red">
+            </div>
+            <div class="component__code">
+                <h4 class="h-four">TV Prod - Service Plan</h4>
+                <h4 class="h-four h-four--red">Agence service plan</h4>
+            </div>
+        </article>
+
+        <!-- Logo -->
+        
+        <article class="component">
+            <h3 class="component__name" id="logo-link">Logo</h3>
+            <div class="component__img">
+                <img
+                srcset="img-ref/homepage-header-logo.png 2x"
+                src="img-ref/homepage-header-logo.png"
+                alt="link normal">
+                <img
+                srcset="img-ref/project-header-logo.png 2x"
+                src="img-ref/project-header-logo.png"
+                alt="link normal">
+            </div>
+            <div class="component__code">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo">
+                    <g>
+                    <path d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
+                            c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"/>
+                    <path d="M12.8,17.8c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C15.9,15.4,14.8,17.8,12.8,17.8z"/>
+                    </g>
+                    <path d="M48.4,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8v-6c0-2.1-0.7-3.5-2.4-3.5C39,6.5,38.1,8,38.1,10c0,0.1,0,6,0,6
+                        c0,1.1,0.3,1.7,1.3,1.8v0.9h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.8v-6c0-2.1-0.6-3.5-2.4-3.5c-1.6,0-2.5,1.5-2.5,3.4v6
+                        c0,1.1,0.3,1.7,1.4,1.8v0.9h-6.7v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.4-1h0.7V7c1-1.3,2.3-1.9,4-1.9
+                        c2.3,0,3.8,1,4.6,2.5c1-1.7,2.5-2.5,4.4-2.5c3.6,0,5.1,2.3,5.1,5.4V16C47,17.1,47.3,17.7,48.4,17.8z"/>
+                    <path d="M64.7,12c0,4.3-2.3,6.9-6,6.9c-1.8,0-3.1-0.7-4.1-1.7v5.2c0,1.1,0.3,1.7,1.3,1.7V25h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.7V8.8
+                        c0-1.1-0.3-1.7-1.3-1.7V6.1l4.6-1h0.7v1.7c0.9-1,2.3-1.7,4.1-1.7C62.3,5.1,64.7,7.7,64.7,12z M60.7,12c0-3.3-0.9-5.8-3-5.8
+                        c-2.1,0-3.2,2.3-3.2,5.8c0,3.5,1.1,5.8,3.2,5.8C59.9,17.8,60.7,15.3,60.7,12z"/>
+                    <path d="M73.2,5.1C69.3,5.1,66,7.5,66,12c0,4.5,3.4,6.9,7.3,6.9c3.9,0,7.3-2.4,7.3-6.9C80.5,7.5,77.1,5.1,73.2,5.1z M73.2,17.8
+                        c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C76.4,15.4,75.2,17.8,73.2,17.8z"/>
+                    <path d="M88.7,10.4c2.1,1,4.7,2.1,3.8,5.2c-0.6,2.1-2.7,3.3-5.5,3.3c-1.7,0-3.9-0.5-5.2-1.5v-3.4h0.7c0.6,2.6,2.7,3.9,4.6,3.9
+                        c1.1,0,2.1-0.5,2.3-1.4c0.3-1.5-1.1-2-3-2.8c-2.7-1.2-4.9-2.6-4.1-5.9c0.6-2.2,3-2.8,5-2.8c1.4,0,3,0.5,4.2,1.4v3h-0.6
+                        C90.1,7,89.1,6,87.2,6c-0.7,0-1.8,0.2-2,1.4C85.2,9,86.8,9.6,88.7,10.4z"/>
+                    <path d="M106.9,11.8c-9,0-9,0-9,0c0.4,5.5,6.1,5.9,8.4,3.3l0.5,0.4c-1,1.9-3,3.4-5.7,3.4c-3.8,0-7.2-2.4-7.2-7.1
+                        c0-4.2,2.9-6.7,7-6.7c4,0,6.2,2.8,6.1,6.3V11.8z M97.8,10.4h5.5c0-2-0.4-4.4-2.5-4.4C99.1,6.1,98,7.7,97.8,10.4z"/>
+                    <path d="M109.4,16.6c0-1.5,1.1-2.4,2.5-2.4c1.4,0,2.5,0.9,2.5,2.4c0,1.5-1.1,2.4-2.5,2.4C110.5,18.9,109.4,18.1,109.4,16.6z"/>
+                    <path d="M123.6,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.6-1h0.7V16
+                        C122.2,17.1,122.4,17.7,123.6,17.8z"/>
+                    <path d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h2.6v1.4
+                        h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"/>
+                </svg>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo logo--cream">
                 <g>
                 <path d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
                         c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"/>
@@ -36,470 +527,87 @@
                 <path d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h2.6v1.4
                     h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"/>
                 </svg>
-            </a>
-            <div class="divider"></div>
-            <h3>Global</h3>
-                <a href="#body">Body</a>
-                <a href="#links">Links</a>
-                <a href="#lists">Lists</a>
-                <a href="#imgs">Images</a>
-                <a href="#buttons">Buttons</a>
-                <a href="#table">Table</a>
-            <h3>Headers</h3>
-                <a href="#h-one">h1</a>
-                <a href="#h-two">h2</a>
-                <a href="#h-three">h3</a>
-                <a href="#h-four">h4</a>
-            <h3>Logos</h3>
-                <a href="#logo-link">Logo</a>
-                <a href="#logomark">Logomark</a>
-            <h3>Header</h3>
-                <a href="#menu">Menu</a>
-                <a href="#header-bar">Header bar</a>
-            <h3>Work Section</h3>
-                <a href="#work-project">Project Link</a>
-                <a href="#work-section">Work Section</a>  
-                <a href="#agency-section">Agency Section</a>
-                <a href="#awards-section">Awards Section</a>   
-            <div class="divider"></div>
-        </aside>
-        <section class="components_section">
-            <h1 class="comopnent__headline">Compose It Web Components</h1>
-            
-            <h2 class="comopnent__subhead">Typography defaults</h2>
-            
-            <!-- Body -->
-            
-            <article class="component">
-            <h3 class="component__name" id="body">Body</h3>
+            </div>
+        </article>
+
+        <!-- Logomark -->
+        
+        <article class="component">
+            <h3 class="component__name" id="logomark">Logomark</h3>
             <div class="component__img">
                 <img
-                    srcset="img-ref/homepage-production-desc.png 2x"
-                    src="img-ref/homepage-production-desc.png"
-                    alt="body copy">
+                srcset="img-ref/homepage-work-logo.png 2x"
+                src="img-ref/homepage-work-logo.png"
+                alt="link normal">
+                <img
+                srcset="img-ref/project-nav-logo.png 2x"
+                src="img-ref/project-nav-logo.png"
+                alt="link normal">
+            </div>
+            <div class="component__code" style="width: 30%;">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 384 450" style="enable-background:new 0 0 384 450;" xml:space="preserve" class="logomark">
+                <g>
+                    <path class="logomark" d="M233.4,26.4c66.7-1.1,115,39,133.4,114.8H384V44.8C344.9,19.5,285.1,3.5,229.9,3.5C98.9,3.5,0,93,0,225
+                        c0,132,98.9,221.5,229.9,221.5c55.2,0,115-16.1,154.1-41.3v-96.4h-17.2c-18.4,75.8-66.7,115.9-133.4,114.8
+                        c-92-1.1-136.8-89.5-136.8-199.7C96.6,113.7,142.6,27.6,233.4,26.4z"/>
+                    <path class="logomark" d="M239.1,336.3c-37.9,0-59.8-45.9-59.8-107.9c0-62,21.8-107.9,59.8-107.9c37.9,0,59.8,44.8,59.8,107.9
+                        C297.8,290.4,277.1,336.3,239.1,336.3z"/>
+                </g>
+                </svg>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 384 450" style="enable-background:new 0 0 384 450;" xml:space="preserve" class="logomark logomark--cream">
+                    <g>
+                        <path d="M233.4,26.4c66.7-1.1,115,39,133.4,114.8H384V44.8C344.9,19.5,285.1,3.5,229.9,3.5C98.9,3.5,0,93,0,225
+                            c0,132,98.9,221.5,229.9,221.5c55.2,0,115-16.1,154.1-41.3v-96.4h-17.2c-18.4,75.8-66.7,115.9-133.4,114.8
+                            c-92-1.1-136.8-89.5-136.8-199.7C96.6,113.7,142.6,27.6,233.4,26.4z"/>
+                        <path d="M239.1,336.3c-37.9,0-59.8-45.9-59.8-107.9c0-62,21.8-107.9,59.8-107.9c37.9,0,59.8,44.8,59.8,107.9
+                            C297.8,290.4,277.1,336.3,239.1,336.3z"/>
+                    </g>
+                </svg>
+            </div>
+        </article>
+
+        <!-- Menu -->
+        
+        <article class="component">
+            <h3 class="component__name" id="menu">Menu</h3>
+            <div class="component__img">
+                <img
+                srcset="img-ref/homepage-header-menu.png 2x"
+                src="img-ref/homepage-header-menu.png"
+                alt="Menu">
+                <img
+                srcset="img-ref/project-header-menu.png 2x"
+                src="img-ref/project-header-menu.png"
+                alt="Menu">
             </div>
             <div class="component__code">
-                <p>Nous sommes <strong>Compose it, </strong>une agence de Production et R&eacute;alisation Audiovisuelle.</p>
-                <p>Nous sommes une &eacute;quipe de sept permanents et disposons de toutes les comp&eacute;tences de la production de films en interne. Nous sommes agiles et mettons en oeuvre les id&eacute;es de nos clients.</p>
-                <p>Nos deux r&eacute;alisateurs inhouse sont garants de la vision artistique de chaque production. Nous sommes cr&eacute;atifs et accompagnons nos clients dans l&#8217;&eacute;criture et la conception des projets.</p>
-                <p>Nos monteurs assurent la post-production des films au sein de nos bureaux. Nous sommes agiles afin de garantir le suivi de chaque projet dans le respect des d&eacute;lais.</p>
-                <p>Nous &eacute;voluons dans diff&eacute;rents univers, et vivons des aventures avec nos clients, car nous sommes curieux, ouverts et passionn&eacute;s : nous irons, ensemble, l&agrave; ou vous nous emmenerez.</p>
-                <p><strong>Let&#8217;s Talk about your project, we will Compose it for you !</strong></p>
+                <div class="menu">
+                    <strong>Menu</strong> <div class="menu-circle"></div>
+                </div>
+                <div class="menu--black">
+                    <strong>Menu</strong> <div class="menu-circle--cream"></div>
+                </div>
             </div>
-            </article>
+        </article>
 
-            <!-- Links -->
-            
-            <article class="component">
-                <h3 class="component__name" id="links">Links</h3>
-                <div class="component__img">
-                    <img
-                    srcset="img-ref/homepage-link.png 2x"
-                    src="img-ref/homepage-link.png"
-                    alt="link normal">
-                </div>
-                <div class="component__code">
-                    <a href="#!">Voir Plus</a>
-                </div>
-            </article>
-
-            <!-- List -->
-
-            <article class="component">
-                <h3 class="component__name" id="lists">Lists</h3>
-                <div class="component__img">
-                    <img
-                    srcset="img-ref/homepage-agency-ul.png 2x"
-                    src="img-ref/homepage-agency-ul.png"
-                    alt="List">
-                    <img
-                    srcset="img-ref/homepage-trust-ul.png 2x"
-                    src="img-ref/homepage-trust-ul.png"
-                    alt="List">
-                </div>
-                <div class="component__code">
-                    <ul class="list--numbered">
-                        <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">01</h4></li>
-                        <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">02</h4></li>
-                        <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">03</h4></li>
-                        <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">04</h4></li>
-                        <li class="list-item list-item--numbered"><h4 class="h-four">List item</h4><h4 class="h-four">05</h4></li>
-                    </ul>
-                    <ul class="list--nonum">
-                        <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
-                        <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
-                        <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
-                        <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
-                        <li class="list-item list-item--nonum"><h4 class="h-four h-four--red">List item</h4></li>
-                    </ul>
-                </div>
-            </article>
-
-            <!-- Imgs -->
-
-            <article class="component">
-                <h3 class="component__name" id="imgs">Imgs</h3>
-                <div class="component__img">
-                    <img
-                    srcset="img-ref/homepage-references-item.png 2x"
-                    src="img-ref/homepage-references-item.png"
-                    alt="Mr Store Image">
-                    <img
-                    srcset="img-ref/homepage-insta-img.png 2x"
-                    src="img-ref/homepage-insta-img.png"
-                    alt="Instagram Image">
-                    <img
-                    srcset="img-ref/homepage-awards-img.png 2x"
-                    src="img-ref/homepage-awards-img.png"
-                    alt="Award Image">
-                    <img
-                    srcset="img-ref/homepage-trust-img.png 2x"
-                    src="img-ref/homepage-trust-img.png"
-                    alt="Trust Image">
-                </div>
-                <div class="component__code" style="width: 30%;">
-                    <figure class="compimg compimg--project">
-                        <img class="img" src="../img/project-img-mr-store.png">
-                    </figure>
-                    <figcaption class="img-caption--project">Digital</figcaption>
-
-                    <figure class="compimg compimg--insta">
-                        <img class="img" src="../img/insta-img-cameras.jpeg">
-                    </figure>
-
-                    <figure class="compimg compimg--awards">
-                        <img class="img" src="../img/awards-nikon-film-fest.png">
-                    </figure>
-
-                    <figure class="compimg compimg--trust">
-                        <img class="img" src="../img/trust-img-service-plan.png">
-                    </figure>
-
-                </div>
-            </article>
-
-            <!-- Buttons -->
-
-            <article class="component">
-                <h3 class="component__name" id="buttons">Buttons</h3>
-
-                <div class="component__img">
-                        <img
-                        srcset="img-ref/homepage-agency-button.png 2x"
-                        src="img-ref/homepage-agency-button.png"
-                        alt="Button">
-                        <img
-                        srcset="img-ref/homepage-contact-button.png 2x"
-                        src="img-ref/homepage-contact-button.png"
-                        alt="Button">
-                        <img
-                        srcset="img-ref/homepage-projects-button.png 2x"
-                        src="img-ref/homepage-projects-button.png"
-                        alt="Button">
-                        <img
-                        srcset="img-ref/homepage-production-button.png 2x"
-                        src="img-ref/homepage-production-button.png"
-                        alt="Button">
-                        <img
-                        srcset="img-ref/homepage-work-button.png 2x"
-                        src="img-ref/homepage-work-button.png"
-                        alt="Button">
-                        <img
-                        srcset="img-ref/homepage-content-button.png 2x"
-                        src="img-ref/homepage-content-button.png"
-                        alt="Button">
-                </div>
-                <div class="component__code">
-                    <a class="button-container--inline-lg">
-                        <div class="button-shapes">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                <circle class="button-cream--blk" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"/></svg>
-                        </div>
-                        <div class="button-text button-text--lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200"><g id="buttons-blk--savior-text">
-                            <path d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z"/><path d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z"/><path d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z"/><path d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z"/><path d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z"/><path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z"/><path d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z"/><path d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z"/><path d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z"/><path d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z"/><path d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z"/><path d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z"/><path d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z"/><path d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z"/><path d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z"/><path d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z"/><path d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z"/><path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z"/><path d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z"/><path d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z"/><path d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z"/><path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z"/><path d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z"/><path d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z"/></g></svg>
-                        </div>
-                    </a>
-                    
-                    <a class="button-container--inline-lg">
-                        <div class="button-shapes button--arrow-rotate">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                <circle class="button-cream--blk" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"/></svg>
-                        </div>
-                    </a>
-
-                    <a class="button-container--inline-sm">
-                        <div class="button-shapes">
-                            <svg id="buttons-red--up" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
-                                <circle class="button-cream" cx="50" cy="50" r="49"/><polygon class="button-red" points="43.69 43.75 43.69 45.42 53.39 45.42 43.16 55.66 44.34 56.84 54.58 46.61 54.58 56.31 56.25 56.31 56.25 43.75 56.25 43.75 56.25 43.75 43.69 43.75"/></svg>
-                        </div>
-                    </a>
-
-                    <a class="button-container--inline-md">
-                        <div class="button-shapes">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                <circle class="button-cream" cx="100" cy="100" r="99"/><path d="M100,2A98,98,0,1,1,2,100,98.11,98.11,0,0,1,100,2m0-2A100,100,0,1,0,200,100,100,100,0,0,0,100,0Z" class="button-red"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5" class="button-red"/></svg>
-                        </div>
-                        <div class="button-text button-text--md">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                            <path d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z" class="button-red"/><path d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z" class="button-red"/><path d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z" class="button-red"/><path d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z" class="button-red"/><path d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z" class="button-red"/><path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z" class="button-red"/><path d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z" class="button-red"/><path d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z" class="button-red"/><path d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z" class="button-red"/><path d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z" class="button-red"/><path d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z" class="button-red"/><path d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z" class="button-red"/><path d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z" class="button-red"/><path d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z" class="button-red"/><path d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z" class="button-red"/><path d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z" class="button-red"/><path d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z" class="button-red"/><path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z" class="button-red"/><path d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z" class="button-red"/><path d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z" class="button-red"/><path d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z" class="button-red"/><path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z" class="button-red"/><path d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z" class="button-red"/><path d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z" class="button-red"/></svg>
-                        </div>
-                    </a>
-
-
-                    <a class="button-container--inline-sm">
-                        <div class="button-shapes">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
-                                <circle class="button-cream" cx="50" cy="50" r="49"/>
-                                <polygon class="button-red" points="58.88 49.95 57.7 48.77 50.84 55.63 50.84 41.16 49.16 41.16 49.16 55.63 42.3 48.77 41.12 49.95 50 58.84 50 58.84 50 58.84 58.88 49.95"/></svg>
-                        </div>
-                        <div class="button-text button-text--sm">
-                           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
-                            <path class="button-red" d="M58.39,13.29c-.16,1.37-1.57,2.17-4,1.88a6.37,6.37,0,0,1-4.08-1.89l1-1a4.76,4.76,0,0,0,3.24,1.55c1.41.16,2.16,0,2.22-.6s-.63-.82-2.21-1.14c-2-.4-3.76-1.06-3.59-2.55s1.81-2.06,4-1.81a6.12,6.12,0,0,1,3.59,1.5l-1,1a4.59,4.59,0,0,0-2.75-1.17c-.94-.12-2.11-.08-2.19.55s.92.77,2.29,1C57.06,11.11,58.57,11.76,58.39,13.29Z"/><path class="button-red" d="M65.75,15.73l1.11,1.2a4.52,4.52,0,0,1-4.23.32c-2.46-.92-3.57-2.82-2.76-5s2.91-2.89,5.44-1.94a4.46,4.46,0,0,1,2.89,3l-1.63.17a2.53,2.53,0,0,0-1.76-1.87c-1.56-.58-2.87-.21-3.41,1.23s.21,2.58,1.77,3.16A2.55,2.55,0,0,0,65.75,15.73Z"/><path class="button-red" d="M72.08,22.33l-.3-3.1L69.7,17.79l-1.36,2L67,18.84l4-5.76,4,2.75c1.41,1,2,2.36,1.15,3.61a2.21,2.21,0,0,1-2.85.7l.36,3.28Zm1-3.83c.69.47,1.31.66,1.76,0s0-1.16-.65-1.64l-2.59-1.79L70.44,16.7Z"/><path class="button-red" d="M76.58,21.38c1.78-1.53,4-1.11,5.72,1s1.84,4.28.07,5.8-4,1.11-5.72-1S74.8,22.9,76.58,21.38Zm4.73,5.52c1.14-1,1.07-2.35-.06-3.66s-2.47-1.6-3.61-.63-1.08,2.35.06,3.67S80.17,27.88,81.31,26.9Z"/><path class="button-red" d="M84.37,36.63l-1.23.62-3-5.83,6.24-3.17.72,1.42-5,2.55Z"/><path class="button-red" d="M86.39,44l-1.33.36L83.36,38l6.76-1.82.41,1.55-5.42,1.45Z"/><path class="button-red" d="M86.64,58.65c-1.37-.17-2.16-1.59-1.85-4a6.4,6.4,0,0,1,1.93-4.07l1,1a4.73,4.73,0,0,0-1.57,3.22c-.18,1.41,0,2.16.57,2.23s.83-.62,1.16-2.2c.42-2,1.09-3.75,2.57-3.57s2,1.83,1.79,4a6.11,6.11,0,0,1-1.53,3.58l-1-1a4.61,4.61,0,0,0,1.19-2.73c.12-1,.1-2.12-.54-2.2s-.77.91-1,2.28C88.83,57.34,88.17,58.84,86.64,58.65Z"/><path class="button-red" d="M84.16,66,83,67.08a4.51,4.51,0,0,1-.3-4.22c.94-2.46,2.85-3.56,5-2.73s2.87,2.93,1.9,5.45a4.47,4.47,0,0,1-3,2.87l-.16-1.64a2.5,2.5,0,0,0,1.88-1.74c.59-1.55.24-2.87-1.2-3.42s-2.58.2-3.17,1.75A2.54,2.54,0,0,0,84.16,66Z"/><path class="button-red" d="M77.53,72.23l3.1-.27,1.46-2.07-2-1.37.91-1.3,5.73,4L84,75.2c-1,1.4-2.37,2-3.61,1.12a2.21,2.21,0,0,1-.68-2.86l-3.28.34Zm3.82,1c-.48.68-.67,1.31,0,1.75s1.15.06,1.64-.63l1.81-2.58-1.6-1.13Z"/><path class="button-red" d="M78.45,76.77c1.51,1.78,1.09,4-1,5.71s-4.28,1.82-5.79,0-1.09-3.94,1-5.71S76.94,75,78.45,76.77ZM72.9,81.46c1,1.15,2.34,1.08,3.66,0s1.61-2.47.64-3.61-2.33-1.09-3.66,0S71.93,80.32,72.9,81.46Z"/><path class="button-red" d="M63.14,84.46l-.62-1.24,5.86-2.93,3.13,6.26-1.43.72-2.52-5Z"/><path class="button-red" d="M55.74,86.42l-.34-1.33,6.33-1.65,1.76,6.77-1.54.4-1.42-5.43Z"/><path class="button-red" d="M41.12,86.59c.18-1.37,1.6-2.15,4.06-1.83a6.37,6.37,0,0,1,4.06,2l-1.05,1A4.75,4.75,0,0,0,45,86.09c-1.41-.19-2.16,0-2.24.56s.62.83,2.2,1.18c2,.42,3.75,1.1,3.55,2.59s-1.84,2-4,1.76a6.12,6.12,0,0,1-3.57-1.55l1-1a4.65,4.65,0,0,0,2.73,1.2c.94.13,2.11.11,2.19-.52s-.9-.78-2.27-1.07C42.41,88.79,40.92,88.12,41.12,86.59Z"/><path class="button-red" d="M33.81,84.06l-1.1-1.21a4.51,4.51,0,0,1,4.23-.27c2.45,1,3.54,2.87,2.7,5s-3,2.85-5.47,1.87a4.47,4.47,0,0,1-2.85-3L33,86.32a2.5,2.5,0,0,0,1.73,1.89c1.55.6,2.87.26,3.43-1.18s-.18-2.58-1.73-3.18A2.54,2.54,0,0,0,33.81,84.06Z"/><path class="button-red" d="M27.57,77.38l.26,3.11L29.89,82,31.27,80l1.3.92-4.06,5.7-3.94-2.8c-1.39-1-2-2.38-1.1-3.62a2.21,2.21,0,0,1,2.86-.66L26,76.28Zm-1,3.82c-.68-.48-1.31-.68-1.76,0s-.06,1.15.62,1.64L28,84.63,29.14,83Z"/><path class="button-red" d="M23,78.27c-1.8,1.5-4,1.06-5.71-1s-1.79-4.3,0-5.8,3.95-1.07,5.7,1S24.83,76.77,23,78.27Zm-4.66-5.58c-1.15,1-1.1,2.33,0,3.66S20.84,78,22,77s1.11-2.33,0-3.67S19.53,71.73,18.38,72.69Z"/><path class="button-red" d="M15.46,62.93l1.23-.61,2.9,5.87-6.28,3.1-.71-1.44,5-2.48Z"/><path class="button-red" d="M13.54,55.52l1.34-.34,1.61,6.34L9.71,63.24l-.4-1.55,5.45-1.38Z"/><path class="button-red" d="M13.46,40.89c1.37.19,2.14,1.62,1.81,4.07a6.41,6.41,0,0,1-2,4l-1-1.06A4.79,4.79,0,0,0,14,44.74c.19-1.41,0-2.16-.56-2.23s-.83.61-1.18,2.18c-.44,2-1.13,3.74-2.62,3.54s-2-1.85-1.73-4a6.1,6.1,0,0,1,1.57-3.56l1,1a4.58,4.58,0,0,0-1.22,2.72c-.14.94-.13,2.11.5,2.2s.79-.9,1.09-2.26C11.26,42.17,11.94,40.68,13.46,40.89Z"/><path class="button-red" d="M16.05,33.58l1.22-1.09a4.52,4.52,0,0,1,.24,4.23c-1,2.45-2.89,3.52-5.06,2.66s-2.82-3-1.83-5.47a4.44,4.44,0,0,1,3-2.83l.14,1.64a2.48,2.48,0,0,0-1.9,1.72c-.62,1.54-.28,2.86,1.15,3.43s2.58-.16,3.2-1.7A2.56,2.56,0,0,0,16.05,33.58Z"/><path class="button-red" d="M22.77,27.39l-3.1.24-1.48,2.05,1.92,1.39-.93,1.29-5.67-4.1,2.83-3.92c1-1.38,2.4-2,3.63-1.07a2.23,2.23,0,0,1,.64,2.87l3.28-.29Zm-3.81-1c.49-.68.69-1.3.06-1.76s-1.15-.07-1.65.61l-1.85,2.56,1.59,1.15Z"/><path class="button-red" d="M21.9,22.87c-1.49-1.81-1-4,1.06-5.71s4.32-1.76,5.81.05,1,4-1.07,5.7S23.38,24.67,21.9,22.87Zm5.61-4.63c-1-1.16-2.33-1.11-3.67,0s-1.64,2.44-.69,3.6,2.33,1.12,3.67,0S28.46,19.4,27.51,18.24Z"/><path class="button-red" d="M37.31,15.37l.6,1.24L32,19.47,29,13.17l1.44-.7,2.45,5.06Z"/><path class="button-red" d="M44.71,13.51,45,14.85l-6.36,1.57L37,9.62l1.55-.38L39.9,14.7Z"/></svg>
-                        </div>
-                    </a>
-
-
-
-                    <a class="button-container--inline-md">
-                        <div class="button-shapes">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                <circle class="button-cream" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5" class="button-red"/></svg>
-                        </div>
-                        <div class="button-text button-text--md">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 120 120">
-                                <path class="button-red" d="M67.58,15.76l1.45.93a4.75,4.75,0,0,1-4.21,1.44c-2.74-.29-4.38-1.92-4.12-4.36s2.2-3.69,5-3.39a4.64,4.64,0,0,1,3.72,2.27l-1.61.6a2.65,2.65,0,0,0-2.28-1.44c-1.73-.18-3,.54-3.14,2.14s.89,2.57,2.63,2.75A2.67,2.67,0,0,0,67.58,15.76Z"/><path class="button-red" d="M70.41,14.89c.79-2.32,3-3.11,5.68-2.18s4,2.87,3.16,5.2-3,3.11-5.68,2.19S69.62,17.22,70.41,14.89Zm7.22,2.47c.51-1.49-.29-2.7-2-3.28S72.54,14,72,15.45s.28,2.69,2,3.28S77.12,18.85,77.63,17.36Z"/><path class="button-red" d="M90.06,20.16l-3.92,6.22-1.25-.79-1.62-7.3-2.84,4.49-1.37-.86L83,15.7l1.51.95L86,23.56l2.69-4.27Z"/><path class="button-red" d="M96.67,28.33l-2.3-2.24-4.13,4.22L89,29.13l4.13-4.22-2.28-2.23,1-1,5.78,5.65Z"/><path class="button-red" d="M97.11,36.38l-2.58-3.62L92.81,33l-1-1.47L100,30.47l1.06,1.5L97.35,39.4l-1-1.48Zm.7-1.37,1.56-3-3.32.49Z"/><path class="button-red" d="M102.21,44.7l-.09,1.71a4.74,4.74,0,0,1-3.34-2.94c-1.11-2.52-.49-4.75,1.75-5.73s4.3.07,5.43,2.67a4.67,4.67,0,0,1-.13,4.35l-1.32-1.1a2.63,2.63,0,0,0,.12-2.69c-.7-1.6-1.93-2.32-3.41-1.67s-1.79,2.05-1.09,3.64A2.67,2.67,0,0,0,102.21,44.7Z"/><path class="button-red" d="M108.06,53.9l-.66-3.14L101.63,52l-.35-1.65,5.77-1.22L106.38,46l1.42-.3,1.68,7.91Z"/><path class="button-red" d="M103.84,63.48l-1.41,0-.12-7.57,7.35-.12.12,7.47-1.41,0-.09-5.8-1.51,0,.07,4.84-1.4,0-.08-4.84-1.62,0Z"/><path class="button-red" d="M107,73.05l-3.68-6.28-1.07,5.54-1.38-.26,1.54-8,1.12.22,3.68,6.28,1-5.19,1.38.27-1.47,7.64Z"/><path class="button-red" d="M103,73.19l1.29.47-1.66,4.53-1.28-.47Z"/><path class="button-red" d="M100.48,89.19l-6.3-3.79.75-1.26,7.28-1.78-4.56-2.74.84-1.4,6.3,3.79-.92,1.53L97,85.19l4.32,2.6Z"/><path class="button-red" d="M96.17,88.87c1.76,1.72,1.53,4-.47,6.07s-4.3,2.33-6.06.61-1.53-4,.47-6.07S94.42,87.15,96.17,88.87Zm-5.33,5.46c1.12,1.1,2.56.9,3.82-.4S96.1,91.2,95,90.1s-2.55-.91-3.83.4S89.71,93.23,90.84,94.33Z"/><path class="button-red" d="M83.15,104.2l-2.08-3.28c-1.18-1.86-.75-3.9,1.5-5.33s4.29-1,5.47.91l2.08,3.28-1.42.9-2-3.18a2.45,2.45,0,0,0-4.13,2.63l2,3.17Z"/><path class="button-red" d="M71.28,103.36c-.49-1.36.46-2.78,2.91-3.67a6.74,6.74,0,0,1,4.73-.14L78.4,101a5,5,0,0,0-3.77.07c-1.41.51-2,1-1.81,1.61s1,.47,2.61,0c2-.55,4-.78,4.57.7s-.73,2.79-2.86,3.56a6.46,6.46,0,0,1-4.08.29l.47-1.41a4.88,4.88,0,0,0,3.13-.2c.94-.33,2-.91,1.79-1.55s-1.22-.29-2.63.1C73.55,104.78,71.83,104.88,71.28,103.36Z"/><path class="button-red" d="M51.47,104.07l-1.42-.95a4.75,4.75,0,0,1,4.23-1.36c2.75.34,4.35,2,4,4.45s-2.27,3.65-5.08,3.29a4.67,4.67,0,0,1-3.68-2.34l1.63-.57a2.63,2.63,0,0,0,2.25,1.48c1.73.22,3-.47,3.18-2.08s-.84-2.58-2.57-2.8A2.68,2.68,0,0,0,51.47,104.07Z"/><path class="button-red" d="M48.66,104.89c-.84,2.31-3,3-5.72,2.07s-3.9-3-3.06-5.27,3-3,5.72-2.07S49.5,102.58,48.66,104.89Zm-7.17-2.61c-.54,1.48.23,2.7,1.94,3.32s3.09.18,3.63-1.3-.23-2.7-2-3.32S42,100.8,41.49,102.28Z"/><path class="button-red" d="M29.15,99.21l4-6.13,1.23.81,1.47,7.33,2.93-4.43,1.35.9-4,6.13-1.49-1L33.28,95.9l-2.78,4.21Z"/><path class="button-red" d="M22.68,90.87l2.25,2.3L29.15,89l1.17,1.21L26.1,94.37l2.23,2.28-1,1-5.65-5.78Z"/><path class="button-red" d="M22.41,82.84l2.49,3.67,1.73-.22,1,1.48-8.27.92-1-1.52,3.89-7.36,1,1.5Zm-.74,1.35-1.62,2.94,3.34-.42Z"/><path class="button-red" d="M17.48,74.39l.13-1.71a4.76,4.76,0,0,1,3.27,3c1.05,2.55.39,4.76-1.88,5.69s-4.29-.17-5.37-2.79a4.66,4.66,0,0,1,.23-4.35l1.3,1.14A2.61,2.61,0,0,0,15,78.07c.66,1.61,1.88,2.36,3.37,1.74s1.83-2,1.17-3.61A2.68,2.68,0,0,0,17.48,74.39Z"/><path class="button-red" d="M11.83,65.12l.6,3.15,5.79-1.1.32,1.65-5.8,1.1.6,3.14-1.42.27L10.4,65.39Z"/><path class="button-red" d="M16.29,55.59l1.4,0-.12,7.57-7.35-.12.12-7.46,1.41,0-.09,5.8,1.51,0,.08-4.84,1.4,0-.07,4.84,1.61,0Z"/><path class="button-red" d="M13.32,46l3.54,6.36L18,46.8l1.38.3-1.7,8-1.12-.24-3.55-6.36-1.11,5.17-1.37-.3,1.63-7.61Z"/><path class="button-red" d="M17.33,45.92l-1.28-.49,1.76-4.49,1.27.5Z"/><path class="button-red" d="M20.13,30l6.22,3.92-.78,1.25-7.31,1.62,4.5,2.83L21.89,41l-6.22-3.92,1-1.51,6.91-1.5-4.26-2.69Z"/><path class="button-red" d="M24.44,30.37c-1.71-1.75-1.43-4.05.62-6.06s4.35-2.23,6.07-.47,1.44,4.06-.61,6.06S26.16,32.13,24.44,30.37ZM29.9,25c-1.1-1.13-2.53-1-3.83.31s-1.5,2.7-.4,3.83,2.53,1,3.83-.32S31,26.16,29.9,25Z"/><path class="button-red" d="M37.75,15.34l2,3.32c1.15,1.88.67,3.92-1.61,5.3s-4.3.87-5.44-1l-2-3.32,1.43-.87L34.08,22a2.17,2.17,0,0,0,3.31.74,2.18,2.18,0,0,0,.87-3.28l-1.95-3.21Z"/><path class="button-red" d="M49.58,16.42c.46,1.37-.51,2.77-3,3.61a6.73,6.73,0,0,1-4.72,0l.54-1.39a5,5,0,0,0,3.77,0c1.41-.48,2-1,1.84-1.57s-1-.49-2.61-.09c-2.05.51-4,.71-4.55-.78s.78-2.78,2.93-3.51a6.35,6.35,0,0,1,4.07-.2l-.49,1.4a4.78,4.78,0,0,0-3.13.13c-1,.31-2,.87-1.82,1.51s1.21.32,2.63,0C47.34,15,49.06,14.89,49.58,16.42Z"/></svg>
-                        </div>
-                    </a>
-
-                </div>
-            </article>
-
-            <!-- Table -->
-
-            <article class="component">
-                <h3 class="component__name" id="table">Table</h3>
-                <div class="component__img">
-                    <img
-                    srcset="img-ref/homepage-awards-table.png 2x"
-                    src="img-ref/homepage-awards-table.png"
-                    alt="Table">
-                </div>
-                <div class="component__code">
-                    <div class="table">
-                        <div class="table__row">
-                            <div class="table__header">Baisser les Potards</div>
-                            <div class="table__content">
-                                <div class="table__hover">
-                                    <div class="table__item">Nikon Film Festival 2020</div>
-                                    <div class="table__item">Sélection Finaliste Top 50</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/BALAIS-TOP50-480x223.png">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="table__row">
-                            <div class="table__header">Passage</div>
-                            <div class="table__content">
-                                <div class="table__hover">
-                                    <div class="table__item">Experimental, Dance & Music Film Festival 2019</div>
-                                    <div class="table__item">Best Film</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/BEST-FILM-Experimental-Dance-Music-Film-Festival-2019-1-480x318.png">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Video Mapping Festival 2019</div>
-                                    <div class="table__item">Award Winner</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/AWARD-WINNER-Videomapping-Festival-2019-1-480x318.png">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Sarajevo Fashion Film Festival 2018</div>
-                                    <div class="table__item">Award Winner</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/AWARD-WINNER-Sarajevo-Fashion-Film-Festival-2018-480x318.png">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Roots of Europe International Film Festival 2018</div>
-                                    <div class="table__item">Award Winner</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/AWARD-WINNER-Roots-of-Europe-International-Film-Festival-2018-1-480x318.png">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="table__row">
-                            <div class="table__header">Eolien et Territoire</div>
-                            <div class="table__content">
-                                <div class="table__hover">
-                                    <div class="table__item">Deauville Green Awards 2019</div>
-                                    <div class="table__item">Trophée Argent dans la catégorie Transition Energétique</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/BORALEX-480x252.png">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="table__row">
-                            <div class="table__header">Renaître ici</div>
-                            <div class="table__content">
-                                <div class="table__hover">
-                                    <div class="table__item">Trophées de la vidéo Touristique 2019</div>
-                                    <div class="table__item">Nomination Meilleure vidéo de Destination Touristique</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/AURA-PRIX-TOURISTIQUE-480x259.png">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Master of Art Film Festival 2019</div>
-                                    <div class="table__item">Nomination Video Art & Art Advertising</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/AURA-PRIX-MASTER-OF-ART.png">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
-                                    <div class="table__item">Nomination Dance Short Film Los Angeles</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/AURA-PRIX-EXPER-LA.png">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
-                                    <div class="table__item">Nomination Dance Short Film Toronto</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="../img/AURA-PRIX-EXPER-TORONTO.png">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- h1 -->
-            
-            <article class="component">
-                <h3 class="component__name" id="h-one">H1</h3>
-                <div class="component__img">
-                    <img
-                        srcset="img-ref/homepage-agency-h1.png 2x"
-                        src="img-ref/homepage-agency-h1.png"
-                        alt="h1 normal">
-                        <img
-                        srcset="img-ref/project-content-h1.png 2x"
-                        src="img-ref/project-content-h1.png"
-                        alt="h1 red">
-                </div>
-                <div class="component__code">
-                    <h1 class="h-one">Compose it</h1>
-                    <h1 class="h-one h-one--red">Mr Store</h1>
-                </div>
-            </article>
-
-            <!-- h2 -->
-            
-            <article class="component">
-                <h3 class="component__name" id="h-two">H2</h3>
-                <div class="component__img">
-                        <img
-                        srcset="img-ref/homepage-work-item-h2.png 2x"
-                        src="img-ref/homepage-work-item-h2.png"
-                        alt="h2 normal">
-                </div>
-                <div class="component__code">
-                    <h2 class="h-two">Fall Guys</h2>
-                </div>
-            </article>
-
-            <!-- h3 -->
-            
-            <article class="component">
-                <h3 class="component__name" id="h-three">H3</h3>
-                <div class="component__img">
-                    <img
-                    srcset="img-ref/project-content-h3.png 2x"
-                    src="img-ref/project-content-h3.png"
-                    alt="h3 normal">
-                    <img
-                        srcset="img-ref/homepage-production-link-h3.png 2x"
-                        src="img-ref/homepage-production-link-h3.png"
-                        alt="h3 red">
-                </div>
-                <div class="component__code">
-                    <h3 class="h-three">Campagne TV</h3>
-                    <h3 class="h-three h-three--red">Découvrir tous les projets</h3>
-                </div>
-            </article>
-
-            <!-- h4 -->
-            
-            <article class="component">
-                <h3 class="component__name" id="h-four">H4</h3>
-                <div class="component__img">
-                    <img
-                    srcset="img-ref/project-content-h4.png 2x"
-                    src="img-ref/project-content-h4.png"
-                    alt="h4 normal">
-                    <img
-                        srcset="img-ref/homepage-trust-h4.png 2x"
-                        src="img-ref/homepage-trust-h4.png"
-                        alt="h4 red">
-                </div>
-                <div class="component__code">
-                    <h4 class="h-four">TV Prod - Service Plan</h4>
-                    <h4 class="h-four h-four--red">Agence service plan</h4>
-                </div>
-            </article>
-
-            <!-- Logo -->
-            
-            <article class="component">
-                <h3 class="component__name" id="logo-link">Logo</h3>
-                <div class="component__img">
-                    <img
-                    srcset="img-ref/homepage-header-logo.png 2x"
-                    src="img-ref/homepage-header-logo.png"
-                    alt="link normal">
-                    <img
-                    srcset="img-ref/project-header-logo.png 2x"
-                    src="img-ref/project-header-logo.png"
-                    alt="link normal">
-                </div>
-                <div class="component__code">
+        <!-- Header Bar -->
+        
+        <article class="component">
+            <h3 class="component__name" id="header-bar">Header Bar</h3>
+            <div class="component__img">
+                <img
+                srcset="img-ref/homepage-header.png 2x"
+                src="img-ref/homepage-header.png"
+                alt="Header Bar">
+                <img
+                srcset="img-ref/project-header.png 2x"
+                src="img-ref/project-header.png"
+                alt="Header Bar">
+            </div>
+            <div class="component__code">
+                <div class="menu-bar">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo">
-                        <g>
-                        <path d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
-                                c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"/>
-                        <path d="M12.8,17.8c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C15.9,15.4,14.8,17.8,12.8,17.8z"/>
-                        </g>
-                        <path d="M48.4,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8v-6c0-2.1-0.7-3.5-2.4-3.5C39,6.5,38.1,8,38.1,10c0,0.1,0,6,0,6
-                            c0,1.1,0.3,1.7,1.3,1.8v0.9h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.8v-6c0-2.1-0.6-3.5-2.4-3.5c-1.6,0-2.5,1.5-2.5,3.4v6
-                            c0,1.1,0.3,1.7,1.4,1.8v0.9h-6.7v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.4-1h0.7V7c1-1.3,2.3-1.9,4-1.9
-                            c2.3,0,3.8,1,4.6,2.5c1-1.7,2.5-2.5,4.4-2.5c3.6,0,5.1,2.3,5.1,5.4V16C47,17.1,47.3,17.7,48.4,17.8z"/>
-                        <path d="M64.7,12c0,4.3-2.3,6.9-6,6.9c-1.8,0-3.1-0.7-4.1-1.7v5.2c0,1.1,0.3,1.7,1.3,1.7V25h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.7V8.8
-                            c0-1.1-0.3-1.7-1.3-1.7V6.1l4.6-1h0.7v1.7c0.9-1,2.3-1.7,4.1-1.7C62.3,5.1,64.7,7.7,64.7,12z M60.7,12c0-3.3-0.9-5.8-3-5.8
-                            c-2.1,0-3.2,2.3-3.2,5.8c0,3.5,1.1,5.8,3.2,5.8C59.9,17.8,60.7,15.3,60.7,12z"/>
-                        <path d="M73.2,5.1C69.3,5.1,66,7.5,66,12c0,4.5,3.4,6.9,7.3,6.9c3.9,0,7.3-2.4,7.3-6.9C80.5,7.5,77.1,5.1,73.2,5.1z M73.2,17.8
-                            c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C76.4,15.4,75.2,17.8,73.2,17.8z"/>
-                        <path d="M88.7,10.4c2.1,1,4.7,2.1,3.8,5.2c-0.6,2.1-2.7,3.3-5.5,3.3c-1.7,0-3.9-0.5-5.2-1.5v-3.4h0.7c0.6,2.6,2.7,3.9,4.6,3.9
-                            c1.1,0,2.1-0.5,2.3-1.4c0.3-1.5-1.1-2-3-2.8c-2.7-1.2-4.9-2.6-4.1-5.9c0.6-2.2,3-2.8,5-2.8c1.4,0,3,0.5,4.2,1.4v3h-0.6
-                            C90.1,7,89.1,6,87.2,6c-0.7,0-1.8,0.2-2,1.4C85.2,9,86.8,9.6,88.7,10.4z"/>
-                        <path d="M106.9,11.8c-9,0-9,0-9,0c0.4,5.5,6.1,5.9,8.4,3.3l0.5,0.4c-1,1.9-3,3.4-5.7,3.4c-3.8,0-7.2-2.4-7.2-7.1
-                            c0-4.2,2.9-6.7,7-6.7c4,0,6.2,2.8,6.1,6.3V11.8z M97.8,10.4h5.5c0-2-0.4-4.4-2.5-4.4C99.1,6.1,98,7.7,97.8,10.4z"/>
-                        <path d="M109.4,16.6c0-1.5,1.1-2.4,2.5-2.4c1.4,0,2.5,0.9,2.5,2.4c0,1.5-1.1,2.4-2.5,2.4C110.5,18.9,109.4,18.1,109.4,16.6z"/>
-                        <path d="M123.6,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.6-1h0.7V16
-                            C122.2,17.1,122.4,17.7,123.6,17.8z"/>
-                        <path d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h2.6v1.4
-                            h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"/>
-                    </svg>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo logo--cream">
+                    viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo">
                     <g>
                     <path d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
                             c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"/>
@@ -525,163 +633,86 @@
                     <path d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h2.6v1.4
                         h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"/>
                     </svg>
-                </div>
-            </article>
-
-            <!-- Logomark -->
-            
-            <article class="component">
-                <h3 class="component__name" id="logomark">Logomark</h3>
-                <div class="component__img">
-                    <img
-                    srcset="img-ref/homepage-work-logo.png 2x"
-                    src="img-ref/homepage-work-logo.png"
-                    alt="link normal">
-                    <img
-                    srcset="img-ref/project-nav-logo.png 2x"
-                    src="img-ref/project-nav-logo.png"
-                    alt="link normal">
-                </div>
-                <div class="component__code" style="width: 30%;">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 384 450" style="enable-background:new 0 0 384 450;" xml:space="preserve" class="logomark">
-                    <g>
-                        <path class="logomark" d="M233.4,26.4c66.7-1.1,115,39,133.4,114.8H384V44.8C344.9,19.5,285.1,3.5,229.9,3.5C98.9,3.5,0,93,0,225
-                            c0,132,98.9,221.5,229.9,221.5c55.2,0,115-16.1,154.1-41.3v-96.4h-17.2c-18.4,75.8-66.7,115.9-133.4,114.8
-                            c-92-1.1-136.8-89.5-136.8-199.7C96.6,113.7,142.6,27.6,233.4,26.4z"/>
-                        <path class="logomark" d="M239.1,336.3c-37.9,0-59.8-45.9-59.8-107.9c0-62,21.8-107.9,59.8-107.9c37.9,0,59.8,44.8,59.8,107.9
-                            C297.8,290.4,277.1,336.3,239.1,336.3z"/>
-                    </g>
-                    </svg>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 384 450" style="enable-background:new 0 0 384 450;" xml:space="preserve" class="logomark logomark--cream">
-                        <g>
-                            <path d="M233.4,26.4c66.7-1.1,115,39,133.4,114.8H384V44.8C344.9,19.5,285.1,3.5,229.9,3.5C98.9,3.5,0,93,0,225
-                                c0,132,98.9,221.5,229.9,221.5c55.2,0,115-16.1,154.1-41.3v-96.4h-17.2c-18.4,75.8-66.7,115.9-133.4,114.8
-                                c-92-1.1-136.8-89.5-136.8-199.7C96.6,113.7,142.6,27.6,233.4,26.4z"/>
-                            <path d="M239.1,336.3c-37.9,0-59.8-45.9-59.8-107.9c0-62,21.8-107.9,59.8-107.9c37.9,0,59.8,44.8,59.8,107.9
-                                C297.8,290.4,277.1,336.3,239.1,336.3z"/>
-                        </g>
-                    </svg>
-                </div>
-            </article>
-
-            <!-- Menu -->
-            
-            <article class="component">
-                <h3 class="component__name" id="menu">Menu</h3>
-                <div class="component__img">
-                    <img
-                    srcset="img-ref/homepage-header-menu.png 2x"
-                    src="img-ref/homepage-header-menu.png"
-                    alt="Menu">
-                    <img
-                    srcset="img-ref/project-header-menu.png 2x"
-                    src="img-ref/project-header-menu.png"
-                    alt="Menu">
-                </div>
-                <div class="component__code">
                     <div class="menu">
                         <strong>Menu</strong> <div class="menu-circle"></div>
                     </div>
+                </div>
+                <div class="menu-bar--black">
+                    <svg version="1.1" id="logo--cream" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo logo--cream">
+                    <g>
+                    <path d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
+                            c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"/>
+                    <path d="M12.8,17.8c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C15.9,15.4,14.8,17.8,12.8,17.8z"/>
+                    </g>
+                    <path d="M48.4,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8v-6c0-2.1-0.7-3.5-2.4-3.5C39,6.5,38.1,8,38.1,10c0,0.1,0,6,0,6
+                        c0,1.1,0.3,1.7,1.3,1.8v0.9h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.8v-6c0-2.1-0.6-3.5-2.4-3.5c-1.6,0-2.5,1.5-2.5,3.4v6
+                        c0,1.1,0.3,1.7,1.4,1.8v0.9h-6.7v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.4-1h0.7V7c1-1.3,2.3-1.9,4-1.9
+                        c2.3,0,3.8,1,4.6,2.5c1-1.7,2.5-2.5,4.4-2.5c3.6,0,5.1,2.3,5.1,5.4V16C47,17.1,47.3,17.7,48.4,17.8z"/>
+                    <path d="M64.7,12c0,4.3-2.3,6.9-6,6.9c-1.8,0-3.1-0.7-4.1-1.7v5.2c0,1.1,0.3,1.7,1.3,1.7V25h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.7V8.8
+                        c0-1.1-0.3-1.7-1.3-1.7V6.1l4.6-1h0.7v1.7c0.9-1,2.3-1.7,4.1-1.7C62.3,5.1,64.7,7.7,64.7,12z M60.7,12c0-3.3-0.9-5.8-3-5.8
+                        c-2.1,0-3.2,2.3-3.2,5.8c0,3.5,1.1,5.8,3.2,5.8C59.9,17.8,60.7,15.3,60.7,12z"/>
+                    <path d="M73.2,5.1C69.3,5.1,66,7.5,66,12c0,4.5,3.4,6.9,7.3,6.9c3.9,0,7.3-2.4,7.3-6.9C80.5,7.5,77.1,5.1,73.2,5.1z M73.2,17.8
+                        c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C76.4,15.4,75.2,17.8,73.2,17.8z"/>
+                    <path d="M88.7,10.4c2.1,1,4.7,2.1,3.8,5.2c-0.6,2.1-2.7,3.3-5.5,3.3c-1.7,0-3.9-0.5-5.2-1.5v-3.4h0.7c0.6,2.6,2.7,3.9,4.6,3.9
+                        c1.1,0,2.1-0.5,2.3-1.4c0.3-1.5-1.1-2-3-2.8c-2.7-1.2-4.9-2.6-4.1-5.9c0.6-2.2,3-2.8,5-2.8c1.4,0,3,0.5,4.2,1.4v3h-0.6
+                        C90.1,7,89.1,6,87.2,6c-0.7,0-1.8,0.2-2,1.4C85.2,9,86.8,9.6,88.7,10.4z"/>
+                    <path d="M106.9,11.8c-9,0-9,0-9,0c0.4,5.5,6.1,5.9,8.4,3.3l0.5,0.4c-1,1.9-3,3.4-5.7,3.4c-3.8,0-7.2-2.4-7.2-7.1
+                        c0-4.2,2.9-6.7,7-6.7c4,0,6.2,2.8,6.1,6.3V11.8z M97.8,10.4h5.5c0-2-0.4-4.4-2.5-4.4C99.1,6.1,98,7.7,97.8,10.4z"/>
+                    <path d="M109.4,16.6c0-1.5,1.1-2.4,2.5-2.4c1.4,0,2.5,0.9,2.5,2.4c0,1.5-1.1,2.4-2.5,2.4C110.5,18.9,109.4,18.1,109.4,16.6z"/>
+                    <path d="M123.6,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.6-1h0.7V16
+                        C122.2,17.1,122.4,17.7,123.6,17.8z"/>
+                    <path d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h2.6v1.4
+                        h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"/>
+                    </svg>
                     <div class="menu--black">
                         <strong>Menu</strong> <div class="menu-circle--cream"></div>
                     </div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <!-- Header Bar -->
-            
-            <article class="component">
-                <h3 class="component__name" id="header-bar">Header Bar</h3>
-                <div class="component__img">
+        <!-- Project Link -->
+        
+        <article class="component">
+            <h3 class="component__name" id="work-project">Project Link</h3>
+            <div class="component__img">
                     <img
-                    srcset="img-ref/homepage-header.png 2x"
-                    src="img-ref/homepage-header.png"
-                    alt="Header Bar">
-                    <img
-                    srcset="img-ref/project-header.png 2x"
-                    src="img-ref/project-header.png"
-                    alt="Header Bar">
-                </div>
-                <div class="component__code">
-                    <div class="menu-bar">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo">
-                        <g>
-                        <path d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
-                                c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"/>
-                        <path d="M12.8,17.8c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C15.9,15.4,14.8,17.8,12.8,17.8z"/>
-                        </g>
-                        <path d="M48.4,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8v-6c0-2.1-0.7-3.5-2.4-3.5C39,6.5,38.1,8,38.1,10c0,0.1,0,6,0,6
-                            c0,1.1,0.3,1.7,1.3,1.8v0.9h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.8v-6c0-2.1-0.6-3.5-2.4-3.5c-1.6,0-2.5,1.5-2.5,3.4v6
-                            c0,1.1,0.3,1.7,1.4,1.8v0.9h-6.7v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.4-1h0.7V7c1-1.3,2.3-1.9,4-1.9
-                            c2.3,0,3.8,1,4.6,2.5c1-1.7,2.5-2.5,4.4-2.5c3.6,0,5.1,2.3,5.1,5.4V16C47,17.1,47.3,17.7,48.4,17.8z"/>
-                        <path d="M64.7,12c0,4.3-2.3,6.9-6,6.9c-1.8,0-3.1-0.7-4.1-1.7v5.2c0,1.1,0.3,1.7,1.3,1.7V25h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.7V8.8
-                            c0-1.1-0.3-1.7-1.3-1.7V6.1l4.6-1h0.7v1.7c0.9-1,2.3-1.7,4.1-1.7C62.3,5.1,64.7,7.7,64.7,12z M60.7,12c0-3.3-0.9-5.8-3-5.8
-                            c-2.1,0-3.2,2.3-3.2,5.8c0,3.5,1.1,5.8,3.2,5.8C59.9,17.8,60.7,15.3,60.7,12z"/>
-                        <path d="M73.2,5.1C69.3,5.1,66,7.5,66,12c0,4.5,3.4,6.9,7.3,6.9c3.9,0,7.3-2.4,7.3-6.9C80.5,7.5,77.1,5.1,73.2,5.1z M73.2,17.8
-                            c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C76.4,15.4,75.2,17.8,73.2,17.8z"/>
-                        <path d="M88.7,10.4c2.1,1,4.7,2.1,3.8,5.2c-0.6,2.1-2.7,3.3-5.5,3.3c-1.7,0-3.9-0.5-5.2-1.5v-3.4h0.7c0.6,2.6,2.7,3.9,4.6,3.9
-                            c1.1,0,2.1-0.5,2.3-1.4c0.3-1.5-1.1-2-3-2.8c-2.7-1.2-4.9-2.6-4.1-5.9c0.6-2.2,3-2.8,5-2.8c1.4,0,3,0.5,4.2,1.4v3h-0.6
-                            C90.1,7,89.1,6,87.2,6c-0.7,0-1.8,0.2-2,1.4C85.2,9,86.8,9.6,88.7,10.4z"/>
-                        <path d="M106.9,11.8c-9,0-9,0-9,0c0.4,5.5,6.1,5.9,8.4,3.3l0.5,0.4c-1,1.9-3,3.4-5.7,3.4c-3.8,0-7.2-2.4-7.2-7.1
-                            c0-4.2,2.9-6.7,7-6.7c4,0,6.2,2.8,6.1,6.3V11.8z M97.8,10.4h5.5c0-2-0.4-4.4-2.5-4.4C99.1,6.1,98,7.7,97.8,10.4z"/>
-                        <path d="M109.4,16.6c0-1.5,1.1-2.4,2.5-2.4c1.4,0,2.5,0.9,2.5,2.4c0,1.5-1.1,2.4-2.5,2.4C110.5,18.9,109.4,18.1,109.4,16.6z"/>
-                        <path d="M123.6,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.6-1h0.7V16
-                            C122.2,17.1,122.4,17.7,123.6,17.8z"/>
-                        <path d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h2.6v1.4
-                            h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"/>
+                    srcset="img-ref/homepage-work-item.png 2x"
+                    src="img-ref/homepage-work-item.png"
+                    alt="Project Link">
+            </div>
+            <div class="component__code">
+                <a href="/project" class="project--link">
+                    <h2 class="h-two">Fall Guys</h2>
+                    <p class="project-category--normal">Digital</p>
+                    <div class="project-category--hover project-category">
+                        <span class="project-category">Découvrir</span>
+                        <span class="project-icon">
+                        <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
+                        <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
+                        <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
+                        <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
                         </svg>
-                        <div class="menu">
-                            <strong>Menu</strong> <div class="menu-circle"></div>
-                        </div>
+                        </span>
                     </div>
-                    <div class="menu-bar--black">
-                        <svg version="1.1" id="logo--cream" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo logo--cream">
-                        <g>
-                        <path d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
-                                c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"/>
-                        <path d="M12.8,17.8c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C15.9,15.4,14.8,17.8,12.8,17.8z"/>
-                        </g>
-                        <path d="M48.4,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8v-6c0-2.1-0.7-3.5-2.4-3.5C39,6.5,38.1,8,38.1,10c0,0.1,0,6,0,6
-                            c0,1.1,0.3,1.7,1.3,1.8v0.9h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.8v-6c0-2.1-0.6-3.5-2.4-3.5c-1.6,0-2.5,1.5-2.5,3.4v6
-                            c0,1.1,0.3,1.7,1.4,1.8v0.9h-6.7v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.4-1h0.7V7c1-1.3,2.3-1.9,4-1.9
-                            c2.3,0,3.8,1,4.6,2.5c1-1.7,2.5-2.5,4.4-2.5c3.6,0,5.1,2.3,5.1,5.4V16C47,17.1,47.3,17.7,48.4,17.8z"/>
-                        <path d="M64.7,12c0,4.3-2.3,6.9-6,6.9c-1.8,0-3.1-0.7-4.1-1.7v5.2c0,1.1,0.3,1.7,1.3,1.7V25h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.7V8.8
-                            c0-1.1-0.3-1.7-1.3-1.7V6.1l4.6-1h0.7v1.7c0.9-1,2.3-1.7,4.1-1.7C62.3,5.1,64.7,7.7,64.7,12z M60.7,12c0-3.3-0.9-5.8-3-5.8
-                            c-2.1,0-3.2,2.3-3.2,5.8c0,3.5,1.1,5.8,3.2,5.8C59.9,17.8,60.7,15.3,60.7,12z"/>
-                        <path d="M73.2,5.1C69.3,5.1,66,7.5,66,12c0,4.5,3.4,6.9,7.3,6.9c3.9,0,7.3-2.4,7.3-6.9C80.5,7.5,77.1,5.1,73.2,5.1z M73.2,17.8
-                            c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C76.4,15.4,75.2,17.8,73.2,17.8z"/>
-                        <path d="M88.7,10.4c2.1,1,4.7,2.1,3.8,5.2c-0.6,2.1-2.7,3.3-5.5,3.3c-1.7,0-3.9-0.5-5.2-1.5v-3.4h0.7c0.6,2.6,2.7,3.9,4.6,3.9
-                            c1.1,0,2.1-0.5,2.3-1.4c0.3-1.5-1.1-2-3-2.8c-2.7-1.2-4.9-2.6-4.1-5.9c0.6-2.2,3-2.8,5-2.8c1.4,0,3,0.5,4.2,1.4v3h-0.6
-                            C90.1,7,89.1,6,87.2,6c-0.7,0-1.8,0.2-2,1.4C85.2,9,86.8,9.6,88.7,10.4z"/>
-                        <path d="M106.9,11.8c-9,0-9,0-9,0c0.4,5.5,6.1,5.9,8.4,3.3l0.5,0.4c-1,1.9-3,3.4-5.7,3.4c-3.8,0-7.2-2.4-7.2-7.1
-                            c0-4.2,2.9-6.7,7-6.7c4,0,6.2,2.8,6.1,6.3V11.8z M97.8,10.4h5.5c0-2-0.4-4.4-2.5-4.4C99.1,6.1,98,7.7,97.8,10.4z"/>
-                        <path d="M109.4,16.6c0-1.5,1.1-2.4,2.5-2.4c1.4,0,2.5,0.9,2.5,2.4c0,1.5-1.1,2.4-2.5,2.4C110.5,18.9,109.4,18.1,109.4,16.6z"/>
-                        <path d="M123.6,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.6-1h0.7V16
-                            C122.2,17.1,122.4,17.7,123.6,17.8z"/>
-                        <path d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h2.6v1.4
-                            h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"/>
-                        </svg>
-                        <div class="menu--black">
-                            <strong>Menu</strong> <div class="menu-circle--cream"></div>
-                        </div>
-                    </div>
-                </div>
-            </article>
+                </a>
+            </div>
+        </article>
 
-            <!-- Project Link -->
-            
-            <article class="component">
-                <h3 class="component__name" id="work-project">Project Link</h3>
-                <div class="component__img">
-                        <img
-                        srcset="img-ref/homepage-work-item.png 2x"
-                        src="img-ref/homepage-work-item.png"
-                        alt="Project Link">
-                </div>
-                <div class="component__code">
-                    <a href="/project" class="project--link">
+        <!-- Work Section -->
+        
+        <article class="component">
+            <h3 class="component__name" id="work-section">Work Section</h3>
+            <div class="component__img">
+                    <img
+                    srcset="img-ref/homepage-work.png 2x"
+                    src="img-ref/homepage-work.png"
+                    alt="Work Section">
+            </div>
+            <div class="component__code">
+                <div class="section section--work">
+                    <a href="/project" class="project--link work-grid-1">
                         <h2 class="h-two">Fall Guys</h2>
                         <p class="project-category--normal">Digital</p>
                         <div class="project-category--hover project-category">
@@ -695,279 +726,404 @@
                             </span>
                         </div>
                     </a>
-                </div>
-            </article>
-
-            <!-- Work Section -->
-            
-            <article class="component">
-                <h3 class="component__name" id="work-section">Work Section</h3>
-                <div class="component__img">
-                        <img
-                        srcset="img-ref/homepage-work.png 2x"
-                        src="img-ref/homepage-work.png"
-                        alt="Work Section">
-                </div>
-                <div class="component__code">
-                    <div class="work-container">
-                        <a href="/project" class="project--link work-grid-1">
-                            <h2 class="h-two">Fall Guys</h2>
-                            <p class="project-category--normal">Digital</p>
-                            <div class="project-category--hover project-category">
-                                <span class="project-category">Découvrir</span>
-                                <span class="project-icon">
-                                <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                                <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                                <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                                <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                                </svg>
-                                </span>
-                            </div>
-                        </a>
-                        <a href="/project" class="project--link work-grid-2">
-                            <h2 class="h-two">Innocent</h2>
-                            <p class="project-category--normal">TV Prod</p>
-                            <div class="project-category--hover project-category">
-                                <span class="project-category">Découvrir</span>
-                                <span class="project-icon">
-                                <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                                <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                                <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                                <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                                </svg>
-                                </span>
-                            </div>
-                        </a>
-                        <a href="/project" class="project--link work-grid-3">
-                            <h2 class="h-two">Sant&#233; Vet</h2>
-                            <p class="project-category--normal">TV Prod</p>
-                            <div class="project-category--hover project-category">
-                                <span class="project-category">Découvrir</span>
-                                <span class="project-icon">
-                                <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                                <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                                <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                                <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                                </svg>
-                                </span>
-                            </div>
-                        </a>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 384 450" style="enable-background:new 0 0 384 450;" xml:space="preserve" class="logomark work-grid-4">
-                            <g>
-                                <path class="logomark" d="M233.4,26.4c66.7-1.1,115,39,133.4,114.8H384V44.8C344.9,19.5,285.1,3.5,229.9,3.5C98.9,3.5,0,93,0,225
-                                    c0,132,98.9,221.5,229.9,221.5c55.2,0,115-16.1,154.1-41.3v-96.4h-17.2c-18.4,75.8-66.7,115.9-133.4,114.8
-                                    c-92-1.1-136.8-89.5-136.8-199.7C96.6,113.7,142.6,27.6,233.4,26.4z"/>
-                                <path class="logomark" d="M239.1,336.3c-37.9,0-59.8-45.9-59.8-107.9c0-62,21.8-107.9,59.8-107.9c37.9,0,59.8,44.8,59.8,107.9
-                                    C297.8,290.4,277.1,336.3,239.1,336.3z"/>
-                            </g>
-                        </svg>
-                        <a href="/project" class="project--link work-grid-5">
-                            <h2 class="h-two">Aura Tourisme</h2>
-                            <p class="project-category--normal">TV Prod</p>
-                            <div class="project-category--hover project-category work-grid-right">
-                                <span class="project-category">Découvrir</span>
-                                <span class="project-icon">
-                                <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                                <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                                <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                                <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                                </svg>
-                                </span>
-                            </div>
-                        </a>
-                        <a href="/project" class="project--link work-grid-6">
-                            <h2 class="h-two">New Balance</h2>
-                            <p class="project-category--normal">Digital</p>
-                            <div class="project-category--hover project-category work-grid-right">
-                                <span class="project-category">Découvrir</span>
-                                <span class="project-icon">
-                                <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                                <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                                <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                                <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                                </svg>
-                                </span>
-                            </div>
-                        </a>
-                        <a href="/project" class="project--link work-grid-7">
-                            <h2 class="h-two">Vestige</h2>
-                            <p class="project-category--normal">Fiction</p>
-                            <div class="project-category--hover project-category work-grid-right">
-                                <span class="project-category">Découvrir</span>
-                                <span class="project-icon">
-                                <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                                <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                                <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                                <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                                </svg>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Agency Section -->
-            
-            <article class="component">
-                <h3 class="component__name" id="agency-section">Agency Section</h3>
-                <div class="component__img">
-                        <img
-                        srcset="img-ref/homepage-agency.png 2x"
-                        src="img-ref/homepage-agency.png"
-                        alt="Work Section">
-                </div>
-                <div class="component__code">
-                    <article class="agency">
-                        <h1 class="h-one">Compose it</h1>
-                        <div class="content content--agency">
-                            <h3 class="h-three">Une agence intégrée</h3>
-                            <div class="content__paragraph">
-                                <h4 class="h-four">Une image cin&eacute;matographique</h4>
-                                <p class="content__text">Nous attachons une importance particuli&egrave;re &agrave; l&rsquo;esth&eacute;tique de nos films en nous appuyant sur l&rsquo;exp&eacute;rience de nos deux r&eacute;alisateurs issus du monde de la fiction et du court-m&eacute;trage. Leur vision artistique nourrit notre cr&eacute;ativit&eacute; au service de chaque film.</p>
-                                <h4 class="h-four">Des prix en festivals</h4>
-                                <p class="content__text">Passionn&eacute;s de cin&eacute;ma, Pierre-Marie Charbonnier et Simon Pierrat &eacute;cument les festivals pendant plusieurs ann&eacute;es, au cours desquelles diff&eacute;rents courts-m&eacute;trages de fiction ont &eacute;t&eacute; prim&eacute;s de nombreuses fois. Par la suite, d&#8217;autres films corporate ont &eacute;galement &eacute;t&eacute; prim&eacute;s dans le cadre de festivals professionnels.</p>
-                                <h4 class="h-four">Du mat&eacute;riel en interne</h4>
-                                <p class="content__text">Nous avons investi dans du mat&eacute;riel de prise de vue cin&eacute;ma afin d&#8217;am&eacute;liorer notre comp&eacute;titivit&eacute; et notre souplesse d&#8217;ex&eacute;cution. Sur chaque projet, nous tournons &agrave; minima avec une cam&eacute;ra RED et des objectif cin&eacute;ma Ang&eacute;nieux.</p>
-                                <h4 class="h-four">Adh&eacute;rent ARPP</h4>
-                                <p class="content__text">Compose It est membre de l&#8217;ARPP : nous ma&icirc;trisons les process qui nous permettent de garantir le respect des r&egrave;gles &eacute;thiques et d&eacute;ontologiques en vigueur dans la publicit&eacute;. Les contenus et les briefs sont valid&eacute;s en respectant les d&eacute;lais.</p>
-                            </div>
+                    <a href="/project" class="project--link work-grid-2">
+                        <h2 class="h-two">Innocent</h2>
+                        <p class="project-category--normal">TV Prod</p>
+                        <div class="project-category--hover project-category">
+                            <span class="project-category">Découvrir</span>
+                            <span class="project-icon">
+                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
+                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
+                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
+                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
+                            </svg>
+                            </span>
                         </div>
-                        <div class="content content--agency">
-                            <a class="button-container--inline-lg">
+                    </a>
+                    <a href="/project" class="project--link work-grid-3">
+                        <h2 class="h-two">Sant&#233; Vet</h2>
+                        <p class="project-category--normal">TV Prod</p>
+                        <div class="project-category--hover project-category">
+                            <span class="project-category">Découvrir</span>
+                            <span class="project-icon">
+                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
+                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
+                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
+                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
+                            </svg>
+                            </span>
+                        </div>
+                    </a>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 384 450" style="enable-background:new 0 0 384 450;" xml:space="preserve" class="logomark work-grid-4">
+                        <g>
+                            <path class="logomark" d="M233.4,26.4c66.7-1.1,115,39,133.4,114.8H384V44.8C344.9,19.5,285.1,3.5,229.9,3.5C98.9,3.5,0,93,0,225
+                                c0,132,98.9,221.5,229.9,221.5c55.2,0,115-16.1,154.1-41.3v-96.4h-17.2c-18.4,75.8-66.7,115.9-133.4,114.8
+                                c-92-1.1-136.8-89.5-136.8-199.7C96.6,113.7,142.6,27.6,233.4,26.4z"/>
+                            <path class="logomark" d="M239.1,336.3c-37.9,0-59.8-45.9-59.8-107.9c0-62,21.8-107.9,59.8-107.9c37.9,0,59.8,44.8,59.8,107.9
+                                C297.8,290.4,277.1,336.3,239.1,336.3z"/>
+                        </g>
+                    </svg>
+                    <a href="/project" class="project--link work-grid-5">
+                        <h2 class="h-two">Aura Tourisme</h2>
+                        <p class="project-category--normal">TV Prod</p>
+                        <div class="project-category--hover project-category work-grid-right">
+                            <span class="project-category">Découvrir</span>
+                            <span class="project-icon">
+                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
+                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
+                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
+                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
+                            </svg>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="/project" class="project--link work-grid-6">
+                        <h2 class="h-two">New Balance</h2>
+                        <p class="project-category--normal">Digital</p>
+                        <div class="project-category--hover project-category work-grid-right">
+                            <span class="project-category">Découvrir</span>
+                            <span class="project-icon">
+                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
+                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
+                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
+                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
+                            </svg>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="/project" class="project--link work-grid-7">
+                        <h2 class="h-two">Vestige</h2>
+                        <p class="project-category--normal">Fiction</p>
+                        <div class="project-category--hover project-category work-grid-right">
+                            <span class="project-category">Découvrir</span>
+                            <span class="project-icon">
+                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
+                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
+                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
+                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
+                            </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Production Section -->
+
+        <article class="component">
+            <h3 class="component__name" id="prod-section">Production Section</h3>
+            <div class="component__img">
+                    <img
+                    srcset="img-ref/homepage-production.png 2x"
+                    src="img-ref/homepage-production.png"
+                    alt="Production Section">
+            </div>
+            <div class="component__code">
+                <article class="section section--prod">
+                    <p class="content__text content__text--pre">Agence de Production Audiovisuelle basée à Lyon</p>
+                    <div class="content content--agency">
+                        <h3 class="h-three">Réalisation et Production</h3>
+                        <div class="content__paragraph">
+                            <p class="content__text">Nous sommes <strong>Compose it, </strong>une agence de Production et R&eacute;alisation Audiovisuelle.</p>
+
+                            <p class="content__text">Nous sommes une &eacute;quipe de sept permanents et disposons de toutes les comp&eacute;tences de la production de films en interne. Nous sommes agiles et mettons en oeuvre les id&eacute;es de nos clients.</p>
+
+                            <p class="content__text">Nos deux r&eacute;alisateurs inhouse sont garants de la vision artistique de chaque production. Nous sommes cr&eacute;atifs et accompagnons nos clients dans l&#8217;&eacute;criture et la conception des projets.</p>
+
+                            <p class="content__text">Nos monteurs assurent la post-production des films au sein de nos bureaux. Nous sommes agiles afin de garantir le suivi de chaque projet dans le respect des d&eacute;lais.</p>
+
+                            <p class="content__text">Nous &eacute;voluons dans diff&eacute;rents univers, et vivons des aventures avec nos clients, car nous sommes curieux, ouverts et passionn&eacute;s : nous irons, ensemble, l&agrave; ou vous nous emmenerez.</p>
+
+                            <p class="content__text"><strong>Let&#8217;s Talk about your project, we will Compose it for you !</strong></p>
+
+                            <a class="button-container--inline-md">
                                 <div class="button-shapes">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                        <circle class="button-cream--blk" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"/></svg>
+                                        <circle class="button-cream" cx="100" cy="100" r="99"/><path d="M100,2A98,98,0,1,1,2,100,98.11,98.11,0,0,1,100,2m0-2A100,100,0,1,0,200,100,100,100,0,0,0,100,0Z" class="button-red"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5" class="button-red"/></svg>
                                 </div>
-                                <div class="button-text button-text--lg">
+                                <div class="button-text button-text--md">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                    <path d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z"/><path d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z"/><path d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z"/><path d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z"/><path d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z"/><path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z"/><path d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z"/><path d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z"/><path d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z"/><path d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z"/><path d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z"/><path d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z"/><path d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z"/><path d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z"/><path d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z"/><path d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z"/><path d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z"/><path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z"/><path d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z"/><path d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z"/><path d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z"/><path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z"/><path d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z"/><path d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z"/></svg>
+                                    <path d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z" class="button-red"/><path d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z" class="button-red"/><path d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z" class="button-red"/><path d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z" class="button-red"/><path d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z" class="button-red"/><path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z" class="button-red"/><path d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z" class="button-red"/><path d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z" class="button-red"/><path d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z" class="button-red"/><path d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z" class="button-red"/><path d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z" class="button-red"/><path d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z" class="button-red"/><path d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z" class="button-red"/><path d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z" class="button-red"/><path d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z" class="button-red"/><path d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z" class="button-red"/><path d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z" class="button-red"/><path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z" class="button-red"/><path d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z" class="button-red"/><path d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z" class="button-red"/><path d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z" class="button-red"/><path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z" class="button-red"/><path d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z" class="button-red"/><path d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z" class="button-red"/></svg>
                                 </div>
                             </a>
-                            <ul class="list--numbered">
-                                <li class="list-item list-item--numbered"><h4 class="h-four">CONCEPTION</h4><h4 class="h-four">01</h4></li>
-                                <li class="list-item list-item--numbered"><h4 class="h-four">PRÉ-PRODUCTION</h4><h4 class="h-four">02</h4></li>
-                                <li class="list-item list-item--numbered"><h4 class="h-four">RÉALISATION</h4><h4 class="h-four">03</h4></li>
-                                <li class="list-item list-item--numbered"><h4 class="h-four">POST-PRODUCTION</h4><h4 class="h-four">04</h4></li>
-                                <li class="list-item list-item--numbered"><h4 class="h-four">DIFFUSION</h4><h4 class="h-four">05</h4></li>
-                            </ul>
                         </div>
-                    </article>
-                </div>
-            </article>
+                    </div>
+                    <div class="section--prod__grid">
 
-            <!-- Awards Section -->
+                        <div class="content__text content__text--prod prod__grid-1">Quelques références 
+                        <div class="menu-circle"></div>
+                        </div>
 
-            <article class="component">
-                <h3 class="component__name" id="awards-section">Awards Section</h3>
-                <div class="component__img">
-                        <img
-                        srcset="img-ref/homepage-awards.png 2x"
-                        src="img-ref/homepage-awards.png"
-                        alt="Awards Section">
-                </div>
-                <div class="component__code">
-                    <article class="awards">
-                        <h1 class="h-one">Récompenses</h1>
-                        <div class="content content--awards">
-                            <div class="table">
-                                <div class="table__row">
-                                    <div class="table__header">Baisser les Potards</div>
-                                    <div class="table__content">
-                                        <div class="table__hover">
-                                            <div class="table__item">Nikon Film Festival 2020</div>
-                                            <div class="table__item">Sélection Finaliste Top 50</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/BALAIS-TOP50-480x223.png">
-                                        </figure>
-                                    </div>
+                        <div class="prod__grid-2">
+                            <figure class="compimg compimg--prod">
+                                <img class="img" src="../img/CANAM4-1024x576.jpg">
+                                <div class="compimg--hover">
+                                    <h2 class="h-two h-two--red">Can-Am</h2>
                                 </div>
-                                <div class="table__row">
-                                    <div class="table__header">Passage</div>
-                                    <div class="table__content">
-                                        <div class="table__hover">
-                                            <div class="table__item">Experimental, Dance & Music Film Festival 2019</div>
-                                            <div class="table__item">Best Film</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/BEST-FILM-Experimental-Dance-Music-Film-Festival-2019-1-480x318.png">
-                                        </figure>
-                                        <div class="table__hover">
-                                            <div class="table__item">Video Mapping Festival 2019</div>
-                                            <div class="table__item">Award Winner</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/AWARD-WINNER-Videomapping-Festival-2019-1-480x318.png">
-                                        </figure>
-                                        <div class="table__hover">
-                                            <div class="table__item">Sarajevo Fashion Film Festival 2018</div>
-                                            <div class="table__item">Award Winner</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/AWARD-WINNER-Sarajevo-Fashion-Film-Festival-2018-480x318.png">
-                                        </figure>
-                                        <div class="table__hover">
-                                            <div class="table__item">Roots of Europe International Film Festival 2018</div>
-                                            <div class="table__item">Award Winner</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/AWARD-WINNER-Roots-of-Europe-International-Film-Festival-2018-1-480x318.png">
-                                        </figure>
-                                    </div>
+                            </figure>
+                            <figcaption class="img-caption--project">Digital</figcaption>
+                        </div>
+
+                        <div class="prod__grid-3">
+                            <figure class="compimg compimg--prod">
+                                <img class="img" src="../img/project-img-mr-store.png">
+                                <div class="compimg--hover">
+                                    <h2 class="h-two h-two--red">Mr Store</h2>
                                 </div>
-                                <div class="table__row">
-                                    <div class="table__header">Eolien et Territoire</div>
-                                    <div class="table__content">
-                                        <div class="table__hover">
-                                            <div class="table__item">Deauville Green Awards 2019</div>
-                                            <div class="table__item">Trophée Argent dans la catégorie Transition Energétique</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/BORALEX-480x252.png">
-                                        </figure>
-                                    </div>
+                            </figure>
+                            <figcaption class="img-caption--project">TV Prod</figcaption>
+                        </div>
+                        
+                        <div class="prod__grid-4">
+                            <figure class="compimg compimg--prod">
+                                <img class="img" src="../img/vlcsnap-2021-08-10-11h07m36s628-1024x576.png">
+                                <div class="compimg--hover">
+                                    <h2 class="h-two h-two--red">Vallée de la gastronomie</h2>
                                 </div>
-                                <div class="table__row">
-                                    <div class="table__header">Renaître ici</div>
-                                    <div class="table__content">
-                                        <div class="table__hover">
-                                            <div class="table__item">Trophées de la vidéo Touristique 2019</div>
-                                            <div class="table__item">Nomination Meilleure vidéo de Destination Touristique</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/AURA-PRIX-TOURISTIQUE-480x259.png">
-                                        </figure>
-                                        <div class="table__hover">
-                                            <div class="table__item">Master of Art Film Festival 2019</div>
-                                            <div class="table__item">Nomination Video Art & Art Advertising</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/AURA-PRIX-MASTER-OF-ART.png">
-                                        </figure>
-                                        <div class="table__hover">
-                                            <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
-                                            <div class="table__item">Nomination Dance Short Film Los Angeles</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/AURA-PRIX-EXPER-LA.png">
-                                        </figure>
-                                        <div class="table__hover">
-                                            <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
-                                            <div class="table__item">Nomination Dance Short Film Toronto</div>
-                                        </div>
-                                        <figure class="compimg compimg--awards table__img">
-                                            <img class="img" src="../img/AURA-PRIX-EXPER-TORONTO.png">
-                                        </figure>
+                            </figure>
+                            <figcaption class="img-caption--project">Digital</figcaption>
+                        </div>
+                        
+                        <div class="prod__grid-5">
+                            <figure class="compimg compimg--prod">
+                                <img class="img" src="../img/Montage-teaser-eolien20-1024x537.jpg">
+                                <div class="compimg--hover">
+                                    <h2 class="h-two h-two--red">Boralex</h2>
+                                </div>
+                            </figure>
+                            <figcaption class="img-caption--project">Corporate</figcaption>
+                        </div>
+                        
+                        <div class="prod__grid-6">
+                            <figure class="compimg compimg--prod">
+                                <img class="img" src="../img/C021_ULTIMATE_V020-1024x560.jpg">
+                                <div class="compimg--hover">
+                                    <h2 class="h-two h-two--red">Ultimate</h2>
+                                </div>
+                            </figure>
+                            <figcaption class="img-caption--project">Digtal</figcaption>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </article>
+
+        <!-- Agency Section -->
+        
+        <article class="component">
+            <h3 class="component__name" id="agency-section">Agency Section</h3>
+            <div class="component__img">
+                    <img
+                    srcset="img-ref/homepage-agency.png 2x"
+                    src="img-ref/homepage-agency.png"
+                    alt="Work Section">
+            </div>
+            <div class="component__code">
+                <article class="section section--agency">
+                    <h1 class="h-one">Compose it</h1>
+                    <div class="content content--agency">
+                        <h3 class="h-three">Une agence intégrée</h3>
+                        <div class="content__paragraph">
+                            <h4 class="h-four">Une image cin&eacute;matographique</h4>
+                            <p class="content__text">Nous attachons une importance particuli&egrave;re &agrave; l&rsquo;esth&eacute;tique de nos films en nous appuyant sur l&rsquo;exp&eacute;rience de nos deux r&eacute;alisateurs issus du monde de la fiction et du court-m&eacute;trage. Leur vision artistique nourrit notre cr&eacute;ativit&eacute; au service de chaque film.</p>
+                            <h4 class="h-four">Des prix en festivals</h4>
+                            <p class="content__text">Passionn&eacute;s de cin&eacute;ma, Pierre-Marie Charbonnier et Simon Pierrat &eacute;cument les festivals pendant plusieurs ann&eacute;es, au cours desquelles diff&eacute;rents courts-m&eacute;trages de fiction ont &eacute;t&eacute; prim&eacute;s de nombreuses fois. Par la suite, d&#8217;autres films corporate ont &eacute;galement &eacute;t&eacute; prim&eacute;s dans le cadre de festivals professionnels.</p>
+                            <h4 class="h-four">Du mat&eacute;riel en interne</h4>
+                            <p class="content__text">Nous avons investi dans du mat&eacute;riel de prise de vue cin&eacute;ma afin d&#8217;am&eacute;liorer notre comp&eacute;titivit&eacute; et notre souplesse d&#8217;ex&eacute;cution. Sur chaque projet, nous tournons &agrave; minima avec une cam&eacute;ra RED et des objectif cin&eacute;ma Ang&eacute;nieux.</p>
+                            <h4 class="h-four">Adh&eacute;rent ARPP</h4>
+                            <p class="content__text">Compose It est membre de l&#8217;ARPP : nous ma&icirc;trisons les process qui nous permettent de garantir le respect des r&egrave;gles &eacute;thiques et d&eacute;ontologiques en vigueur dans la publicit&eacute;. Les contenus et les briefs sont valid&eacute;s en respectant les d&eacute;lais.</p>
+                        </div>
+                    </div>
+                    <div class="content content--agency">
+                        <a class="button-container--inline-lg">
+                            <div class="button-shapes">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                                    <circle class="button-cream--blk" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"/></svg>
+                            </div>
+                            <div class="button-text button-text--lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                                <path d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z"/><path d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z"/><path d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z"/><path d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z"/><path d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z"/><path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z"/><path d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z"/><path d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z"/><path d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z"/><path d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z"/><path d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z"/><path d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z"/><path d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z"/><path d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z"/><path d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z"/><path d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z"/><path d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z"/><path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z"/><path d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z"/><path d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z"/><path d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z"/><path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z"/><path d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z"/><path d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="list--numbered">
+                            <li class="list-item list-item--numbered"><h4 class="h-four">CONCEPTION</h4><h4 class="h-four">01</h4></li>
+                            <li class="list-item list-item--numbered"><h4 class="h-four">PRÉ-PRODUCTION</h4><h4 class="h-four">02</h4></li>
+                            <li class="list-item list-item--numbered"><h4 class="h-four">RÉALISATION</h4><h4 class="h-four">03</h4></li>
+                            <li class="list-item list-item--numbered"><h4 class="h-four">POST-PRODUCTION</h4><h4 class="h-four">04</h4></li>
+                            <li class="list-item list-item--numbered"><h4 class="h-four">DIFFUSION</h4><h4 class="h-four">05</h4></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </article>
+
+        <!-- Insta Section -->
+
+        <article class="component">
+            <h3 class="component__name" id="insta-section">Insta Section</h3>
+            <div class="component__img">
+                    <img
+                    srcset="img-ref/homepage-production.png 2x"
+                    src="img-ref/homepage-production.png"
+                    alt="">
+            </div>
+            <div class="component__code">
+                
+            </div>
+        </article>
+
+        <!-- Trust Section -->
+        
+        <article class="component">
+            <h3 class="component__name" id="trust-section">Trust Section</h3>
+            <div class="component__img">
+                    <img
+                    srcset="img-ref/homepage-production.png 2x"
+                    src="img-ref/homepage-production.png"
+                    alt="">
+            </div>
+            <div class="component__code">
+                
+            </div>
+        </article>
+
+        <!-- Awards Section -->
+
+        <article class="component">
+            <h3 class="component__name" id="awards-section">Awards Section</h3>
+            <div class="component__img">
+                    <img
+                    srcset="img-ref/homepage-awards.png 2x"
+                    src="img-ref/homepage-awards.png"
+                    alt="Awards Section">
+            </div>
+            <div class="component__code">
+                <article class="section section--awards">
+                    <h1 class="h-one">Récompenses</h1>
+                    <div class="content content--awards">
+                        <div class="table">
+                            <div class="table__row">
+                                <div class="table__header">Baisser les Potards</div>
+                                <div class="table__content">
+                                    <div class="table__hover">
+                                        <div class="table__item">Nikon Film Festival 2020</div>
+                                        <div class="table__item">Sélection Finaliste Top 50</div>
                                     </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/BALAIS-TOP50-480x223.png">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__header">Passage</div>
+                                <div class="table__content">
+                                    <div class="table__hover">
+                                        <div class="table__item">Experimental, Dance & Music Film Festival 2019</div>
+                                        <div class="table__item">Best Film</div>
+                                    </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/BEST-FILM-Experimental-Dance-Music-Film-Festival-2019-1-480x318.png">
+                                    </figure>
+                                    <div class="table__hover">
+                                        <div class="table__item">Video Mapping Festival 2019</div>
+                                        <div class="table__item">Award Winner</div>
+                                    </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/AWARD-WINNER-Videomapping-Festival-2019-1-480x318.png">
+                                    </figure>
+                                    <div class="table__hover">
+                                        <div class="table__item">Sarajevo Fashion Film Festival 2018</div>
+                                        <div class="table__item">Award Winner</div>
+                                    </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/AWARD-WINNER-Sarajevo-Fashion-Film-Festival-2018-480x318.png">
+                                    </figure>
+                                    <div class="table__hover">
+                                        <div class="table__item">Roots of Europe International Film Festival 2018</div>
+                                        <div class="table__item">Award Winner</div>
+                                    </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/AWARD-WINNER-Roots-of-Europe-International-Film-Festival-2018-1-480x318.png">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__header">Eolien et Territoire</div>
+                                <div class="table__content">
+                                    <div class="table__hover">
+                                        <div class="table__item">Deauville Green Awards 2019</div>
+                                        <div class="table__item">Trophée Argent dans la catégorie Transition Energétique</div>
+                                    </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/BORALEX-480x252.png">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__header">Renaître ici</div>
+                                <div class="table__content">
+                                    <div class="table__hover">
+                                        <div class="table__item">Trophées de la vidéo Touristique 2019</div>
+                                        <div class="table__item">Nomination Meilleure vidéo de Destination Touristique</div>
+                                    </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/AURA-PRIX-TOURISTIQUE-480x259.png">
+                                    </figure>
+                                    <div class="table__hover">
+                                        <div class="table__item">Master of Art Film Festival 2019</div>
+                                        <div class="table__item">Nomination Video Art & Art Advertising</div>
+                                    </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/AURA-PRIX-MASTER-OF-ART.png">
+                                    </figure>
+                                    <div class="table__hover">
+                                        <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
+                                        <div class="table__item">Nomination Dance Short Film Los Angeles</div>
+                                    </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/AURA-PRIX-EXPER-LA.png">
+                                    </figure>
+                                    <div class="table__hover">
+                                        <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
+                                        <div class="table__item">Nomination Dance Short Film Toronto</div>
+                                    </div>
+                                    <figure class="compimg compimg--awards table__img">
+                                        <img class="img" src="../img/AURA-PRIX-EXPER-TORONTO.png">
+                                    </figure>
                                 </div>
                             </div>
                         </div>
-                        <a href="#!">Découvrir toutes les récompenses</a>
-                    </article>
-                </div>
-            </article>
+                    </div>
+                    <a href="#!">Découvrir toutes les récompenses</a>
+                </article>
+            </div>
+        </article>
 
-        </section>
-    </body>
+        <!-- Contact Section -->
+
+        <article class="component">
+            <h3 class="component__name" id="contact-section">Contact Section</h3>
+            <div class="component__img">
+                    <img
+                    srcset="img-ref/homepage-production.png 2x"
+                    src="img-ref/homepage-production.png"
+                    alt="">
+            </div>
+            <div class="component__code">
+                
+            </div>
+        </article>
+
+        <!-- Project Video Section -->
+
+        <!-- Project Content Section -->
+
+        <!-- Project Callout Section -->
+
+        <!-- Project Nav Section -->
+
+    </section>
+</body>
 </html>

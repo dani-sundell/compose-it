@@ -32,8 +32,8 @@ html {
     ref: https://type-scale.com/?size=13&scale=1.333&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false
     */
     --font-size-h1: 13.288rem;
-    --font-size-h2: 4.209rem;
-    --font-size-h3: 4rem;
+    --font-size-h2: 4.3rem;
+    --font-size-h3: 2.9rem;
     --font-size-h4: 1.333rem;
     --font-size-table: 1.6rem;
     --font-size-p: 1rem;
@@ -119,6 +119,38 @@ figure.compimg--insta img {
 .compimg--trust {
     background-color: var(--color-cream);
     border-color: var(--color-black);
+}
+
+.compimg--prod {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.compimg--hover {
+    position: absolute;
+    background: url(../imag/253787394_1760563340802190_1757040334419137845_n.jpg);
+    color: var(--color-red);
+    opacity: 0;
+    transition: .5s ease;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.compimg--prod:hover .compimg--hover {
+    opacity: 1;
 }
 
 figcaption {
@@ -238,7 +270,7 @@ figcaption {
 /* Components Library */
 
 aside {
-    width:20%;
+    width: 20%;
     float: left;
     background-color: var(--color-cream);
     position: fixed;
@@ -274,7 +306,7 @@ aside h1, aside h2, aside h3, aside a, aside.logo {
     padding: .75rem 0rem .75rem 2rem;
 }
 
-section {
+.components_section {
     width: 80%;
     float: right;
     padding: 3rem;
@@ -323,7 +355,7 @@ h3 {
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     margin: 0;
-    line-height: 1;
+    line-height: 1.25;
 }
 
 /* Site Headers */
@@ -348,6 +380,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-h2);
     text-transform: uppercase;
+}
+
+.h-two--red {
+    color: var(--color-red);
 }
 
 .h-three {
@@ -519,6 +555,10 @@ ul {
     border-radius: 50%;
 }
 
+.menu-circle:hover, .menu-circle--cream:hover {
+    transform: scale(1.1);
+}
+
 .menu--black {
     display: flex;
     flex-direction: row;
@@ -602,7 +642,7 @@ a.project--link:hover > .project-category--normal {
 
 /* Work Section */
 
-.work-container {
+.section--work {
     width: 100%;
     height: 100vh;
     padding: 2rem 0;
@@ -640,12 +680,19 @@ a.project--link:hover > .project-category--normal {
 }
 
 
-/* Agency & Awards */
+/* Sections */
 
-.agency, .awards {
-    background-color: var(--color-red);
+.section {
     padding: 4rem;
     margin: 0 auto;
+}
+
+.section--agency, .section--awards {
+    background-color: var(--color-red);
+}
+
+.section--prod {
+    background-color: var(--color-cream);
 }
 
 .content {
@@ -666,7 +713,7 @@ a.project--link:hover > .project-category--normal {
 .content__paragraph {
     flex-basis: 50%;
     font-size: .85vw;
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 .content__text {
@@ -674,10 +721,68 @@ a.project--link:hover > .project-category--normal {
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
-    padding: 1rem 0;
+    padding: .5rem 0;
+}
+
+.content__text--pre {
+    padding-bottom: 3rem;
+}
+
+.content__text--prod {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.content__text:first-child {
+    padding-top: 0;
+
 }
 
 .awards a {
     padding-top: 3rem;
     text-align: center;
+}
+
+.section--prod__grid {
+    padding-top: 5rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(20, minmax(0, 1fr));
+    grid-template-rows: repeat(15, minmax(0, 1fr));
+}
+
+.prod__grid-1 {
+    grid-row: 1 / 1;
+    grid-column: 10 / 20;
+    align-self: start;
+    justify-self: end;
+}
+
+.prod__grid-2 {
+    grid-column: 1 / 12;
+    grid-row: 1 / 5;
+}
+
+.prod__grid-3 {
+    grid-column: 14 / 20;
+    grid-row: 4 / 7;
+}
+
+.prod__grid-4 {
+    grid-column: 2 / 10;
+    grid-row: 6 / 10;
+}
+
+.prod__grid-5 {
+    grid-column: 12 / 18;
+    grid-row: 8 / 11;
+}
+
+.prod__grid-6 {
+    grid-column: 5 / 15;
+    grid-row: 11 / 15;
 }
