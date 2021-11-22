@@ -465,6 +465,7 @@ ul {
 .list--nonum figure {
     position: absolute;
     left: 75%;
+    top: 35%;
     opacity: 0;
     width: 200px;
     height: 200px;
@@ -528,6 +529,7 @@ ul {
 .table__content figure {
     position: absolute;
     left: 75%;
+    top: 35%;
     opacity: 0;
     width: 200px;
     height: 200px;
@@ -552,7 +554,7 @@ ul {
 }
 
 .table__img img{
-    z-index: 3;
+    z-index: 10;
     margin: auto;
     width: 100%;
 }
@@ -825,6 +827,7 @@ a.project--link:hover > .project-category--normal {
     align-items: flex-end;
     padding: 0rem;
     background: url(../img/sfsdfsdfsdf-1600x900.jpeg);
+    background-color: var(--color-cream);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
