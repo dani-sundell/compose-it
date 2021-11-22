@@ -22,10 +22,10 @@ html {
     --font: termina, sans-serif;
     
     /*Type Weights*/
-    --font-weight-h1: 900;
-    --font-weight-h2: 500;
+    --font-weight-h2: 900;
     --font-weight-h3: 500;
-    --font-weight-h4: 600;
+    --font-weight-h4: 500;
+    --font-weight-h5: 600;
     --font-weight-table: 400;
     --font-weight-table-h: 700;
     --font-weight-p: 400;
@@ -34,13 +34,13 @@ html {
     /*Type Sizes
     ref: https://type-scale.com/?size=13&scale=1.333&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false
     */
-    --font-size-h1: 13.288rem;
-    --font-size-h2: 4.3rem;
-    --font-size-h3: 2.9rem;
-    --font-size-h4: 1.333rem;
+    --font-size-h2: 13.288rem;
+    --font-size-h3: 4.3rem;
+    --font-size-h4: 2.9rem;
+    --font-size-h5: 1.333rem;
     --font-size-table: 1.6rem;
     --font-size-p: 1rem;
-     /*Ultimately, I think it's bad design to have h2 and h3 so close in size, but the site uses two different sizes for these items consistenly, so I followed that lead to be faithful to their design*/
+     /*Ultimately, I think it's bad design to have h3 and h4 so close in size, but the site uses two different sizes for these items consistenly, so I followed that lead to be faithful to their design*/
 }
 
 body {
@@ -115,7 +115,7 @@ aside a:hover {
     color: var(--color-black);
 }
 
-aside h1, aside h2, aside h3, aside a, aside.logo {
+aside h2, aside h3, aside h4, aside a, aside.logo {
     padding: .75rem 0rem .75rem 2rem;
 }
 
@@ -156,19 +156,19 @@ section.components__section {
     padding: 2rem 0;
 }
 
-h1 {
+h2 {
     font-size: 1.75rem;
 }
 
-h2 {
+h3 {
     font-size: 1.25rem;
 }
 
-h3 {
+h4 {
     font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5 {
     text-transform: uppercase;
     margin: 0;
     line-height: 1.25;
@@ -380,30 +380,19 @@ figcaption {
 
 /* Site Headers */
 
-.h-one {
+.h-two {
     color: var(--color-cream);
     background-color: var(--color-red);
-    font-weight: var(--font-weight-h1);
-    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-h2);
+    font-size: var(--font-size-h2);
     text-transform: uppercase;
     margin: 0 auto;
     text-align: left;
 }
 
-.h-one--red {
-    color: var(--color-red);
-    background-color:transparent;
-}
-
-.h-two {
-    color: var(--color-black);
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-h2);
-    text-transform: uppercase;
-}
-
 .h-two--red {
     color: var(--color-red);
+    background-color:transparent;
 }
 
 .h-three {
@@ -413,17 +402,8 @@ figcaption {
     text-transform: uppercase;
 }
 
-.h-three--thin {
-    color: var(--color-black);
-    font-size: var(--font-size-h3);
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
 .h-three--red {
     color: var(--color-red);
-    font-weight: 400;
-    text-transform: none;
 }
 
 .h-four {
@@ -433,7 +413,27 @@ figcaption {
     text-transform: uppercase;
 }
 
+.h-four--thin {
+    color: var(--color-black);
+    font-size: var(--font-size-h4);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .h-four--red {
+    color: var(--color-red);
+    font-weight: 400;
+    text-transform: none;
+}
+
+.h-five {
+    color: var(--color-black);
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-weight-h5);
+    text-transform: uppercase;
+}
+
+.h-five--red {
     color: var(--color-red);
 }
 
@@ -881,7 +881,7 @@ a.project--link:hover > .project-category--normal {
     grid-column: span 1;
 }
 
-.content--insta h1 {
+.content--insta h2 {
     font-size: 16.45rem;
     grid-column: span 3;
     justify-self: start;
@@ -917,7 +917,7 @@ a.project--link:hover > .project-category--normal {
     padding: 0;
 }
 
-.content--contact h1:hover {
+.content--contact h2:hover {
     color: var(--color-cream);
     -webkit-text-stroke: 2px var(--color-red);
 /*ref: https://css-tricks.com/adding-stroke-to-web-text/*/
@@ -927,7 +927,7 @@ a.project--link:hover > .project-category--normal {
     flex-basis: 20%;
 }
 
-.content--contact h3 {
+.content--contact h4 {
     flex-basis: 50%;
 }
 
@@ -949,7 +949,7 @@ a.project--link:hover > .project-category--normal {
     margin-bottom: 2rem;
 }
 
-.content--agency .h-three, .content--agency .list--numbered, .content--trust .h-three, .content__list--trust{
+.content--agency .h-four, .content--agency .list--numbered, .content--trust .h-four, .content__list--trust{
     flex-basis: 50%;
 }
 
