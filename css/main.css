@@ -35,9 +35,9 @@ html {
     /*Type Sizes
     ref: https://type-scale.com/?size=13&scale=1.333&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false
     */
-    --font-size-h2: 13.288rem;
+    --font-size-h2: 13.19rem;
     --font-size-h3: 4.3rem;
-    --font-size-h4: 2.9rem;
+    --font-size-h4: 3rem;
     --font-size-h5: 1.333rem;
     --font-size-table: 1.6rem;
     --font-size-p: 1rem;
@@ -76,13 +76,17 @@ strong {
 }
 
 .main-site {
-    background-color: var(--color-cream);
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-.site-container {
+.site-container--cream {
     padding: 0rem 4rem;
+    background-color: var(--color-cream);
+}
+
+.site-container--red {
+    background-color: var(--color-red);
 }
 
 /* Components Library */
@@ -246,15 +250,15 @@ figure.compimg--insta img {
 .compimg--hover {
     position: absolute;
     background: url(../imag/253787394_1760563340802190_1757040334419137845_n.jpg);
-    color: var(--color-red);
+    mix-blend-mode: difference;
     opacity: 0;
     transition: .5s ease;
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 91%;
     padding: 0;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -418,7 +422,7 @@ figcaption {
 }
 
 .h-three--prod {
-    mix-blend-mode: difference;
+    color: var(--color-cream);
 }
 
 .h-four {
@@ -711,7 +715,7 @@ a.project--link:hover > .project-category--normal {
 /* Box Link */
 
 .box-link--hider {
-    height: 12rem;
+    height: 14rem;
     overflow: hidden;
     background-color: var(--color-cream);
     margin-bottom: 0rem;
@@ -726,7 +730,7 @@ a.project--link:hover > .project-category--normal {
     position: relative;
     bottom: -2rem;
     padding: 1rem 3rem 4rem;
-    transition: bottom 2s;
+    transition: bottom 1s ease;
     z-index: 1;
 }
 
@@ -775,6 +779,7 @@ a.project--link:hover > .project-category--normal {
 
 .section--agency, .section--awards {
     background-color: var(--color-red);
+    padding: 4rem;
 }
 
 .section--agency {
@@ -784,10 +789,11 @@ a.project--link:hover > .project-category--normal {
 .section--trust {
     background-color: var(--color-cream);
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10rem 4rem 4rem 4rem;
 }
 
 .section--prod {
@@ -804,7 +810,7 @@ a.project--link:hover > .project-category--normal {
     padding: 0rem;
     background: url(../img/sfsdfsdfsdf-1600x900.jpeg);
     background-color: var(--color-cream);
-    background-position: top;
+    background-position: 0 -315%;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -850,10 +856,11 @@ a.project--link:hover > .project-category--normal {
     width: 100%;
     height: 268px;
     display: grid;
-    grid-template-columns: repeat(12,268px);
+    grid-template-columns: repeat(13,268px);
     grid-auto-columns: 268px;
     grid-template-rows: 268px;
     gap: 2rem;
+    padding-right: 4rem;
     overflow-x: scroll;
     overflow-y: hidden;
 }
@@ -863,10 +870,11 @@ a.project--link:hover > .project-category--normal {
 }
 
 .content--insta h2 {
-    font-size: 16.45rem;
-    grid-column: span 3;
+    font-size: 21.45rem;
+    grid-column: span 4;
     justify-self: start;
     align-self: center;
+    padding-top: 2rem;
 }
 
 .content--insta::-webkit-scrollbar {
@@ -875,7 +883,7 @@ a.project--link:hover > .project-category--normal {
 
 .content--trust {
     width: 100%;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .content--contact {
@@ -1050,16 +1058,16 @@ a.project--link:hover > .project-category--normal {
 }
 
 .prod__grid-4 {
-    grid-column: 2 / 10;
+    grid-column: 2 / 11;
     grid-row: 6 / 10;
 }
 
 .prod__grid-5 {
-    grid-column: 12 / 18;
+    grid-column: 13 / 19;
     grid-row: 8 / 11;
 }
 
 .prod__grid-6 {
-    grid-column: 5 / 15;
+    grid-column: 5 / 17;
     grid-row: 11 / 15;
 }
