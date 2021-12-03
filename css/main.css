@@ -37,7 +37,7 @@ html {
     */
     --font-size-h2: 13.19rem;
     --font-size-h3: 4.3rem;
-    --font-size-h4: 3rem;
+    --font-size-h4: 4rem;
     --font-size-h5: 1.333rem;
     --font-size-table: 1.6rem;
     --font-size-p: 1rem;
@@ -81,8 +81,13 @@ strong {
 }
 
 .site-container--cream {
-    padding: 0rem 4rem;
+    padding: 0rem 6rem;
     background-color: var(--color-cream);
+}
+
+.site-container--red {
+    padding: 0rem 6rem;
+    background-color: var(--color-red);
 }
 
 .site-container--red {
@@ -484,7 +489,7 @@ ul {
 .list--nonum figure {
     position: absolute;
     left: 75%;
-    top: 35%;
+    top: 40%;
     opacity: 0;
     width: 200px;
     height: 200px;
@@ -517,12 +522,13 @@ ul {
     justify-content: space-between;
     align-items: flex-start;
     border-top: solid 1px var(--color-black);
-    padding: 1rem 0;
-    flex-basis: 30%;
+    padding: 1.5rem 0;
+    line-height: 1.75;
+    flex-basis: 20%;
 }
 
 .table__content {
-    flex-basis: 70%;
+    flex-basis: 80%;
 }
 
 .table__row:last-child {
@@ -547,8 +553,8 @@ ul {
 
 .table__content figure {
     position: absolute;
-    left: 75%;
-    top: 35%;
+    left: 25%;
+    top: 50%;
     opacity: 0;
     width: 200px;
     height: 200px;
@@ -563,7 +569,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 5rem;
     opacity: 1;
     transition: all .2s ease-in-out;
 }
@@ -779,7 +785,11 @@ a.project--link:hover > .project-category--normal {
 
 .section--agency, .section--awards {
     background-color: var(--color-red);
-    padding: 4rem;
+    padding: 4rem 6rem;
+}
+
+.section--awards {
+    position: relative;
 }
 
 .section--agency {
@@ -788,12 +798,13 @@ a.project--link:hover > .project-category--normal {
 
 .section--trust {
     background-color: var(--color-cream);
+    position: relative;
     width: 100%;
-    height: 80vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem 4rem 4rem 4rem;
+    padding: 10rem 6rem 7rem 6rem;
 }
 
 .section--prod {
@@ -810,8 +821,8 @@ a.project--link:hover > .project-category--normal {
     padding: 0rem;
     background: url(../img/sfsdfsdfsdf-1600x900.jpeg);
     background-color: var(--color-cream);
-    background-position: 0 -315%;
-    background-size: contain;
+    background-position: 0 -10rem;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -883,7 +894,7 @@ a.project--link:hover > .project-category--normal {
 
 .content--trust {
     width: 100%;
-    gap: 4rem;
+    gap: 6rem;
 }
 
 .content--contact {
@@ -944,7 +955,6 @@ a.project--link:hover > .project-category--normal {
 
 .content__paragraph {
     flex-basis: 50%;
-    font-size: .85vw;
     margin-top: 0rem;
 }
 
@@ -979,11 +989,19 @@ a.project--link:hover > .project-category--normal {
     text-align: center;
 }
 
+.section--agency h2 {
+    font-size: 10.5vw;
+}
+
+.section--awards h2 {
+    font-size: 8.8vw;
+}
+
 /* Work Section */
 
 .section--work {
     width: 100%;
-    height: 83vh;
+    height: 85vh;
     background-color: var(--color-cream);
     border-bottom: 1px solid var(--color-black);
     display: grid;
@@ -1027,13 +1045,13 @@ a.project--link:hover > .project-category--normal {
 .section--work__scroll {
     position: absolute;
     bottom: -3rem;
-    right: 4rem;
+    right: 6rem;
 }
 
 /* Production Section */
 
 .section--prod__grid {
-    padding-top: 5rem;
+    padding-top: 9rem;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(20, minmax(0, 1fr));
@@ -1070,4 +1088,27 @@ a.project--link:hover > .project-category--normal {
 .prod__grid-6 {
     grid-column: 5 / 17;
     grid-row: 11 / 15;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1500px) {
+    .h-two {
+        font-size: 17.47rem;
+    }
+    .section--insta {
+        background-position: 0 200%;
+        background-size: cover;
+    }
+    .content--insta h2 {
+        font-size: 26.45rem;
+        grid-column: span 5;
+    }
+    .content--insta {
+        grid-template-columns: repeat(14,268px);
+    }
+    .table__content figure {
+        width: 300px;
+        height: 300px;
+    }
 }
