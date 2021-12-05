@@ -404,7 +404,6 @@ figcaption {
     color: var(--color-cream);
     background-color: var(--color-red);
     font-weight: var(--font-weight-h2);
-    font-size: var(--font-size-h2);
     text-transform: uppercase;
     margin: 0 auto;
     text-align: left;
@@ -413,6 +412,26 @@ figcaption {
 .h-two--red {
     color: var(--color-red);
     background-color:transparent;
+}
+
+.h-two--agency {
+    /*ref: https://css-tricks.com/snippets/css/fluid-typography/*/
+    font-size: calc(42px + (210 - 42) * ((100vw - 520px) / (1920 - 520)));
+}
+
+.h-two--awards {
+       /*ref: https://css-tricks.com/snippets/css/fluid-typography/*/
+    font-size: calc(33px + (168 - 33) * ((100vw - 520px) / (1920 - 520)));
+}
+
+.h-two--phone {
+       /*ref: https://css-tricks.com/snippets/css/fluid-typography/*/
+    font-size: calc(18px + (150 - 18) * ((100vw - 520px) / (1920 - 520)));
+}
+
+.h-two--email {
+       /*ref: https://css-tricks.com/snippets/css/fluid-typography/*/
+    font-size: calc(8.4px + (70 - 8.4) * ((100vw - 520px) / (1920 - 520)));
 }
 
 .h-three {
@@ -828,11 +847,8 @@ a.project--link:hover > .project-category--normal {
 
 .section--hider {
     width: 100%;
-    height: 80vh;
-    overflow: hidden;
     background-color: var(--color-red);
     bottom: 0rem;
-    position: relative;
 }
 
 .section--contact {
@@ -841,12 +857,7 @@ a.project--link:hover > .project-category--normal {
     width: 100%;
     border: 2px solid var(--color-black);
     border-bottom: none;
-    position: relative;
-    bottom: -38vh;
-    transition: bottom 2s;
-    z-index: 1;
     padding: 6rem;
-    height: 100vh;
 }
 
 .section--contact:hover {
@@ -996,14 +1007,6 @@ a.project--link:hover > .project-category--normal {
     text-align: center;
 }
 
-.section--agency h2 {
-    font-size: 10.5vw;
-}
-
-.section--awards h2 {
-    font-size: 8.8vw;
-}
-
 /* Work Section */
 
 .section--work {
@@ -1100,9 +1103,6 @@ a.project--link:hover > .project-category--normal {
 /* Media Queries */
 
 @media screen and (min-width: 1500px) {
-    .h-two {
-        font-size: 17.47rem;
-    }
     .section--insta {
         background-position: 0 200%;
         background-size: cover;
@@ -1131,4 +1131,40 @@ a.project--link:hover > .project-category--normal {
         --font-size-h3: 3.3rem;
         --font-size-h4: 3rem;
     }
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --font-size-h3: 2.3rem;
+        --font-size-h4: 2rem;
+        --font-size-h5: 1rem;
+        --font-size-table: 1rem;
+        --font-size-p: .8rem;
+        }
+        .content--contact .button-container--inline-lg {
+            width: 130px;
+            height: 130px;
+        }
+        .list--nonum figure {
+            width: 150px;
+            height: 150px;
+            top: 38%;
+        }
+        .content--contact {
+            padding-bottom: 3rem;
+        }
+        .content--insta {
+            grid-template-columns: repeat(12,268px);
+        }
+        .content--insta h2 {
+            font-size: 16.5rem;
+            grid-column: span 3;
+        }
+        .project-arrow {
+            padding: .125rem;
+            height: 1rem;
+        }
+        div.project-category {
+            height: 16px;
+        }
 }
