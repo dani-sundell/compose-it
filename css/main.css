@@ -1,4 +1,4 @@
-/* Global */
+/* #region Global*/
 
 html {
     box-sizing: border-box;
@@ -93,8 +93,9 @@ strong {
 .site-container--red {
     background-color: var(--color-red);
 }
+/*#endregion*/
 
-/* Components Library */
+/* #region Components Library */
 
 .component-container {
     display: flex;
@@ -193,8 +194,9 @@ h2, h3, h4, h5 {
     margin: 0;
     line-height: 1.25;
 }
+/*#endregion*/
 
-/* Images */
+/* #region Images */
 
 img {
     max-width: 100%;
@@ -285,8 +287,9 @@ figure.compimg--insta img {
 figcaption {
     text-transform: uppercase;
 }
+/*#endregion*/
 
-/* Buttons */
+/* #region Buttons */
 
 .button-container {
     position: absolute;
@@ -397,8 +400,9 @@ figcaption {
 .button-red {
     fill: var(--color-red);
 }
+/*#endregion*/
 
-/* Site Headers */
+/* #region Site Headers */
 
 .h-two {
     color: var(--color-cream);
@@ -479,8 +483,9 @@ figcaption {
 .h-five--red {
     color: var(--color-red);
 }
+/*#endregion*/
 
-/* Lists */
+/* #region Lists */
 
 ul {
     padding: 0;
@@ -527,9 +532,9 @@ ul {
 .list-item--nonum:hover > .compimg {
     opacity: 1;
 }
+/*#endregion*/
 
-
-/* Table */
+/* #region Table */
 
 .table {
     width: 100%;
@@ -606,8 +611,9 @@ ul {
 .table__hover:hover + .compimg {
     opacity: 1;
 }
+/*#endregion*/
 
-/* Site Logos */
+/* #region Site Logos */
 
 .logo {
     fill: var(--color-black);
@@ -629,8 +635,9 @@ ul {
     fill: var(--color-cream);
     background-color: var(--color-red);
 }
+/*#endregion*/
 
-/* Site Menu Bar */
+/* #region Site Menu Bar */
 
 .menu {
     display: flex;
@@ -656,12 +663,6 @@ ul {
 }
 
 .menu--black {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
     color: var(--color-cream);
     background-color: var(--color-black);
 }
@@ -692,8 +693,9 @@ ul {
     align-content: center;
     border-bottom: 1px solid var(--color-cream);
 }
+/*#endregion*/
 
-/* Project Link */
+/* #region Project Link */
 
 div.project-category {
     align-content: center;
@@ -736,8 +738,9 @@ a.project--link:hover > .project-category--hover {
 a.project--link:hover > .project-category--normal {
     display: none;
 } 
+/*#endregion*/
 
-/* Box Link */
+/* #region Box Link */
 
 .box-link--hider {
     height: 14rem;
@@ -776,8 +779,9 @@ a.project--link:hover > .project-category--normal {
 .box-link:hover {
     bottom: 0rem;
 }
+/*#endregion*/
 
-/* Footer Links */
+/* #region Footer Links */
 
 .links__footer--text {
     text-decoration: none;
@@ -794,8 +798,9 @@ a.project--link:hover > .project-category--normal {
 .links__footer:hover {
     fill: var(--color-red);
 }
+/*#endregion*/
 
-/* Sections */
+/* #region Sections */
 
 .section {
     padding: 4rem 0rem;
@@ -863,8 +868,9 @@ a.project--link:hover > .project-category--normal {
 .section--contact:hover {
     bottom: 0rem;
 }
+/*#endregion*/
 
-/* Section Content */
+/* #region Section Content */
 
 .content {
     display: flex;
@@ -1006,8 +1012,9 @@ a.project--link:hover > .project-category--normal {
     padding-top: 3rem;
     text-align: center;
 }
+/*#endregion*/
 
-/* Work Section */
+/* #region Work Section */
 
 .section--work {
     width: 100%;
@@ -1057,8 +1064,9 @@ a.project--link:hover > .project-category--normal {
     bottom: -3rem;
     right: 6rem;
 }
+/*#endregion*/
 
-/* Production Section */
+/* #region Production Section */
 
 .section--prod__grid {
     padding-top: 9rem;
@@ -1099,8 +1107,9 @@ a.project--link:hover > .project-category--normal {
     grid-column: 5 / 17;
     grid-row: 11 / 15;
 }
+/*#endregion*/
 
-/* Media Queries */
+/* #region Media Queries */
 
 @media screen and (min-width: 1500px) {
     .section--insta {
@@ -1165,6 +1174,7 @@ a.project--link:hover > .project-category--normal {
             height: 1rem;
         }
         div.project-category {
-            height: 16px;
+            height: 16;
         }
 }
+/*#endregion*/
