@@ -1,511 +1,1218 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Compose It</title>
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.typekit.net/axs1svs.css">
-    </head>
-    <body class="main-site">
-        <div class="site-container--cream">
-            <!--#region Header-->
-            <div class="menu-bar">
-                <a href="index.html" class="logo">
-                    <h1 style="display: none">Compose It</h1>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewbox="0 0 134 25" style="enable-background:new 0 0 134 25;" xml:space="preserve" class="logo">
-                    <g>
-                    <path d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
-                            c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"/>
-                    <path d="M12.8,17.8c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C15.9,15.4,14.8,17.8,12.8,17.8z"/>
-                    </g>
-                    <path d="M48.4,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8v-6c0-2.1-0.7-3.5-2.4-3.5C39,6.5,38.1,8,38.1,10c0,0.1,0,6,0,6
+    <link rel="stylesheet" href="https://use.typekit.net/axs1svs.css" />
+  </head>
+  <body class="main-site">
+    <div class="site-container--cream">
+      <!--#region Header-->
+      <div class="menu-bar">
+        <a href="index.html" class="logo">
+          <h1 style="display: none">Compose It</h1>
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewbox="0 0 134 25"
+            style="enable-background: new 0 0 134 25"
+            xml:space="preserve"
+            class="logo"
+          >
+            <g>
+              <path
+                d="M12.5,1.2c3.6-0.1,6.2,2.1,7.1,6.1h0.9V2.2C18.5,0.9,15.3,0,12.3,0C5.3,0,0,4.8,0,11.9c0,7.1,5.3,11.9,12.3,11.9
+                            c3,0,6.2-0.9,8.2-2.2v-5.2h-0.9c-1,4.1-3.6,6.2-7.1,6.1c-4.9-0.1-7.3-4.8-7.3-10.7C5.2,5.9,7.6,1.3,12.5,1.2z"
+              />
+              <path
+                d="M12.8,17.8c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C15.9,15.4,14.8,17.8,12.8,17.8z"
+              />
+            </g>
+            <path
+              d="M48.4,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8v-6c0-2.1-0.7-3.5-2.4-3.5C39,6.5,38.1,8,38.1,10c0,0.1,0,6,0,6
                         c0,1.1,0.3,1.7,1.3,1.8v0.9h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.8v-6c0-2.1-0.6-3.5-2.4-3.5c-1.6,0-2.5,1.5-2.5,3.4v6
                         c0,1.1,0.3,1.7,1.4,1.8v0.9h-6.7v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.4-1h0.7V7c1-1.3,2.3-1.9,4-1.9
-                        c2.3,0,3.8,1,4.6,2.5c1-1.7,2.5-2.5,4.4-2.5c3.6,0,5.1,2.3,5.1,5.4V16C47,17.1,47.3,17.7,48.4,17.8z"/>
-                    <path d="M64.7,12c0,4.3-2.3,6.9-6,6.9c-1.8,0-3.1-0.7-4.1-1.7v5.2c0,1.1,0.3,1.7,1.3,1.7V25h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.7V8.8
+                        c2.3,0,3.8,1,4.6,2.5c1-1.7,2.5-2.5,4.4-2.5c3.6,0,5.1,2.3,5.1,5.4V16C47,17.1,47.3,17.7,48.4,17.8z"
+            />
+            <path
+              d="M64.7,12c0,4.3-2.3,6.9-6,6.9c-1.8,0-3.1-0.7-4.1-1.7v5.2c0,1.1,0.3,1.7,1.3,1.7V25h-6.6v-0.9c1-0.1,1.3-0.7,1.3-1.7V8.8
                         c0-1.1-0.3-1.7-1.3-1.7V6.1l4.6-1h0.7v1.7c0.9-1,2.3-1.7,4.1-1.7C62.3,5.1,64.7,7.7,64.7,12z M60.7,12c0-3.3-0.9-5.8-3-5.8
-                        c-2.1,0-3.2,2.3-3.2,5.8c0,3.5,1.1,5.8,3.2,5.8C59.9,17.8,60.7,15.3,60.7,12z"/>
-                    <path d="M73.2,5.1C69.3,5.1,66,7.5,66,12c0,4.5,3.4,6.9,7.3,6.9c3.9,0,7.3-2.4,7.3-6.9C80.5,7.5,77.1,5.1,73.2,5.1z M73.2,17.8
-                        c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C76.4,15.4,75.2,17.8,73.2,17.8z"/>
-                    <path d="M88.7,10.4c2.1,1,4.7,2.1,3.8,5.2c-0.6,2.1-2.7,3.3-5.5,3.3c-1.7,0-3.9-0.5-5.2-1.5v-3.4h0.7c0.6,2.6,2.7,3.9,4.6,3.9
+                        c-2.1,0-3.2,2.3-3.2,5.8c0,3.5,1.1,5.8,3.2,5.8C59.9,17.8,60.7,15.3,60.7,12z"
+            />
+            <path
+              d="M73.2,5.1C69.3,5.1,66,7.5,66,12c0,4.5,3.4,6.9,7.3,6.9c3.9,0,7.3-2.4,7.3-6.9C80.5,7.5,77.1,5.1,73.2,5.1z M73.2,17.8
+                        c-2,0-3.2-2.5-3.2-5.8c0-3.3,1.2-5.8,3.2-5.8c2,0,3.2,2.4,3.2,5.8C76.4,15.4,75.2,17.8,73.2,17.8z"
+            />
+            <path
+              d="M88.7,10.4c2.1,1,4.7,2.1,3.8,5.2c-0.6,2.1-2.7,3.3-5.5,3.3c-1.7,0-3.9-0.5-5.2-1.5v-3.4h0.7c0.6,2.6,2.7,3.9,4.6,3.9
                         c1.1,0,2.1-0.5,2.3-1.4c0.3-1.5-1.1-2-3-2.8c-2.7-1.2-4.9-2.6-4.1-5.9c0.6-2.2,3-2.8,5-2.8c1.4,0,3,0.5,4.2,1.4v3h-0.6
-                        C90.1,7,89.1,6,87.2,6c-0.7,0-1.8,0.2-2,1.4C85.2,9,86.8,9.6,88.7,10.4z"/>
-                    <path d="M106.9,11.8c-9,0-9,0-9,0c0.4,5.5,6.1,5.9,8.4,3.3l0.5,0.4c-1,1.9-3,3.4-5.7,3.4c-3.8,0-7.2-2.4-7.2-7.1
-                        c0-4.2,2.9-6.7,7-6.7c4,0,6.2,2.8,6.1,6.3V11.8z M97.8,10.4h5.5c0-2-0.4-4.4-2.5-4.4C99.1,6.1,98,7.7,97.8,10.4z"/>
-                    <path d="M109.4,16.6c0-1.5,1.1-2.4,2.5-2.4c1.4,0,2.5,0.9,2.5,2.4c0,1.5-1.1,2.4-2.5,2.4C110.5,18.9,109.4,18.1,109.4,16.6z"/>
-                    <path d="M123.6,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.6-1h0.7V16
-                        C122.2,17.1,122.4,17.7,123.6,17.8z"/>
-                    <path d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h3.6v1.4
-                        h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"/>
-                    </svg>
-                </a>
-                <div class="menu">
-                    <strong>Menu</strong> <div class="menu-circle"></div>
-                </div>
-            </div>
-            <!--#region Work-->
-            <div class="section--work__container">
-                <a href="#prod-section" class="button-container--inline-sm section--work__scroll">
-                    <div class="button-shapes">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
-                            <circle class="button-cream" cx="50" cy="50" r="49"/>
-                            <polygon class="button-red" points="58.88 49.95 57.7 48.77 50.84 55.63 50.84 41.16 49.16 41.16 49.16 55.63 42.3 48.77 41.12 49.95 50 58.84 50 58.84 50 58.84 58.88 49.95"/></svg>
-                    </div>
-                    <div class="button-text button-text--sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
-                        <path class="button-red" d="M58.39,13.29c-.16,1.37-1.57,2.17-4,1.88a6.37,6.37,0,0,1-4.08-1.89l1-1a4.76,4.76,0,0,0,3.24,1.55c1.41.16,2.16,0,2.22-.6s-.63-.82-2.21-1.14c-2-.4-3.76-1.06-3.59-2.55s1.81-2.06,4-1.81a6.12,6.12,0,0,1,3.59,1.5l-1,1a4.59,4.59,0,0,0-2.75-1.17c-.94-.12-2.11-.08-2.19.55s.92.77,2.29,1C57.06,11.11,58.57,11.76,58.39,13.29Z"/><path class="button-red" d="M65.75,15.73l1.11,1.2a4.52,4.52,0,0,1-4.23.32c-2.46-.92-3.57-2.82-2.76-5s2.91-2.89,5.44-1.94a4.46,4.46,0,0,1,2.89,3l-1.63.17a2.53,2.53,0,0,0-1.76-1.87c-1.56-.58-2.87-.21-3.41,1.23s.21,2.58,1.77,3.16A2.55,2.55,0,0,0,65.75,15.73Z"/><path class="button-red" d="M72.08,22.33l-.3-3.1L69.7,17.79l-1.36,2L67,18.84l4-5.76,4,2.75c1.41,1,2,2.36,1.15,3.61a2.21,2.21,0,0,1-2.85.7l.36,3.28Zm1-3.83c.69.47,1.31.66,1.76,0s0-1.16-.65-1.64l-2.59-1.79L70.44,16.7Z"/><path class="button-red" d="M76.58,21.38c1.78-1.53,4-1.11,5.72,1s1.84,4.28.07,5.8-4,1.11-5.72-1S74.8,22.9,76.58,21.38Zm4.73,5.52c1.14-1,1.07-2.35-.06-3.66s-2.47-1.6-3.61-.63-1.08,2.35.06,3.67S80.17,27.88,81.31,26.9Z"/><path class="button-red" d="M84.37,36.63l-1.23.62-3-5.83,6.24-3.17.72,1.42-5,2.55Z"/><path class="button-red" d="M86.39,44l-1.33.36L83.36,38l6.76-1.82.41,1.55-5.42,1.45Z"/><path class="button-red" d="M86.64,58.65c-1.37-.17-2.16-1.59-1.85-4a6.4,6.4,0,0,1,1.93-4.07l1,1a4.73,4.73,0,0,0-1.57,3.22c-.18,1.41,0,2.16.57,2.23s.83-.62,1.16-2.2c.42-2,1.09-3.75,2.57-3.57s2,1.83,1.79,4a6.11,6.11,0,0,1-1.53,3.58l-1-1a4.61,4.61,0,0,0,1.19-2.73c.12-1,.1-2.12-.54-2.2s-.77.91-1,2.28C88.83,57.34,88.17,58.84,86.64,58.65Z"/><path class="button-red" d="M84.16,66,83,67.08a4.51,4.51,0,0,1-.3-4.22c.94-2.46,2.85-3.56,5-2.73s2.87,2.93,1.9,5.45a4.47,4.47,0,0,1-3,2.87l-.16-1.64a2.5,2.5,0,0,0,1.88-1.74c.59-1.55.24-2.87-1.2-3.42s-2.58.2-3.17,1.75A2.54,2.54,0,0,0,84.16,66Z"/><path class="button-red" d="M77.53,72.23l3.1-.27,1.46-2.07-2-1.37.91-1.3,5.73,4L84,75.2c-1,1.4-2.37,2-3.61,1.12a2.21,2.21,0,0,1-.68-2.86l-3.28.34Zm3.82,1c-.48.68-.67,1.31,0,1.75s1.15.06,1.64-.63l1.81-2.58-1.6-1.13Z"/><path class="button-red" d="M78.45,76.77c1.51,1.78,1.09,4-1,5.71s-4.28,1.82-5.79,0-1.09-3.94,1-5.71S76.94,75,78.45,76.77ZM72.9,81.46c1,1.15,2.34,1.08,3.66,0s1.61-2.47.64-3.61-2.33-1.09-3.66,0S71.93,80.32,72.9,81.46Z"/><path class="button-red" d="M63.14,84.46l-.62-1.24,5.86-2.93,3.13,6.26-1.43.72-2.52-5Z"/><path class="button-red" d="M55.74,86.42l-.34-1.33,6.33-1.65,1.76,6.77-1.54.4-1.42-5.43Z"/><path class="button-red" d="M41.12,86.59c.18-1.37,1.6-2.15,4.06-1.83a6.37,6.37,0,0,1,4.06,2l-1.05,1A4.75,4.75,0,0,0,45,86.09c-1.41-.19-2.16,0-2.24.56s.62.83,2.2,1.18c2,.42,3.75,1.1,3.55,2.59s-1.84,2-4,1.76a6.12,6.12,0,0,1-3.57-1.55l1-1a4.65,4.65,0,0,0,2.73,1.2c.94.13,2.11.11,2.19-.52s-.9-.78-2.27-1.07C42.41,88.79,40.92,88.12,41.12,86.59Z"/><path class="button-red" d="M33.81,84.06l-1.1-1.21a4.51,4.51,0,0,1,4.23-.27c2.45,1,3.54,2.87,2.7,5s-3,2.85-5.47,1.87a4.47,4.47,0,0,1-2.85-3L33,86.32a2.5,2.5,0,0,0,1.73,1.89c1.55.6,2.87.26,3.43-1.18s-.18-2.58-1.73-3.18A2.54,2.54,0,0,0,33.81,84.06Z"/><path class="button-red" d="M27.57,77.38l.26,3.11L29.89,82,31.27,80l1.3.92-4.06,5.7-3.94-2.8c-1.39-1-2-2.38-1.1-3.62a2.21,2.21,0,0,1,2.86-.66L26,76.28Zm-1,3.82c-.68-.48-1.31-.68-1.76,0s-.06,1.15.62,1.64L28,84.63,29.14,83Z"/><path class="button-red" d="M23,78.27c-1.8,1.5-4,1.06-5.71-1s-1.79-4.3,0-5.8,3.95-1.07,5.7,1S24.83,76.77,23,78.27Zm-4.66-5.58c-1.15,1-1.1,2.33,0,3.66S20.84,78,22,77s1.11-2.33,0-3.67S19.53,71.73,18.38,72.69Z"/><path class="button-red" d="M15.46,62.93l1.23-.61,2.9,5.87-6.28,3.1-.71-1.44,5-2.48Z"/><path class="button-red" d="M13.54,55.52l1.34-.34,1.61,6.34L9.71,63.24l-.4-1.55,5.45-1.38Z"/><path class="button-red" d="M13.46,40.89c1.37.19,2.14,1.62,1.81,4.07a6.41,6.41,0,0,1-2,4l-1-1.06A4.79,4.79,0,0,0,14,44.74c.19-1.41,0-2.16-.56-2.23s-.83.61-1.18,2.18c-.44,2-1.13,3.74-2.62,3.54s-2-1.85-1.73-4a6.1,6.1,0,0,1,1.57-3.56l1,1a4.58,4.58,0,0,0-1.22,2.72c-.14.94-.13,2.11.5,2.2s.79-.9,1.09-2.26C11.26,42.17,11.94,40.68,13.46,40.89Z"/><path class="button-red" d="M16.05,33.58l1.22-1.09a4.52,4.52,0,0,1,.24,4.23c-1,2.45-2.89,3.52-5.06,2.66s-2.82-3-1.83-5.47a4.44,4.44,0,0,1,3-2.83l.14,1.64a2.48,2.48,0,0,0-1.9,1.72c-.62,1.54-.28,2.86,1.15,3.43s2.58-.16,3.2-1.7A2.56,2.56,0,0,0,16.05,33.58Z"/><path class="button-red" d="M22.77,27.39l-3.1.24-1.48,2.05,1.92,1.39-.93,1.29-5.67-4.1,2.83-3.92c1-1.38,2.4-2,3.63-1.07a2.23,2.23,0,0,1,.64,2.87l3.28-.29Zm-3.81-1c.49-.68.69-1.3.06-1.76s-1.15-.07-1.65.61l-1.85,2.56,1.59,1.15Z"/><path class="button-red" d="M21.9,22.87c-1.49-1.81-1-4,1.06-5.71s4.32-1.76,5.81.05,1,4-1.07,5.7S23.38,24.67,21.9,22.87Zm5.61-4.63c-1-1.16-2.33-1.11-3.67,0s-1.64,2.44-.69,3.6,2.33,1.12,3.67,0S28.46,19.4,27.51,18.24Z"/><path class="button-red" d="M37.31,15.37l.6,1.24L32,19.47,29,13.17l1.44-.7,2.45,5.06Z"/><path class="button-red" d="M44.71,13.51,45,14.85l-6.36,1.57L37,9.62l1.55-.38L39.9,14.7Z"/></svg>
-                    </div>
-                </a>
-                <div class="section section--work">
-                    <a class="project--link work-grid-1">
-                        <h3 class="h-three">Fall Guys</h3>
-                        <p class="project-category--normal">Digital</p>
-                        <div class="project-category--hover project-category">
-                            <span class="project-category">Découvrir</span>
-                            <span class="project-icon">
-                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                            </svg>
-                            </span>
-                        </div>
-                    </a>
-                    <a class="project--link work-grid-2">
-                        <h3 class="h-three">Innocent</h3>
-                        <p class="project-category--normal">TV Prod</p>
-                        <div class="project-category--hover project-category">
-                            <span class="project-category">Découvrir</span>
-                            <span class="project-icon">
-                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                            </svg>
-                            </span>
-                        </div>
-                    </a>
-                    <a class="project--link work-grid-3">
-                        <h3 class="h-three">Sant&#233; Vet</h3>
-                        <p class="project-category--normal">TV Prod</p>
-                        <div class="project-category--hover project-category">
-                            <span class="project-category">Découvrir</span>
-                            <span class="project-icon">
-                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                            </svg>
-                            </span>
-                        </div>
-                    </a>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 384 450" style="enable-background:new 0 0 384 450;" xml:space="preserve" class="logomark work-grid-4">
-                        <g>
-                            <path class="logomark" d="M233.4,26.4c66.7-1.1,115,39,133.4,114.8h484V44.8C344.9,19.5,285.1,3.5,229.9,3.5C98.9,3.5,0,93,0,225
-                                c0,132,98.9,221.5,229.9,221.5c55.2,0,115-16.1,154.1-41.3v-96.4h-17.2c-18.4,75.8-66.7,115.9-133.4,114.8
-                                c-92-1.1-136.8-89.5-136.8-199.7C96.6,113.7,142.6,27.6,233.4,26.4z"/>
-                            <path class="logomark" d="M239.1,336.3c-37.9,0-59.8-45.9-59.8-107.9c0-62,21.8-107.9,59.8-107.9c37.9,0,59.8,44.8,59.8,107.9
-                                C297.8,290.4,277.1,336.3,239.1,336.3z"/>
-                        </g>
-                    </svg>
-                    <a class="project--link work-grid-5">
-                        <h3 class="h-three">Aura Tourisme</h3>
-                        <p class="project-category--normal">TV Prod</p>
-                        <div class="project-category--hover project-category work-grid-right">
-                            <span class="project-category">Découvrir</span>
-                            <span class="project-icon">
-                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                            </svg>
-                            </span>
-                        </div>
-                    </a>
-                    <a class="project--link work-grid-6">
-                        <h3 class="h-three">New Balance</h3>
-                        <p class="project-category--normal">Digital</p>
-                        <div class="project-category--hover project-category work-grid-right">
-                            <span class="project-category">Découvrir</span>
-                            <span class="project-icon">
-                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                            </svg>
-                            </span>
-                        </div>
-                    </a>
-                    <a class="project--link work-grid-7">
-                        <h3 class="h-three">Vestige</h3>
-                        <p class="project-category--normal">Fiction</p>
-                        <div class="project-category--hover project-category work-grid-right">
-                            <span class="project-category">Découvrir</span>
-                            <span class="project-icon">
-                            <svg viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-arrow">
-                            <path d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z" fill="black"></path>
-                            <path d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z" fill="black"></path>
-                            <path d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z" fill="black"></path>
-                            </svg>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!--#region Production-->
-            <article class="section section--prod">
-                <p class="content__text content__text--pre">Agence de Production Audiovisuelle basée à Lyon</p>
-                <div class="content content--agency" id="prod-section">
-                    <h4 class="h-four">Réalisation et Production</h4>
-                    <div class="content__paragraph">
-                        <p class="content__text">Nous sommes <strong>Compose it, </strong>une agence de Production et R&eacute;alisation Audiovisuelle.</p>
-                        <p class="content__text">Nous sommes une &eacute;quipe de sept permanents et disposons de toutes les comp&eacute;tences de la production de films en interne. Nous sommes agiles et mettons en oeuvre les id&eacute;es de nos clients.</p>
-                        <p class="content__text">Nos deux r&eacute;alisateurs inhouse sont garants de la vision artistique de chaque production. Nous sommes cr&eacute;atifs et accompagnons nos clients dans l&#8217;&eacute;criture et la conception des projets.</p>
-                        <p class="content__text">Nos monteurs assurent la post-production des films au sein de nos bureaux. Nous sommes agiles afin de garantir le suivi de chaque projet dans le respect des d&eacute;lais.</p>
-                        <p class="content__text">Nous &eacute;voluons dans diff&eacute;rents univers, et vivons des aventures avec nos clients, car nous sommes curieux, ouverts et passionn&eacute;s : nous irons, ensemble, l&agrave; ou vous nous emmenerez.</p>
-                        <p class="content__text"><strong>Let&#8217;s Talk about your project, we will Compose it for you !</strong></p>
-                        <a class="button-container--inline-md">
-                            <div class="button-shapes">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                    <circle class="button-cream" cx="100" cy="100" r="99"/><path d="M100,2A98,98,0,1,1,2,100,98.11,98.11,0,0,1,100,2m0-2A100,100,0,1,0,200,100,100,100,0,0,0,100,0Z" class="button-red"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5" class="button-red"/></svg>
-                            </div>
-                            <div class="button-text button-text--md">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                <path d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z" class="button-red"/><path d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z" class="button-red"/><path d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z" class="button-red"/><path d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z" class="button-red"/><path d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z" class="button-red"/><path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z" class="button-red"/><path d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z" class="button-red"/><path d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z" class="button-red"/><path d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z" class="button-red"/><path d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z" class="button-red"/><path d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z" class="button-red"/><path d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z" class="button-red"/><path d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z" class="button-red"/><path d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z" class="button-red"/><path d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z" class="button-red"/><path d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z" class="button-red"/><path d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z" class="button-red"/><path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z" class="button-red"/><path d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z" class="button-red"/><path d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z" class="button-red"/><path d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z" class="button-red"/><path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z" class="button-red"/><path d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z" class="button-red"/><path d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z" class="button-red"/></svg>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="section--prod__grid">
-                    <div class="content__text content__text--prod prod__grid-1">Quelques références
-                    <div class="menu-circle"></div>
-                    </div>
-                    <div class="prod__grid-2">
-                        <figure class="compimg compimg--prod">
-                            <img class="img" src="img/CANAM4-1024x576.jpg" alt="Image">
-                            <div class="compimg--hover">
-                                <a href="!#"><h3 class="h-three h-three--prod">Can-Am</h3></a>
-                            </div>
-                            <figcaption class="img-caption--project">Digital</figcaption>
-                        </figure>
-                        
-                    </div>
-                    <div class="prod__grid-3">
-                        <figure class="compimg compimg--prod">
-                            <img class="img" src="img/project-img-mr-store.png" alt="Image">
-                            <div class="compimg--hover">
-                                <a href="!#"><h3 class="h-three h-three--prod">Mr Store</h3></a>
-                            </div>
-                            <figcaption class="img-caption--project">TV Prod</figcaption>
-                        </figure>
-                        
-                    </div>
-
-                    <div class="prod__grid-4">
-                        <figure class="compimg compimg--prod">
-                            <img class="img" src="img/vlcsnap-2021-08-10-11h07m36s628-1024x576.png" alt="Image">
-                            <div class="compimg--hover">
-                                <a href="!#"><h3 class="h-three h-three--prod">Vallée de la gastronomie</h3></a>
-                            </div>
-                            <figcaption class="img-caption--project">Digital</figcaption>
-                        </figure>
-                        
-                    </div>
-
-                    <div class="prod__grid-5">
-                        <figure class="compimg compimg--prod">
-                            <img class="img" src="img/Montage-teaser-eolien20-1024x537.jpg" alt="Image">
-                            <div class="compimg--hover">
-                                <a href="!#"><h3 class="h-three h-three--prod">Boralex</h3></a>
-                            </div>
-                            <figcaption class="img-caption--project">Corporate</figcaption>
-                        </figure>
-                        
-                    </div>
-
-                    <div class="prod__grid-6">
-                        <figure class="compimg compimg--prod">
-                            <img class="img" src="img/C021_ULTIMATE_V020-1024x560.jpg" alt="Image">
-                            <div class="compimg--hover">
-                                <a href="!#"><h3 class="h-three h-three--prod">Ultimate</h3></a>
-                            </div>
-                            <figcaption class="img-caption--project">Digtal</figcaption>
-                        </figure>
-                        
-                    </div>
-                </div>
-                <div class="box-link--hider">
-                    <div class="box-link">
-                        <div class="box-link__content">
-                            <h4 class="h-four h-four--red">Découvrir tous les projets</h4>
-                            <a class="button-container--inline-sm">
-                                <div class="button-shapes">
-                                    <svg id="buttons-red--up-prod-box-link" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
-                                        <circle class="button-cream" cx="50" cy="50" r="49"/><polygon class="button-red" points="43.69 43.75 43.69 45.42 53.39 45.42 43.16 55.66 44.34 56.84 54.58 46.61 54.58 56.31 56.25 56.31 56.25 43.75 56.25 43.75 56.25 43.75 43.69 43.75"/></svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
+                        C90.1,7,89.1,6,87.2,6c-0.7,0-1.8,0.2-2,1.4C85.2,9,86.8,9.6,88.7,10.4z"
+            />
+            <path
+              d="M106.9,11.8c-9,0-9,0-9,0c0.4,5.5,6.1,5.9,8.4,3.3l0.5,0.4c-1,1.9-3,3.4-5.7,3.4c-3.8,0-7.2-2.4-7.2-7.1
+                        c0-4.2,2.9-6.7,7-6.7c4,0,6.2,2.8,6.1,6.3V11.8z M97.8,10.4h5.5c0-2-0.4-4.4-2.5-4.4C99.1,6.1,98,7.7,97.8,10.4z"
+            />
+            <path
+              d="M109.4,16.6c0-1.5,1.1-2.4,2.5-2.4c1.4,0,2.5,0.9,2.5,2.4c0,1.5-1.1,2.4-2.5,2.4C110.5,18.9,109.4,18.1,109.4,16.6z"
+            />
+            <path
+              d="M123.6,17.8v0.9h-6.6v-0.9c1-0.1,1.4-0.7,1.4-1.8V8.8c0-1.1-0.3-1.7-1.4-1.7V6.1l4.6-1h0.7V16
+                        C122.2,17.1,122.4,17.7,123.6,17.8z"
+            />
+            <path
+              d="M133.3,17.1c-0.6,1-1.8,1.9-3.5,1.9c-2,0-3.9-0.7-3.9-3.9V6.8h-2V5.3c2.5,0,4.1-1.8,4.7-4.1c0.8,0,1.2,0,1.2,0v4.1h3.6v1.4
+                        h-2.6V15c0,0.9,0.5,1.4,1,1.7c0.7,0.2,1.4,0.1,2-0.4L133.3,17.1z"
+            />
+          </svg>
+        </a>
+        <div class="menu">
+          <strong>Menu</strong>
+          <div class="menu-circle"></div>
         </div>
-            <!--#region Agency-->
-            <article class="section section--agency">
-                <h2 class="h-two h-two--agency">Compose it</h2>
-                <div class="content content--agency">
-                    <h4 class="h-four">Une agence intégrée</h4>
-                    <div class="content__paragraph">
-                        <h5 class="h-five">Une image cin&eacute;matographique</h5>
-                        <p class="content__text">Nous attachons une importance particuli&egrave;re &agrave; l&rsquo;esth&eacute;tique de nos films en nous appuyant sur l&rsquo;exp&eacute;rience de nos deux r&eacute;alisateurs issus du monde de la fiction et du court-m&eacute;trage. Leur vision artistique nourrit notre cr&eacute;ativit&eacute; au service de chaque film.</p>
-                        <h5 class="h-five">Des prix en festivals</h5>
-                        <p class="content__text">Passionn&eacute;s de cin&eacute;ma, Pierre-Marie Charbonnier et Simon Pierrat &eacute;cument les festivals pendant plusieurs ann&eacute;es, au cours desquelles diff&eacute;rents courts-m&eacute;trages de fiction ont &eacute;t&eacute; prim&eacute;s de nombreuses fois. Par la suite, d&#8217;autres films corporate ont &eacute;galement &eacute;t&eacute; prim&eacute;s dans le cadre de festivals professionnels.</p>
-                        <h5 class="h-five">Du mat&eacute;riel en interne</h5>
-                        <p class="content__text">Nous avons investi dans du mat&eacute;riel de prise de vue cin&eacute;ma afin d&#8217;am&eacute;liorer notre comp&eacute;titivit&eacute; et notre souplesse d&#8217;ex&eacute;cution. Sur chaque projet, nous tournons &agrave; minima avec une cam&eacute;ra RED et des objectif cin&eacute;ma Ang&eacute;nieux.</p>
-                        <h5 class="h-five">Adh&eacute;rent ARPP</h5>
-                        <p class="content__text">Compose It est membre de l&#8217;ARPP : nous ma&icirc;trisons les process qui nous permettent de garantir le respect des r&egrave;gles &eacute;thiques et d&eacute;ontologiques en vigueur dans la publicit&eacute;. Les contenus et les briefs sont valid&eacute;s en respectant les d&eacute;lais.</p>
-                    </div>
-                </div>
-                <div class="content content--agency">
-                    <a class="button-container--inline-lg">
-                        <div class="button-shapes">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                <circle class="button-cream--blk" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"/></svg>
-                        </div>
-                        <div class="button-text button-text--lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                            <path d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z"/><path d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z"/><path d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z"/><path d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z"/><path d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z"/><path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z"/><path d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z"/><path d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z"/><path d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z"/><path d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z"/><path d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z"/><path d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z"/><path d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z"/><path d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z"/><path d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z"/><path d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z"/><path d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z"/><path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z"/><path d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z"/><path d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z"/><path d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z"/><path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z"/><path d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z"/><path d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z"/></svg>
-                        </div>
-                    </a>
-                    <ul class="list--numbered">
-                        <li class="list-item list-item--numbered"><h5 class="h-five">CONCEPTION</h5><h5 class="h-five">01</h5></li>
-                        <li class="list-item list-item--numbered"><h5 class="h-five">PRÉ-PRODUCTION</h5><h5 class="h-five">02</h5></li>
-                        <li class="list-item list-item--numbered"><h5 class="h-five">RÉALISATION</h5><h5 class="h-five">03</h5></li>
-                        <li class="list-item list-item--numbered"><h5 class="h-five">POST-PRODUCTION</h5><h5 class="h-five">04</h5></li>
-                        <li class="list-item list-item--numbered"><h5 class="h-five">DIFFUSION</h5><h5 class="h-five">05</h5></li>
-                    </ul>
-                </div>
-            </article>
-            <!--#region Insta-->
-            <article class="section section--insta">
-                <div class="content--insta">
-                    <h2 class="h-two h-two--red">Insta</h2>
-                    <a href="https://www.instagram.com/p/CWDy2H9o77J/"><figure class="compimg compimg--insta">
-                        <img class="img" src="img/254838928_1321584128281022_5178029343191846147_n.jpg" alt="Image">
-                    </figure></a>
-                    <a href="https://www.instagram.com/p/CWDyylDocsJ/"><figure class="compimg compimg--insta">
-                        <img class="img" src="img/254379286_108885048179561_448578568573009036_n.jpg" alt="Image">
-                    </figure></a>
-                    <a href="https://www.instagram.com/p/CWDyvo-oZuS/"><figure class="compimg compimg--insta">
-                        <img class="img" src="img/254292369_131941605864640_5830075327915987860_n.jpg" alt="Image">
-                    </figure></a>
-                    <a href="https://www.instagram.com/p/CWAt0XOoF1y/"><figure class="compimg compimg--insta">
-                        <img class="img" src="img/253787394_1760563340802190_1757040334419137845_n.jpg" alt="Image">
-                    </figure></a>
-                    <a href="https://www.instagram.com/p/CWAtvVjI-bz/"><figure class="compimg compimg--insta">
-                        <img class="img" src="img/254068008_401673668341702_802960703123140033_n.jpg" alt="Image">
-                    </figure></a>
-                    <a href="https://www.instagram.com/p/CWAte7cINvp/"><figure class="compimg compimg--insta">
-                        <img class="img" src="img/254078147_214410634163782_2193567389439757245_n.jpg" alt="Image">
-                    </figure></a>
-                    <a href="https://www.instagram.com/p/CTwYMSmohpL/"><figure class="compimg compimg--insta">
-                        <img class="img" src="img/241702325_574550980647449_5311797978791950906_n.jpg" alt="Image">
-                    </figure></a>
-                    <a href="https://www.instagram.com/p/CTwYGrNoCWB/"><figure class="compimg compimg--insta">
-                        <img class="img" src="img/241722466_554018682510933_5549561933152187304_n.jpg" alt="Image">
-                    </figure></a>
-                    <a href="https://www.instagram.com/p/CTwX_iIIVXl/"><figure class="compimg compimg--insta">
-                        <img class="img" src="img/241953127_134985438847846_6240426476278452073_n.jpg" alt="Image">
-                    </figure></a>
-                </div>
-            </article>
-            <!--#region Trust-->
-            <article class="section section--trust">
-                <div class="content content--trust">
-                    <h4 class="h-four">Ils nous font confiance</h4>
-                    <div class="content__list--trust">
-                        <ul class="list--nonum">
-                            <li class="list-item list-item--nonum">
-                                <h5 class="h-five h-five--red">Agence Service Plan</h5>
-                                <figure class="compimg compimg--trust list__img">
-                                <img class="img" src="img/Logo-SERVICE-PLAN--480x48.png" alt="Logo">
-                                </figure>
-                            </li>
-                            <li class="list-item list-item--nonum">
-                                <h5 class="h-five h-five--red">Sncf Réseau</h5>
-                                <figure class="compimg compimg--trust list__img">
-                                    <img class="img" src="img/Logo-SNCF-RESEAUX.png" alt="Logo">
-                                </figure>
-                            </li>
-                            <li class="list-item list-item--nonum">
-                                <h5 class="h-five h-five--red">Nokia</h5>
-                                <figure class="compimg compimg--trust list__img">
-                                    <img class="img" src="img/Logo-nokia-3--480x270.png" alt="Logo">
-                                </figure>
-                            </li>
-                            <li class="list-item list-item--nonum">
-                                <h5 class="h-five h-five--red">Boralex</h5>
-                                <figure class="compimg compimg--trust list__img">
-                                    <img class="img" src="img/Logo-boralex--480x121.png" alt="Logo">
-                                </figure>
-                            </li>
-                            <li class="list-item list-item--nonum">
-                                <h5 class="h-five h-five--red">Agence Nouveau monde</h5>
-                                <figure class="compimg compimg--trust list__img">
-                                    <img class="img" src="img/logo_NM_noir-480x136.png" alt="Logo">
-                                </figure>
-                            </li>
-                        </ul>
-                        <a href="#!">Voir Plus</a>
-                    </div>
-                </div>
-            </article>
-            <!--#region Awards-->
-            <article class="section section--awards">
-                <h2 class="h-two h-two--awards">Récompenses</h2>
-                <div class="content content--awards">
-                    <div class="table">
-                        <div class="table__row">
-                            <div class="table__header">Baisser les Potards</div>
-                            <div class="table__content">
-                                <div class="table__hover">
-                                    <div class="table__item">Nikon Film Festival 2020</div>
-                                    <div class="table__item">Sélection Finaliste Top 50</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/BALAIS-TOP50-480x223.png" alt="Image">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="table__row">
-                            <div class="table__header">Passage</div>
-                            <div class="table__content">
-                                <div class="table__hover">
-                                    <div class="table__item">Experimental, Dance & Music Film Festival 2019</div>
-                                    <div class="table__item">Best Film</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/BEST-FILM-Experimental-Dance-Music-Film-Festival-2019-1-480x318.png" alt="Award Logo">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Video Mapping Festival 2019</div>
-                                    <div class="table__item">Award Winner</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/AWARD-WINNER-Videomapping-Festival-2019-1-480x318.png" alt="Award Logo">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Sarajevo Fashion Film Festival 2018</div>
-                                    <div class="table__item">Award Winner</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/AWARD-WINNER-Sarajevo-Fashion-Film-Festival-2018-480x318.png" alt="Award Logo">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Roots of Europe International Film Festival 2018</div>
-                                    <div class="table__item">Award Winner</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/AWARD-WINNER-Roots-of-Europe-International-Film-Festival-2018-1-480x318.png" alt="Award Logo">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="table__row">
-                            <div class="table__header">Eolien et Territoire</div>
-                            <div class="table__content">
-                                <div class="table__hover">
-                                    <div class="table__item">Deauville Green Awards 2019</div>
-                                    <div class="table__item">Trophée Argent dans la catégorie Transition Energétique</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/BORALEX-480x252.png" alt="Award Logo">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="table__row">
-                            <div class="table__header">Renaître ici</div>
-                            <div class="table__content">
-                                <div class="table__hover">
-                                    <div class="table__item">Trophées de la vidéo Touristique 2019</div>
-                                    <div class="table__item">Nomination Meilleure vidéo de Destination Touristique</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/AURA-PRIX-TOURISTIQUE-480x259.png" alt="Award Logo">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Master of Art Film Festival 2019</div>
-                                    <div class="table__item">Nomination Video Art & Art Advertising</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/AURA-PRIX-MASTER-OF-ART.png" alt="Award Logo">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
-                                    <div class="table__item">Nomination Dance Short Film Los Angeles</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/AURA-PRIX-EXPER-LA.png" alt="Award Logo">
-                                </figure>
-                                <div class="table__hover">
-                                    <div class="table__item">Experimental Dance & Music Film Festival 2019</div>
-                                    <div class="table__item">Nomination Dance Short Film Toronto</div>
-                                </div>
-                                <figure class="compimg compimg--awards table__img">
-                                    <img class="img" src="img/AURA-PRIX-EXPER-TORONTO.png" alt="Award Logo">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#!">Découvrir toutes les récompenses</a>
-            </article>
-            <!--#region Contact-->
-            <div class="site-container--red">
-                <div class="section--hider">
-                    <article class="section section--contact">
-                        <div class="content content--contact">
-                            <h4 class="h-four--thin">Let’s talk about your project, we will <span style="font-weight: 700;">Compose It</span> for you.</h4>
-                            <a class="button-container--inline-lg">
-                                <div class="button-shapes button--arrow-rotate">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
-                                        <circle class="button-cream--blk" cx="100" cy="100" r="99"/><polygon points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"/></svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="content content--contact content--contact--block">
-                            <a href="tel:0629664445">
-                                <h2 class="h-two h-two--red h-two--phone">06.29.66.44.45</h2>
-                            </a>
-                            <a href="mailto:contact@composeitprod.com">
-                                <h2 class="h-two h-two--red h-two--email">contact@composeitprod.com</h2>
-                            </a>
-                        </div>
-                        <div class="content content--footer">
-                            <a class="links__footer--text" href="https://composeitprod.fr/mentions-legales/">Mentions légales</a>
-                            <div class="content--social">
-                                <a class="links__footer" href="https://www.youtube.com/channel/UC3L3H5bDtKU9zjC-ZWStAEQ">
-                                    <svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                                </a>
-                                <a class="links__footer" href="https://twitter.com/composeitprod">
-                                    <svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                                    </svg>
-                                </a>
-                                <a class="links__footer" href="https://www.instagram.com/composeitprod">
-                                    <svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                                    </svg>
-                                </a>
-                                <a class="links__footer" href="https://www.facebook.com/composeitprod">
-                                    <svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                                </a>
-                                <a class="links__footer" href="https://vimeo.com/composeitprod">
-                                    <svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Vimeo</title><path d="M23.9765 6.4168c-.105 2.338-1.739 5.5429-4.894 9.6088-3.2679 4.247-6.0258 6.3699-8.2898 6.3699-1.409 0-2.578-1.294-3.553-3.881l-1.9179-7.1138c-.719-2.584-1.488-3.878-2.312-3.878-.179 0-.806.378-1.8809 1.132l-1.129-1.457a315.06 315.06 0 003.501-3.1279c1.579-1.368 2.765-2.085 3.5539-2.159 1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.5069.5389 2.45 1.1309 3.674 1.7759 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.8679 3.434-5.7568 6.7619-5.6368 2.4729.06 3.6279 1.664 3.4929 4.7969z"/></svg>
-                                </a>
-                            </div>
-                            <a class="links__footer--text" href="https://composeitprod.fr/mentions-legales/">Merci Beaucoup.</a>
-                        </div>
-                    </article>
-                </div>
+      </div>
+      <!-- #endregion -->
+      <!--#region Work-->
+      <div class="section--work__container">
+        <a
+          href="#prod-section"
+          class="button-container--inline-sm section--work__scroll"
+        >
+          <div class="button-shapes">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+              <circle class="button-cream" cx="50" cy="50" r="49" />
+              <polygon
+                class="button-red"
+                points="58.88 49.95 57.7 48.77 50.84 55.63 50.84 41.16 49.16 41.16 49.16 55.63 42.3 48.77 41.12 49.95 50 58.84 50 58.84 50 58.84 58.88 49.95"
+              />
+            </svg>
+          </div>
+          <div class="button-text button-text--sm">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+              <path
+                class="button-red"
+                d="M58.39,13.29c-.16,1.37-1.57,2.17-4,1.88a6.37,6.37,0,0,1-4.08-1.89l1-1a4.76,4.76,0,0,0,3.24,1.55c1.41.16,2.16,0,2.22-.6s-.63-.82-2.21-1.14c-2-.4-3.76-1.06-3.59-2.55s1.81-2.06,4-1.81a6.12,6.12,0,0,1,3.59,1.5l-1,1a4.59,4.59,0,0,0-2.75-1.17c-.94-.12-2.11-.08-2.19.55s.92.77,2.29,1C57.06,11.11,58.57,11.76,58.39,13.29Z"
+              />
+              <path
+                class="button-red"
+                d="M65.75,15.73l1.11,1.2a4.52,4.52,0,0,1-4.23.32c-2.46-.92-3.57-2.82-2.76-5s2.91-2.89,5.44-1.94a4.46,4.46,0,0,1,2.89,3l-1.63.17a2.53,2.53,0,0,0-1.76-1.87c-1.56-.58-2.87-.21-3.41,1.23s.21,2.58,1.77,3.16A2.55,2.55,0,0,0,65.75,15.73Z"
+              />
+              <path
+                class="button-red"
+                d="M72.08,22.33l-.3-3.1L69.7,17.79l-1.36,2L67,18.84l4-5.76,4,2.75c1.41,1,2,2.36,1.15,3.61a2.21,2.21,0,0,1-2.85.7l.36,3.28Zm1-3.83c.69.47,1.31.66,1.76,0s0-1.16-.65-1.64l-2.59-1.79L70.44,16.7Z"
+              />
+              <path
+                class="button-red"
+                d="M76.58,21.38c1.78-1.53,4-1.11,5.72,1s1.84,4.28.07,5.8-4,1.11-5.72-1S74.8,22.9,76.58,21.38Zm4.73,5.52c1.14-1,1.07-2.35-.06-3.66s-2.47-1.6-3.61-.63-1.08,2.35.06,3.67S80.17,27.88,81.31,26.9Z"
+              />
+              <path
+                class="button-red"
+                d="M84.37,36.63l-1.23.62-3-5.83,6.24-3.17.72,1.42-5,2.55Z"
+              />
+              <path
+                class="button-red"
+                d="M86.39,44l-1.33.36L83.36,38l6.76-1.82.41,1.55-5.42,1.45Z"
+              />
+              <path
+                class="button-red"
+                d="M86.64,58.65c-1.37-.17-2.16-1.59-1.85-4a6.4,6.4,0,0,1,1.93-4.07l1,1a4.73,4.73,0,0,0-1.57,3.22c-.18,1.41,0,2.16.57,2.23s.83-.62,1.16-2.2c.42-2,1.09-3.75,2.57-3.57s2,1.83,1.79,4a6.11,6.11,0,0,1-1.53,3.58l-1-1a4.61,4.61,0,0,0,1.19-2.73c.12-1,.1-2.12-.54-2.2s-.77.91-1,2.28C88.83,57.34,88.17,58.84,86.64,58.65Z"
+              />
+              <path
+                class="button-red"
+                d="M84.16,66,83,67.08a4.51,4.51,0,0,1-.3-4.22c.94-2.46,2.85-3.56,5-2.73s2.87,2.93,1.9,5.45a4.47,4.47,0,0,1-3,2.87l-.16-1.64a2.5,2.5,0,0,0,1.88-1.74c.59-1.55.24-2.87-1.2-3.42s-2.58.2-3.17,1.75A2.54,2.54,0,0,0,84.16,66Z"
+              />
+              <path
+                class="button-red"
+                d="M77.53,72.23l3.1-.27,1.46-2.07-2-1.37.91-1.3,5.73,4L84,75.2c-1,1.4-2.37,2-3.61,1.12a2.21,2.21,0,0,1-.68-2.86l-3.28.34Zm3.82,1c-.48.68-.67,1.31,0,1.75s1.15.06,1.64-.63l1.81-2.58-1.6-1.13Z"
+              />
+              <path
+                class="button-red"
+                d="M78.45,76.77c1.51,1.78,1.09,4-1,5.71s-4.28,1.82-5.79,0-1.09-3.94,1-5.71S76.94,75,78.45,76.77ZM72.9,81.46c1,1.15,2.34,1.08,3.66,0s1.61-2.47.64-3.61-2.33-1.09-3.66,0S71.93,80.32,72.9,81.46Z"
+              />
+              <path
+                class="button-red"
+                d="M63.14,84.46l-.62-1.24,5.86-2.93,3.13,6.26-1.43.72-2.52-5Z"
+              />
+              <path
+                class="button-red"
+                d="M55.74,86.42l-.34-1.33,6.33-1.65,1.76,6.77-1.54.4-1.42-5.43Z"
+              />
+              <path
+                class="button-red"
+                d="M41.12,86.59c.18-1.37,1.6-2.15,4.06-1.83a6.37,6.37,0,0,1,4.06,2l-1.05,1A4.75,4.75,0,0,0,45,86.09c-1.41-.19-2.16,0-2.24.56s.62.83,2.2,1.18c2,.42,3.75,1.1,3.55,2.59s-1.84,2-4,1.76a6.12,6.12,0,0,1-3.57-1.55l1-1a4.65,4.65,0,0,0,2.73,1.2c.94.13,2.11.11,2.19-.52s-.9-.78-2.27-1.07C42.41,88.79,40.92,88.12,41.12,86.59Z"
+              />
+              <path
+                class="button-red"
+                d="M33.81,84.06l-1.1-1.21a4.51,4.51,0,0,1,4.23-.27c2.45,1,3.54,2.87,2.7,5s-3,2.85-5.47,1.87a4.47,4.47,0,0,1-2.85-3L33,86.32a2.5,2.5,0,0,0,1.73,1.89c1.55.6,2.87.26,3.43-1.18s-.18-2.58-1.73-3.18A2.54,2.54,0,0,0,33.81,84.06Z"
+              />
+              <path
+                class="button-red"
+                d="M27.57,77.38l.26,3.11L29.89,82,31.27,80l1.3.92-4.06,5.7-3.94-2.8c-1.39-1-2-2.38-1.1-3.62a2.21,2.21,0,0,1,2.86-.66L26,76.28Zm-1,3.82c-.68-.48-1.31-.68-1.76,0s-.06,1.15.62,1.64L28,84.63,29.14,83Z"
+              />
+              <path
+                class="button-red"
+                d="M23,78.27c-1.8,1.5-4,1.06-5.71-1s-1.79-4.3,0-5.8,3.95-1.07,5.7,1S24.83,76.77,23,78.27Zm-4.66-5.58c-1.15,1-1.1,2.33,0,3.66S20.84,78,22,77s1.11-2.33,0-3.67S19.53,71.73,18.38,72.69Z"
+              />
+              <path
+                class="button-red"
+                d="M15.46,62.93l1.23-.61,2.9,5.87-6.28,3.1-.71-1.44,5-2.48Z"
+              />
+              <path
+                class="button-red"
+                d="M13.54,55.52l1.34-.34,1.61,6.34L9.71,63.24l-.4-1.55,5.45-1.38Z"
+              />
+              <path
+                class="button-red"
+                d="M13.46,40.89c1.37.19,2.14,1.62,1.81,4.07a6.41,6.41,0,0,1-2,4l-1-1.06A4.79,4.79,0,0,0,14,44.74c.19-1.41,0-2.16-.56-2.23s-.83.61-1.18,2.18c-.44,2-1.13,3.74-2.62,3.54s-2-1.85-1.73-4a6.1,6.1,0,0,1,1.57-3.56l1,1a4.58,4.58,0,0,0-1.22,2.72c-.14.94-.13,2.11.5,2.2s.79-.9,1.09-2.26C11.26,42.17,11.94,40.68,13.46,40.89Z"
+              />
+              <path
+                class="button-red"
+                d="M16.05,33.58l1.22-1.09a4.52,4.52,0,0,1,.24,4.23c-1,2.45-2.89,3.52-5.06,2.66s-2.82-3-1.83-5.47a4.44,4.44,0,0,1,3-2.83l.14,1.64a2.48,2.48,0,0,0-1.9,1.72c-.62,1.54-.28,2.86,1.15,3.43s2.58-.16,3.2-1.7A2.56,2.56,0,0,0,16.05,33.58Z"
+              />
+              <path
+                class="button-red"
+                d="M22.77,27.39l-3.1.24-1.48,2.05,1.92,1.39-.93,1.29-5.67-4.1,2.83-3.92c1-1.38,2.4-2,3.63-1.07a2.23,2.23,0,0,1,.64,2.87l3.28-.29Zm-3.81-1c.49-.68.69-1.3.06-1.76s-1.15-.07-1.65.61l-1.85,2.56,1.59,1.15Z"
+              />
+              <path
+                class="button-red"
+                d="M21.9,22.87c-1.49-1.81-1-4,1.06-5.71s4.32-1.76,5.81.05,1,4-1.07,5.7S23.38,24.67,21.9,22.87Zm5.61-4.63c-1-1.16-2.33-1.11-3.67,0s-1.64,2.44-.69,3.6,2.33,1.12,3.67,0S28.46,19.4,27.51,18.24Z"
+              />
+              <path
+                class="button-red"
+                d="M37.31,15.37l.6,1.24L32,19.47,29,13.17l1.44-.7,2.45,5.06Z"
+              />
+              <path
+                class="button-red"
+                d="M44.71,13.51,45,14.85l-6.36,1.57L37,9.62l1.55-.38L39.9,14.7Z"
+              />
+            </svg>
+          </div>
+        </a>
+        <div class="section section--work">
+          <a class="project--link work-grid-1">
+            <h3 class="h-three">Fall Guys</h3>
+            <p class="project-category--normal">Digital</p>
+            <div class="project-category--hover project-category">
+              <span class="project-category">Découvrir</span>
+              <span class="project-icon">
+                <svg
+                  viewbox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-arrow"
+                >
+                  <path
+                    d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z"
+                    fill="black"
+                  ></path>
+                </svg>
+              </span>
             </div>
-    </body>
+          </a>
+          <a class="project--link work-grid-2">
+            <h3 class="h-three">Innocent</h3>
+            <p class="project-category--normal">TV Prod</p>
+            <div class="project-category--hover project-category">
+              <span class="project-category">Découvrir</span>
+              <span class="project-icon">
+                <svg
+                  viewbox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-arrow"
+                >
+                  <path
+                    d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z"
+                    fill="black"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+          <a class="project--link work-grid-3">
+            <h3 class="h-three">Sant&#233; Vet</h3>
+            <p class="project-category--normal">TV Prod</p>
+            <div class="project-category--hover project-category">
+              <span class="project-category">Découvrir</span>
+              <span class="project-icon">
+                <svg
+                  viewbox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-arrow"
+                >
+                  <path
+                    d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z"
+                    fill="black"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewbox="0 0 384 450"
+            style="enable-background: new 0 0 384 450"
+            xml:space="preserve"
+            class="logomark work-grid-4"
+          >
+            <g>
+              <path
+                class="logomark"
+                d="M233.4,26.4c66.7-1.1,115,39,133.4,114.8h484V44.8C344.9,19.5,285.1,3.5,229.9,3.5C98.9,3.5,0,93,0,225
+                                c0,132,98.9,221.5,229.9,221.5c55.2,0,115-16.1,154.1-41.3v-96.4h-17.2c-18.4,75.8-66.7,115.9-133.4,114.8
+                                c-92-1.1-136.8-89.5-136.8-199.7C96.6,113.7,142.6,27.6,233.4,26.4z"
+              />
+              <path
+                class="logomark"
+                d="M239.1,336.3c-37.9,0-59.8-45.9-59.8-107.9c0-62,21.8-107.9,59.8-107.9c37.9,0,59.8,44.8,59.8,107.9
+                                C297.8,290.4,277.1,336.3,239.1,336.3z"
+              />
+            </g>
+          </svg>
+          <a class="project--link work-grid-5">
+            <h3 class="h-three">Aura Tourisme</h3>
+            <p class="project-category--normal">TV Prod</p>
+            <div
+              class="project-category--hover project-category work-grid-right"
+            >
+              <span class="project-category">Découvrir</span>
+              <span class="project-icon">
+                <svg
+                  viewbox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-arrow"
+                >
+                  <path
+                    d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z"
+                    fill="black"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+          <a class="project--link work-grid-6">
+            <h3 class="h-three">New Balance</h3>
+            <p class="project-category--normal">Digital</p>
+            <div
+              class="project-category--hover project-category work-grid-right"
+            >
+              <span class="project-category">Découvrir</span>
+              <span class="project-icon">
+                <svg
+                  viewbox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-arrow"
+                >
+                  <path
+                    d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z"
+                    fill="black"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+          <a class="project--link work-grid-7">
+            <h3 class="h-three">Vestige</h3>
+            <p class="project-category--normal">Fiction</p>
+            <div
+              class="project-category--hover project-category work-grid-right"
+            >
+              <span class="project-category">Découvrir</span>
+              <span class="project-icon">
+                <svg
+                  viewbox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-arrow"
+                >
+                  <path
+                    d="M6.56619 0.0600586L5.43481 0.0600586L5.43481 11.3738H6.56619L6.56619 0.0600586Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M6.80005 11.2L0.800049 5.19995L4.88049e-05 5.99995L6.00005 12L6.80005 11.2Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M12.0004 5.99995L11.2004 5.19995L5.20044 11.2L6.00044 12L12.0004 5.99995Z"
+                    fill="black"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!--#region Production-->
+      <article class="section section--prod">
+        <p class="content__text content__text--pre">
+          Agence de Production Audiovisuelle basée à Lyon
+        </p>
+        <div class="content content--agency" id="prod-section">
+          <h4 class="h-four">Réalisation et Production</h4>
+          <div class="content__paragraph">
+            <p class="content__text">
+              Nous sommes <strong>Compose it, </strong>une agence de Production
+              et R&eacute;alisation Audiovisuelle.
+            </p>
+            <p class="content__text">
+              Nous sommes une &eacute;quipe de sept permanents et disposons de
+              toutes les comp&eacute;tences de la production de films en
+              interne. Nous sommes agiles et mettons en oeuvre les id&eacute;es
+              de nos clients.
+            </p>
+            <p class="content__text">
+              Nos deux r&eacute;alisateurs inhouse sont garants de la vision
+              artistique de chaque production. Nous sommes cr&eacute;atifs et
+              accompagnons nos clients dans l&#8217;&eacute;criture et la
+              conception des projets.
+            </p>
+            <p class="content__text">
+              Nos monteurs assurent la post-production des films au sein de nos
+              bureaux. Nous sommes agiles afin de garantir le suivi de chaque
+              projet dans le respect des d&eacute;lais.
+            </p>
+            <p class="content__text">
+              Nous &eacute;voluons dans diff&eacute;rents univers, et vivons des
+              aventures avec nos clients, car nous sommes curieux, ouverts et
+              passionn&eacute;s : nous irons, ensemble, l&agrave; ou vous nous
+              emmenerez.
+            </p>
+            <p class="content__text">
+              <strong
+                >Let&#8217;s Talk about your project, we will Compose it for you
+                !</strong
+              >
+            </p>
+            <a class="button-container--inline-md">
+              <div class="button-shapes">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                  <circle class="button-cream" cx="100" cy="100" r="99" />
+                  <path
+                    d="M100,2A98,98,0,1,1,2,100,98.11,98.11,0,0,1,100,2m0-2A100,100,0,1,0,200,100,100,100,0,0,0,100,0Z"
+                    class="button-red"
+                  />
+                  <polygon
+                    points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"
+                    class="button-red"
+                  />
+                </svg>
+              </div>
+              <div class="button-text button-text--md">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                  <path
+                    d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z"
+                    class="button-red"
+                  />
+                  <path
+                    d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z"
+                    class="button-red"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="section--prod__grid">
+          <div class="content__text content__text--prod prod__grid-1">
+            Quelques références
+            <div class="menu-circle"></div>
+          </div>
+          <div class="prod__grid-2">
+            <figure class="compimg compimg--prod">
+              <img class="img" src="img/CANAM4-1024x576.jpg" alt="Image" />
+              <div class="compimg--hover">
+                <a href="!#"><h3 class="h-three h-three--prod">Can-Am</h3></a>
+              </div>
+              <figcaption class="img-caption--project">Digital</figcaption>
+            </figure>
+          </div>
+          <div class="prod__grid-3">
+            <figure class="compimg compimg--prod">
+              <img class="img" src="img/project-img-mr-store.png" alt="Image" />
+              <div class="compimg--hover">
+                <a href="!#"><h3 class="h-three h-three--prod">Mr Store</h3></a>
+              </div>
+              <figcaption class="img-caption--project">TV Prod</figcaption>
+            </figure>
+          </div>
+
+          <div class="prod__grid-4">
+            <figure class="compimg compimg--prod">
+              <img
+                class="img"
+                src="img/vlcsnap-2021-08-10-11h07m36s628-1024x576.png"
+                alt="Image"
+              />
+              <div class="compimg--hover">
+                <a href="!#"
+                  ><h3 class="h-three h-three--prod">
+                    Vallée de la gastronomie
+                  </h3></a
+                >
+              </div>
+              <figcaption class="img-caption--project">Digital</figcaption>
+            </figure>
+          </div>
+
+          <div class="prod__grid-5">
+            <figure class="compimg compimg--prod">
+              <img
+                class="img"
+                src="img/Montage-teaser-eolien20-1024x537.jpg"
+                alt="Image"
+              />
+              <div class="compimg--hover">
+                <a href="!#"><h3 class="h-three h-three--prod">Boralex</h3></a>
+              </div>
+              <figcaption class="img-caption--project">Corporate</figcaption>
+            </figure>
+          </div>
+
+          <div class="prod__grid-6">
+            <figure class="compimg compimg--prod">
+              <img
+                class="img"
+                src="img/C021_ULTIMATE_V020-1024x560.jpg"
+                alt="Image"
+              />
+              <div class="compimg--hover">
+                <a href="!#"><h3 class="h-three h-three--prod">Ultimate</h3></a>
+              </div>
+              <figcaption class="img-caption--project">Digtal</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="box-link--hider">
+          <div class="box-link">
+            <div class="box-link__content">
+              <h4 class="h-four h-four--red">Découvrir tous les projets</h4>
+              <a class="button-container--inline-sm">
+                <div class="button-shapes">
+                  <svg
+                    id="buttons-red--up-prod-box-link"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewbox="0 0 100 100"
+                  >
+                    <circle class="button-cream" cx="50" cy="50" r="49" />
+                    <polygon
+                      class="button-red"
+                      points="43.69 43.75 43.69 45.42 53.39 45.42 43.16 55.66 44.34 56.84 54.58 46.61 54.58 56.31 56.25 56.31 56.25 43.75 56.25 43.75 56.25 43.75 43.69 43.75"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- #endregion -->
+    <!--#region Agency-->
+    <article class="section section--agency">
+      <h2 class="h-two h-two--agency">Compose it</h2>
+      <div class="content content--agency">
+        <h4 class="h-four">Une agence intégrée</h4>
+        <div class="content__paragraph">
+          <h5 class="h-five">Une image cin&eacute;matographique</h5>
+          <p class="content__text">
+            Nous attachons une importance particuli&egrave;re &agrave;
+            l&rsquo;esth&eacute;tique de nos films en nous appuyant sur
+            l&rsquo;exp&eacute;rience de nos deux r&eacute;alisateurs issus du
+            monde de la fiction et du court-m&eacute;trage. Leur vision
+            artistique nourrit notre cr&eacute;ativit&eacute; au service de
+            chaque film.
+          </p>
+          <h5 class="h-five">Des prix en festivals</h5>
+          <p class="content__text">
+            Passionn&eacute;s de cin&eacute;ma, Pierre-Marie Charbonnier et
+            Simon Pierrat &eacute;cument les festivals pendant plusieurs
+            ann&eacute;es, au cours desquelles diff&eacute;rents
+            courts-m&eacute;trages de fiction ont &eacute;t&eacute;
+            prim&eacute;s de nombreuses fois. Par la suite, d&#8217;autres films
+            corporate ont &eacute;galement &eacute;t&eacute; prim&eacute;s dans
+            le cadre de festivals professionnels.
+          </p>
+          <h5 class="h-five">Du mat&eacute;riel en interne</h5>
+          <p class="content__text">
+            Nous avons investi dans du mat&eacute;riel de prise de vue
+            cin&eacute;ma afin d&#8217;am&eacute;liorer notre
+            comp&eacute;titivit&eacute; et notre souplesse
+            d&#8217;ex&eacute;cution. Sur chaque projet, nous tournons &agrave;
+            minima avec une cam&eacute;ra RED et des objectif cin&eacute;ma
+            Ang&eacute;nieux.
+          </p>
+          <h5 class="h-five">Adh&eacute;rent ARPP</h5>
+          <p class="content__text">
+            Compose It est membre de l&#8217;ARPP : nous ma&icirc;trisons les
+            process qui nous permettent de garantir le respect des r&egrave;gles
+            &eacute;thiques et d&eacute;ontologiques en vigueur dans la
+            publicit&eacute;. Les contenus et les briefs sont valid&eacute;s en
+            respectant les d&eacute;lais.
+          </p>
+        </div>
+      </div>
+      <div class="content content--agency">
+        <a class="button-container--inline-lg">
+          <div class="button-shapes">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+              <circle class="button-cream--blk" cx="100" cy="100" r="99" />
+              <polygon
+                points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"
+              />
+            </svg>
+          </div>
+          <div class="button-text button-text--lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+              <path
+                d="M116.19,28.08l-.31,2.66-14.32-1.66,1.61-13.9,14.12,1.63L117,19.48,106,18.2l-.33,2.87,9.16,1.06-.31,2.66-9.16-1.06L105,26.79Z"
+              />
+              <path
+                d="M137.69,23.81l-5,13.07-2.61-1-5.76-13-3.62,9.45-2.89-1.11,5-13.08L126,19.32l5.38,12.34,3.44-9Z"
+              />
+              <path
+                d="M154.32,47.88c-1.78,2.11-5,1.89-8.81-1.3a12.92,12.92,0,0,1-4.73-7.67l2.81-.48a9.56,9.56,0,0,0,3.71,6.15c2.17,1.83,3.62,2.34,4.37,1.45s-.15-2.05-2.43-4.34c-2.84-2.84-5.12-5.9-3.19-8.2s5.3-1.44,8.6,1.34A12.23,12.23,0,0,1,159,41.28l-2.77.56a9.2,9.2,0,0,0-3.3-5c-1.44-1.24-3.43-2.48-4.25-1.5s.68,2.3,2.66,4.26C154.51,42.78,156.3,45.53,154.32,47.88Z"
+              />
+              <path
+                d="M161.76,59.77l-5-6.81-3.27.55-2-2.75,15.67-2.34,2.08,2.82-6.87,14.28-2-2.78Zm1.3-2.62,2.87-5.72-6.31,1Z"
+              />
+              <path
+                d="M175.32,61.06l-7.77,9.19,12,.45,1.4,3.16-15.66-.8L164,70l10-12.1Z"
+              />
+              <path d="M168.05,81l13.56-3.45.79,3.1-13.56,3.45Z" />
+              <path
+                d="M176.83,85.73c4.67-.32,7.66,2.92,8,8.37s-2.14,9.07-6.81,9.39-7.66-2.92-8-8.37S172.16,86.05,176.83,85.73Zm1,14.51c3-.21,4.52-2.5,4.29-5.95S180,88.78,177.05,89s-4.52,2.48-4.28,6S174.83,100.44,177.82,100.24Z"
+              />
+              <path
+                d="M168.44,118.1l5.43-3,1-5-4.68-.9.6-3.12,13.75,2.64-1.82,9.48c-.65,3.36-2.68,5.6-5.67,5-2.33-.44-3.49-2.27-3.58-4.65l-5.71,3.3Zm7.79-1.34c-.31,1.65-.16,2.95,1.38,3.24s2.16-.85,2.47-2.5l1.19-6.2-3.85-.74Z"
+              />
+              <path
+                d="M165.07,147.1c-2.69-1.55-2.91-4.45-1.12-7.57l3.19-5.53-3.92-2.25,1.59-2.77L177,136l-4.78,8.3C170.37,147.38,167.72,148.63,165.07,147.1Zm1.61-2.84c1.38.8,2.4,0,3.3-1.56l3.05-5.3-3.61-2.08-3,5.31C165.47,142.19,165.29,143.47,166.68,144.26Z"
+              />
+              <path
+                d="M148.88,155.21l-2-1.87,8.91-9.62L166,153.24l-2.17,2.35L155.61,148Z"
+              />
+              <path
+                d="M141.35,174.26l-4.18-6.1c-2.38-3.47-1.7-7.38,2.49-10.26s8.09-2.1,10.47,1.36l4.19,6.1-2.64,1.81-4.05-5.9c-1.59-2.31-3.89-2.77-6.38-1.06s-2.9,4-1.31,6.33l4.05,5.91Z"
+              />
+              <path
+                d="M118.5,173c-1-2.58.83-5.29,5.48-7a12.79,12.79,0,0,1,9-.32l-1,2.68a9.61,9.61,0,0,0-7.19.18c-2.66,1-3.82,2-3.42,3.08s1.87.89,5,0c3.87-1.07,7.66-1.54,8.71,1.27s-1.36,5.33-5.41,6.83a12.32,12.32,0,0,1-7.76.59l.88-2.7a9.17,9.17,0,0,0,5.95-.41c1.79-.64,3.84-1.76,3.4-3s-2.33-.55-5,.21C122.84,175.67,119.57,175.88,118.5,173Z"
+              />
+              <path
+                d="M82.94,171.71l.34-2.65,14.3,1.83L95.8,184.78,81.69,183l.34-2.66,11,1.41.37-2.86-9.14-1.18.34-2.65,9.14,1.17.39-3Z"
+              />
+              <path
+                d="M61.38,175.72l5.17-13,2.6,1,5.6,13.11,3.73-9.4,2.88,1.14-5.17,13L73,180.35,67.81,168l-3.55,8.92Z"
+              />
+              <path
+                d="M45,151.44c1.81-2.09,5-1.83,8.8,1.41a12.82,12.82,0,0,1,4.63,7.73l-2.82.45a9.52,9.52,0,0,0-3.62-6.2c-2.15-1.86-3.6-2.39-4.36-1.52s.13,2.07,2.38,4.38c2.81,2.88,5.05,6,3.08,8.24s-5.31,1.39-8.58-1.44A12.19,12.19,0,0,1,40.28,158l2.78-.53a9.16,9.16,0,0,0,3.23,5c1.43,1.26,3.4,2.52,4.24,1.55s-.65-2.31-2.61-4.29C44.78,156.53,43,153.77,45,151.44Z"
+              />
+              <path
+                d="M37.76,139.49l4.94,6.86,3.28-.51,2,2.78-15.69,2.15-2-2.84,7-14.2,2,2.81Zm-1.33,2.6-2.93,5.68,6.32-1Z"
+              />
+              <path
+                d="M24.21,138l7.88-9.1-12-.59-1.36-3.18,15.65,1,1.32,3.11-10.09,12Z"
+              />
+              <path d="M31.72,118.17l-13.6,3.28-.75-3.11L31,115.06Z" />
+              <path
+                d="M23,113.32c-4.67.26-7.62-3-7.93-8.47s2.26-9,6.93-9.31,7.62,3,7.93,8.47S27.68,113.06,23,113.32ZM22.18,98.8c-3,.17-4.55,2.44-4.35,5.9s2,5.53,5,5.36,4.55-2.42,4.36-5.89S25.18,98.63,22.18,98.8Z"
+              />
+              <path
+                d="M31.77,81.07l-5.46,3-1,5L30,90l-.64,3.11L15.61,90.29l1.93-9.47c.68-3.35,2.75-5.56,5.73-4.95,2.33.47,3.46,2.32,3.53,4.7l5.74-3.24ZM24,82.32c.34-1.65.19-2.94-1.34-3.25s-2.16.82-2.5,2.46l-1.26,6.2,3.84.78Z"
+              />
+              <path
+                d="M35.52,52.09c2.67,1.58,2.86,4.48,1,7.58l-3.25,5.49,3.89,2.3-1.63,2.76-12-7.14,4.89-8.24C30.22,51.74,32.89,50.53,35.52,52.09Zm-1.64,2.82c-1.38-.82-2.4,0-3.32,1.52L27.44,61.7,31,63.82l3.12-5.27C35.06,57,35.26,55.72,33.88,54.91Z"
+              />
+              <path d="M51.8,44.19l2,1.9-9,9.5L34.63,46l2.2-2.32L45,51.37Z" />
+              <path
+                d="M59.53,25.25l4.12,6.15C66,34.89,65.25,38.8,61,41.62s-8.11,2-10.45-1.47L46.47,34l2.66-1.78,4,6C54.67,40.49,57,41,59.47,39.3s2.94-4,1.38-6.32l-4-5.95Z"
+              />
+              <path
+                d="M82.4,26.78c.93,2.6-.89,5.29-5.57,7a12.88,12.88,0,0,1-9,.21l1-2.67a9.57,9.57,0,0,0,7.19-.1c2.67-.95,3.85-1.94,3.46-3s-1.85-.92-5-.1c-3.88,1-7.68,1.44-8.69-1.38s1.42-5.31,5.49-6.76a12.2,12.2,0,0,1,7.77-.49l-.92,2.68a9.13,9.13,0,0,0-6,.34c-1.8.61-3.87,1.71-3.44,2.92s2.33.57,5-.15C78.1,24.05,81.37,23.88,82.4,26.78Z"
+              />
+            </svg>
+          </div>
+        </a>
+        <ul class="list--numbered">
+          <li class="list-item list-item--numbered">
+            <h5 class="h-five">CONCEPTION</h5>
+            <h5 class="h-five">01</h5>
+          </li>
+          <li class="list-item list-item--numbered">
+            <h5 class="h-five">PRÉ-PRODUCTION</h5>
+            <h5 class="h-five">02</h5>
+          </li>
+          <li class="list-item list-item--numbered">
+            <h5 class="h-five">RÉALISATION</h5>
+            <h5 class="h-five">03</h5>
+          </li>
+          <li class="list-item list-item--numbered">
+            <h5 class="h-five">POST-PRODUCTION</h5>
+            <h5 class="h-five">04</h5>
+          </li>
+          <li class="list-item list-item--numbered">
+            <h5 class="h-five">DIFFUSION</h5>
+            <h5 class="h-five">05</h5>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <!-- #endregion -->
+    <!--#region Insta-->
+    <article class="section section--insta">
+      <div class="content--insta">
+        <h2 class="h-two h-two--red">Insta</h2>
+        <a href="https://www.instagram.com/p/CWDy2H9o77J/"
+          ><figure class="compimg compimg--insta">
+            <img
+              class="img"
+              src="img/254838928_1321584128281022_5178029343191846147_n.jpg"
+              alt="Image"
+            /></figure
+        ></a>
+        <a href="https://www.instagram.com/p/CWDyylDocsJ/"
+          ><figure class="compimg compimg--insta">
+            <img
+              class="img"
+              src="img/254379286_108885048179561_448578568573009036_n.jpg"
+              alt="Image"
+            /></figure
+        ></a>
+        <a href="https://www.instagram.com/p/CWDyvo-oZuS/"
+          ><figure class="compimg compimg--insta">
+            <img
+              class="img"
+              src="img/254292369_131941605864640_5830075327915987860_n.jpg"
+              alt="Image"
+            /></figure
+        ></a>
+        <a href="https://www.instagram.com/p/CWAt0XOoF1y/"
+          ><figure class="compimg compimg--insta">
+            <img
+              class="img"
+              src="img/253787394_1760563340802190_1757040334419137845_n.jpg"
+              alt="Image"
+            /></figure
+        ></a>
+        <a href="https://www.instagram.com/p/CWAtvVjI-bz/"
+          ><figure class="compimg compimg--insta">
+            <img
+              class="img"
+              src="img/254068008_401673668341702_802960703123140033_n.jpg"
+              alt="Image"
+            /></figure
+        ></a>
+        <a href="https://www.instagram.com/p/CWAte7cINvp/"
+          ><figure class="compimg compimg--insta">
+            <img
+              class="img"
+              src="img/254078147_214410634163782_2193567389439757245_n.jpg"
+              alt="Image"
+            /></figure
+        ></a>
+        <a href="https://www.instagram.com/p/CTwYMSmohpL/"
+          ><figure class="compimg compimg--insta">
+            <img
+              class="img"
+              src="img/241702325_574550980647449_5311797978791950906_n.jpg"
+              alt="Image"
+            /></figure
+        ></a>
+        <a href="https://www.instagram.com/p/CTwYGrNoCWB/"
+          ><figure class="compimg compimg--insta">
+            <img
+              class="img"
+              src="img/241722466_554018682510933_5549561933152187304_n.jpg"
+              alt="Image"
+            /></figure
+        ></a>
+        <a href="https://www.instagram.com/p/CTwX_iIIVXl/"
+          ><figure class="compimg compimg--insta">
+            <img
+              class="img"
+              src="img/241953127_134985438847846_6240426476278452073_n.jpg"
+              alt="Image"
+            /></figure
+        ></a>
+      </div>
+    </article>
+    <!-- #endregion -->
+    <!--#region Trust-->
+    <article class="section section--trust">
+      <div class="content content--trust">
+        <h4 class="h-four">Ils nous font confiance</h4>
+        <div class="content__list--trust">
+          <ul class="list--nonum">
+            <li class="list-item list-item--nonum">
+              <h5 class="h-five h-five--red">Agence Service Plan</h5>
+              <figure class="compimg compimg--trust list__img">
+                <img
+                  class="img"
+                  src="img/Logo-SERVICE-PLAN--480x48.png"
+                  alt="Logo"
+                />
+              </figure>
+            </li>
+            <li class="list-item list-item--nonum">
+              <h5 class="h-five h-five--red">Sncf Réseau</h5>
+              <figure class="compimg compimg--trust list__img">
+                <img class="img" src="img/Logo-SNCF-RESEAUX.png" alt="Logo" />
+              </figure>
+            </li>
+            <li class="list-item list-item--nonum">
+              <h5 class="h-five h-five--red">Nokia</h5>
+              <figure class="compimg compimg--trust list__img">
+                <img
+                  class="img"
+                  src="img/Logo-nokia-3--480x270.png"
+                  alt="Logo"
+                />
+              </figure>
+            </li>
+            <li class="list-item list-item--nonum">
+              <h5 class="h-five h-five--red">Boralex</h5>
+              <figure class="compimg compimg--trust list__img">
+                <img
+                  class="img"
+                  src="img/Logo-boralex--480x121.png"
+                  alt="Logo"
+                />
+              </figure>
+            </li>
+            <li class="list-item list-item--nonum">
+              <h5 class="h-five h-five--red">Agence Nouveau monde</h5>
+              <figure class="compimg compimg--trust list__img">
+                <img
+                  class="img"
+                  src="img/logo_NM_noir-480x136.png"
+                  alt="Logo"
+                />
+              </figure>
+            </li>
+          </ul>
+          <a href="#!">Voir Plus</a>
+        </div>
+      </div>
+    </article>
+    <!-- #endregion -->
+    <!--#region Awards-->
+    <article class="section section--awards">
+      <h2 class="h-two h-two--awards">Récompenses</h2>
+      <div class="content content--awards">
+        <div class="table">
+          <div class="table__row">
+            <div class="table__header">Baisser les Potards</div>
+            <div class="table__content">
+              <div class="table__hover">
+                <div class="table__item">Nikon Film Festival 2020</div>
+                <div class="table__item">Sélection Finaliste Top 50</div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/BALAIS-TOP50-480x223.png"
+                  alt="Image"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__header">Passage</div>
+            <div class="table__content">
+              <div class="table__hover">
+                <div class="table__item">
+                  Experimental, Dance & Music Film Festival 2019
+                </div>
+                <div class="table__item">Best Film</div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/BEST-FILM-Experimental-Dance-Music-Film-Festival-2019-1-480x318.png"
+                  alt="Award Logo"
+                />
+              </figure>
+              <div class="table__hover">
+                <div class="table__item">Video Mapping Festival 2019</div>
+                <div class="table__item">Award Winner</div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/AWARD-WINNER-Videomapping-Festival-2019-1-480x318.png"
+                  alt="Award Logo"
+                />
+              </figure>
+              <div class="table__hover">
+                <div class="table__item">
+                  Sarajevo Fashion Film Festival 2018
+                </div>
+                <div class="table__item">Award Winner</div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/AWARD-WINNER-Sarajevo-Fashion-Film-Festival-2018-480x318.png"
+                  alt="Award Logo"
+                />
+              </figure>
+              <div class="table__hover">
+                <div class="table__item">
+                  Roots of Europe International Film Festival 2018
+                </div>
+                <div class="table__item">Award Winner</div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/AWARD-WINNER-Roots-of-Europe-International-Film-Festival-2018-1-480x318.png"
+                  alt="Award Logo"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__header">Eolien et Territoire</div>
+            <div class="table__content">
+              <div class="table__hover">
+                <div class="table__item">Deauville Green Awards 2019</div>
+                <div class="table__item">
+                  Trophée Argent dans la catégorie Transition Energétique
+                </div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/BORALEX-480x252.png"
+                  alt="Award Logo"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__header">Renaître ici</div>
+            <div class="table__content">
+              <div class="table__hover">
+                <div class="table__item">
+                  Trophées de la vidéo Touristique 2019
+                </div>
+                <div class="table__item">
+                  Nomination Meilleure vidéo de Destination Touristique
+                </div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/AURA-PRIX-TOURISTIQUE-480x259.png"
+                  alt="Award Logo"
+                />
+              </figure>
+              <div class="table__hover">
+                <div class="table__item">Master of Art Film Festival 2019</div>
+                <div class="table__item">
+                  Nomination Video Art & Art Advertising
+                </div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/AURA-PRIX-MASTER-OF-ART.png"
+                  alt="Award Logo"
+                />
+              </figure>
+              <div class="table__hover">
+                <div class="table__item">
+                  Experimental Dance & Music Film Festival 2019
+                </div>
+                <div class="table__item">
+                  Nomination Dance Short Film Los Angeles
+                </div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/AURA-PRIX-EXPER-LA.png"
+                  alt="Award Logo"
+                />
+              </figure>
+              <div class="table__hover">
+                <div class="table__item">
+                  Experimental Dance & Music Film Festival 2019
+                </div>
+                <div class="table__item">
+                  Nomination Dance Short Film Toronto
+                </div>
+              </div>
+              <figure class="compimg compimg--awards table__img">
+                <img
+                  class="img"
+                  src="img/AURA-PRIX-EXPER-TORONTO.png"
+                  alt="Award Logo"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#!">Découvrir toutes les récompenses</a>
+    </article>
+    <!-- #endregion -->
+    <!--#region Contact-->
+    <div class="site-container--red">
+      <div class="section--hider">
+        <article class="section section--contact">
+          <div class="content content--contact">
+            <h4 class="h-four--thin">
+              Let’s talk about your project, we will
+              <span style="font-weight: 700">Compose It</span> for you.
+            </h4>
+            <a class="button-container--inline-lg">
+              <div class="button-shapes button--arrow-rotate">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+                  <circle class="button-cream--blk" cx="100" cy="100" r="99" />
+                  <polygon
+                    points="87.37 87.5 87.37 90.85 106.78 90.85 86.31 111.32 88.68 113.69 109.15 93.22 109.15 112.63 112.5 112.63 112.5 87.5 112.5 87.5 112.5 87.5 87.37 87.5"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="content content--contact content--contact--block">
+            <a href="tel:0629664445">
+              <h2 class="h-two h-two--red h-two--phone">06.29.66.44.45</h2>
+            </a>
+            <a href="mailto:contact@composeitprod.com">
+              <h2 class="h-two h-two--red h-two--email">
+                contact@composeitprod.com
+              </h2>
+            </a>
+          </div>
+          <div class="content content--footer">
+            <a
+              class="links__footer--text"
+              href="https://composeitprod.fr/mentions-legales/"
+              >Mentions légales</a
+            >
+            <div class="content--social">
+              <a
+                class="links__footer"
+                href="https://www.youtube.com/channel/UC3L3H5bDtKU9zjC-ZWStAEQ"
+              >
+                <svg
+                  role="img"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <a class="links__footer" href="https://twitter.com/composeitprod">
+                <svg
+                  role="img"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Twitter</title>
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="links__footer"
+                href="https://www.instagram.com/composeitprod"
+              >
+                <svg
+                  role="img"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="links__footer"
+                href="https://www.facebook.com/composeitprod"
+              >
+                <svg
+                  role="img"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Facebook</title>
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a class="links__footer" href="https://vimeo.com/composeitprod">
+                <svg
+                  role="img"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Vimeo</title>
+                  <path
+                    d="M23.9765 6.4168c-.105 2.338-1.739 5.5429-4.894 9.6088-3.2679 4.247-6.0258 6.3699-8.2898 6.3699-1.409 0-2.578-1.294-3.553-3.881l-1.9179-7.1138c-.719-2.584-1.488-3.878-2.312-3.878-.179 0-.806.378-1.8809 1.132l-1.129-1.457a315.06 315.06 0 003.501-3.1279c1.579-1.368 2.765-2.085 3.5539-2.159 1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.5069.5389 2.45 1.1309 3.674 1.7759 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.8679 3.434-5.7568 6.7619-5.6368 2.4729.06 3.6279 1.664 3.4929 4.7969z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <a
+              class="links__footer--text"
+              href="https://composeitprod.fr/mentions-legales/"
+              >Merci Beaucoup.</a
+            >
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- #endregion -->
+  </body>
 </html>
