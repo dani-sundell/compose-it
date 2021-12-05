@@ -1,3 +1,13 @@
+/* 
+
+Notes on Validation errors: 
+"Due to their dynamic nature, CSS variables are currently not statically checked" — seems like the validator does not check variables, but given we learned var() in the course, I'm thinking this is not something to worry about
+":-webkit-scrollbar is a vendor extended pseudo-element" — this is required to match the orginal site ref: https://css-tricks.com/custom-scrollbars-in-webkit/
+"-webkit-text-stroke is a vendor extension" — this is required to match the original site ref: ref: https://css-tricks.com/adding-stroke-to-web-text/ 
+
+*/
+
+
 /* #region Global*/
 
 html {
@@ -1005,7 +1015,6 @@ a.project--link:hover > .project-category--normal {
 
 .content__text:first-child {
     padding-top: 0;
-
 }
 
 .section--awards a {
