@@ -1174,7 +1174,7 @@ a.project--link:hover > .project-category--normal {
             height: 1rem;
         }
         div.project-category {
-            height: 16;
+            height: 16px;
         }
 }
 /*#endregion*/
