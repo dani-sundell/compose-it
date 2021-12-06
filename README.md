@@ -12,5 +12,5 @@ This is a project for the Web Development course at the Minneapolis College of A
 
 ## Author
 
-Project Code: [Dani Sundell]
+Project Code: Dani Sundell
 Source Design: [Compose It](https://composeitprod.fr/)
